@@ -1,10 +1,10 @@
 ---
 title: Ivanti Consulting & Implementation | Latest Solutions
 description: Certified Ivanti consultants and the only Ivanti Premier Partner with expertise across the entire Ivanti portfolio.
-eyebrow: Ivanti & Us
-heading: Your bridge between Ivanti and your business goals
-intro: Our certified consultants help you manage and maintain your Ivanti products, and we go beyond just focusing on software support.
-cardsTitle: What We Do
+eyebrow: Ivanti Premier Partner
+heading: Ivanti & Us
+intro: "We are Ivanti partners, certified consultants trained to assist in managing and maintaining Ivanti products. We go beyond just focusing on software support—we provide a bridge between your Ivanti products and your business goals and requirements."
+cardsTitle: Ivanti products we cover
 cards:
   - { title: Ivanti Asset Manager, text: Track every IT asset through its full lifecycle., href: /ivanti-asset-manager }
   - { title: Ivanti Automation, text: Hand repetitive IT tasks to software., href: /ivanti-automation }
@@ -17,21 +17,19 @@ cards:
 heroImage: { src: /images/ivanti/ivanti-elite-partner.png, alt: Ivanti Elite Partner badge }
 ---
 
-## Our experienced team provides
+## Our experienced team is able to provide:
 
 - Ivanti Professional Services
 - Ivanti Channel Management
 - Ivanti Patch Management
 - Ivanti Training
 
-## Boutique concierge service
+In addition to being an Ivanti partner, we offer a unique boutique-style concierge service. This provides you with weekly touchpoints and monthly guidance to maximize adoption, achieve your goals, and implement recommendations. Our team is able to provide consultations for custom builds, architecture optimization, and Ivanti training.
 
-Our concierge offering gives you weekly touchpoints and monthly guidance to improve adoption, support your goals and put recommendations into practice. Consultations cover custom builds, architecture optimization and Ivanti training.
+Consulting gives you a fresh view of your business from our experienced team. We can often find issues that might have been overlooked and help you with rapid implementation and better security. Consulting helps us customize your Ivanti software to meet your IT management needs while working alongside you.
 
-## A fresh outside view
+## What We Do
 
-Consulting brings a fresh perspective that catches overlooked issues, speeds up implementation and strengthens security. We tailor Ivanti to your IT management needs while working alongside your team.
+Above is our ever-growing directory of products covered by Latest Solutions. We are proud to be the only Ivanti Premier partner with expertise in the **entire** Ivanti portfolio of products.
 
-## The entire Ivanti portfolio
-
-We are the only Ivanti Premier partner with expertise in the **entire** Ivanti portfolio. Book a free, no-obligation consultation to map your current issues and get ahead of future ones.
+If you aren't sure which product or system will best suit your needs, please feel free to schedule a free consultation with us. We are happy to help you map out current issues and help you resolve others before they ever arise! No pressure, no obligation.
