@@ -1,16 +1,16 @@
 /* Brand colours and fonts live here. Change a value once and it updates everywhere. */
 :root {
-  --navy: #0a1834;
-  --navy-2: #13254d;
-  --accent: #1fb6e8;
-  --accent-dark: #0f8fbd;
-  --ink: #1b2233;
+  --navy: #03233c;
+  --navy-2: #033f63;
+  --accent: #5cb06c;
+  --accent-dark: #24646c;
+  --ink: #3c3c3c;
   --muted: #5b6478;
   --line: #e3e7ef;
-  --bg-soft: #f4f7fb;
+  --bg-soft: #f8f8f8;
   --white: #ffffff;
   --radius: 14px;
-  --font-head: 'Montserrat', system-ui, sans-serif;
+  --font-head: 'Poppins', system-ui, sans-serif;
   --font-body: 'Open Sans', system-ui, sans-serif;
 }
 
@@ -30,7 +30,8 @@ p { margin: 0 0 1em; }
 .section.soft { background: var(--bg-soft); }
 .section.dark { background: var(--navy); color: #d6deee; }
 .section.dark h2, .section.dark h3 { color: var(--white); }
-.eyebrow { font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.8rem; font-weight: 700; color: var(--accent); margin-bottom: 0.8em; }
+.eyebrow { font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.8rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 0.8em; }
+.hero .eyebrow, .section.dark .eyebrow { color: var(--accent); }
 .lead { font-size: 1.15rem; max-width: 760px; }
 .center { text-align: center; }
 .center .lead { margin-inline: auto; }
@@ -72,7 +73,7 @@ p { margin: 0 0 1em; }
 }
 
 /* Hero */
-.hero { background: linear-gradient(135deg, rgba(10,24,52,0.88) 0%, rgba(10,24,52,0.55) 100%), url(/images/shared/texture-blue.jpg) center / cover, var(--navy); color: #d6deee; padding: clamp(64px, 10vw, 120px) 0; }
+.hero { background: linear-gradient(135deg, rgba(3,35,60,0.9) 0%, rgba(3,63,99,0.6) 100%), url(/images/shared/texture-blue.jpg) center / cover, var(--navy); color: #d6deee; padding: clamp(64px, 10vw, 120px) 0; }
 .hero h1 { color: var(--white); max-width: 900px; }
 .hero .lead { color: #c4cfe3; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
@@ -135,7 +136,7 @@ blockquote.quote { font-family: var(--font-head); font-size: clamp(1.3rem, 2.4vw
 .form .btn { justify-self: start; }
 
 /* Footer */
-.site-footer { background: #071127; color: #9fadc7; padding: 56px 0 24px; font-size: 0.92rem; }
+.site-footer { background: #001e39; color: #9fadc7; padding: 56px 0 24px; font-size: 0.92rem; }
 .site-footer a { color: #c9d4e8; text-decoration: none; }
 .site-footer a:hover { color: var(--accent); }
 .site-footer h4 { color: var(--white); font-size: 0.95rem; }
