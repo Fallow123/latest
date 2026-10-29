@@ -6,6 +6,8 @@ heading: "Ivanti Neurons for Risk-Based Vulnerability Management"
 intro: "Connect your infrastructure with vulnerability data, threat intelligence, pen test findings and asset criticality to see your true risk and fix what matters first."
 ---
 
+![RiskSense, acquired by Ivanti](/images/ivanti-risksense/risksense-logo.png)
+
 ## Experience a risk management cloud solution
 
 - Shorten time to remediation and improve operational efficiency
@@ -24,3 +26,13 @@ Our consultants are former Ivanti employees who know the product inside out, fro
 - **Consulting:** a custom configuration and a step-by-step implementation plan built around your environment
 - **Tech Support:** a knowledgeable team on call for quick answers and how-to guidance
 - **Expert Solutions Architecture:** ongoing help to reach your goals, such as full team adoption
+
+## The Neurons for RBVM platform
+
+![RiskSense dashboard in Ivanti Neurons for RBVM](/images/ivanti-risksense/risksense-dashboard.png)
+
+![Ivanti Neurons for RBVM overview](/images/ivanti-risksense/risksense-overview.png)
+
+## Integrations
+
+![Ivanti Neurons for RBVM integrations](/images/ivanti-risksense/risksense-integrations.png)

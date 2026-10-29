@@ -4,6 +4,7 @@ description: "Ivanti Identity Director implementation: automate onboarding, role
 eyebrow: Ivanti
 heading: "Ivanti Identity Director"
 intro: "Identity and access management, powered by RES, that automates identity tasks so IT can focus on other priorities."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Automate your identity management

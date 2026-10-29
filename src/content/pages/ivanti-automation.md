@@ -4,6 +4,7 @@ description: "Ivanti Automation implementation services: automate provisioning, 
 eyebrow: Ivanti
 heading: "Ivanti Automation Solutions"
 intro: "Hand repetitive tasks to software so your staff can focus on higher-value work."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Automate your workload with ease

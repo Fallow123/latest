@@ -6,18 +6,19 @@ intro: Seamless implementation, training and support for Ivanti, TeamDynamix, Ne
 whatWeDo:
   title: What Exactly Do We Do?
   text: We don't just sell software. We implement it seamlessly and affordably, and we stay with you until your team gets real value from it. Our consultants are former Ivanti employees and certified Ivanti experts, we are a TeamDynamix partner, and we help firms run NetDocuments as their document management system.
+  image: /images/home/workspace.jpg
 services:
   - title: Strategic Consulting
-    icon: /icons/compass.svg
+    icon: /images/home/strategic-consulting.png
     text: We work one-on-one with your team to understand your processes and current systems, then build an IT roadmap tied to your business goals.
   - title: Tech Support
-    icon: /icons/headset.svg
+    icon: /images/home/tech-support.png
     text: Patient, highly trained remote technicians who resolve complex technology issues quickly.
   - title: Solution Specialists
-    icon: /icons/puzzle.svg
+    icon: /images/home/solution-specialists.png
     text: Assessment, IT strategy and infrastructure optimization to increase adoption and reach your goals.
   - title: Latest TechFusion
-    icon: /icons/handshake.svg
+    icon: /images/home/techfusion.png
     text: An embedded consulting partner that works alongside your team for continuous improvement.
 benefits:
   - title: Rapid Implementation

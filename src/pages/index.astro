@@ -29,8 +29,9 @@ const d = home.data;
       <div>
         <p class="eyebrow">Who we are</p>
         <h2>{d.whatWeDo.title}</h2>
+        <div class="lead"><p set:html={d.whatWeDo.text} /></div>
       </div>
-      <div class="lead"><p set:html={d.whatWeDo.text} /></div>
+      {d.whatWeDo.image && <img class="rounded" src={d.whatWeDo.image} alt="" loading="lazy" />}
     </div>
   </section>
 

@@ -5,6 +5,7 @@ eyebrow: About Us
 heading: Experts in Top IT Solutions in the Industry
 intro: We are a group of IT software consultants offering boutique-style services to architect, implement and optimize your IT software, with a cost-effective, user-oriented focus.
 cta: { label: Schedule a free, no-obligation consultation, href: '#contact' }
+heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti Premier Partner badge }
 ---
 
 ## Why we started
@@ -26,6 +27,8 @@ Latest Solutions was founded to close the gaps in the IT software lifecycle. We 
 We are an Ivanti Premier Partner with expertise across the entire Ivanti portfolio. Founded in 2011, our team brings **100+ years of combined Ivanti experience**. Many of us are former Ivanti employees, so we know how to align the products with best practices.
 
 ## Meet our team
+
+![The Latest Solutions leadership team](/images/about/team.png)
 
 We are a collaboration of independent consultants with partner, customer and former-Ivanti experience, offering on-demand consulting and professional services. We are certified in TeamDynamix, Ivanti, NetDocuments and Intercom.
 

@@ -4,6 +4,7 @@ description: "Ivanti Unified Endpoint Management implementation: manage Windows,
 eyebrow: Ivanti
 heading: "Unified Endpoint Management Solutions"
 intro: "One console for your IT team to manage every type of user device, with implementation services to get more from it."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Manage all your devices in one place

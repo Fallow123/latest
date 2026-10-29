@@ -6,12 +6,13 @@ heading: Boost Your Automation with TeamDynamix iPaaS
 intro: "An automation and AI platform that connects your enterprise systems, so the right information reaches the right people at the right time."
 cardsTitle: Platform
 cards:
-  - { title: Get up and running quickly, text: "A no-code, highly configurable platform with AI and workflows that add the right approvals." }
-  - { title: Integration Hub, text: "Hundreds of prebuilt connectors to sync data across Workday, Microsoft 365, Salesforce and more." }
-  - { title: Automation Meets AI, text: "Automate equipment replacement, password resets and on/off-boarding, with AI agents that build forms and workflows." }
-  - { title: Optimize / Test, text: "See which offerings and integrations achieve the outcomes you want." }
-  - { title: Visual Flow Building, text: "Build flows without code, triggered by webhooks, APIs, events, schedules or user actions." }
-  - { title: API Management, text: "Publish, manage and monitor APIs from one hub with full governance." }
+  - { title: Get up and running quickly, icon: /images/shared/personalized-campaigns.png, text: "A no-code, highly configurable platform with AI and workflows that add the right approvals." }
+  - { title: Integration Hub, icon: /images/teamdynamix-ipaas/journey.png, text: "Hundreds of prebuilt connectors to sync data across Workday, Microsoft 365, Salesforce and more." }
+  - { title: Automation Meets AI, icon: /images/teamdynamix-ipaas/behavior.png, text: "Automate equipment replacement, password resets and on/off-boarding, with AI agents that build forms and workflows." }
+  - { title: Optimize / Test, icon: /images/teamdynamix-ipaas/ab-test.png, text: "See which offerings and integrations achieve the outcomes you want." }
+  - { title: Visual Flow Building, icon: /images/teamdynamix-ipaas/analytics.png, text: "Build flows without code, triggered by webhooks, APIs, events, schedules or user actions." }
+  - { title: API Management, icon: /images/teamdynamix-ipaas/leadscoring.png, text: "Publish, manage and monitor APIs from one hub with full governance." }
+heroImage: { src: /images/shared/teamdynamix-logo-reversed.png, alt: TeamDynamix logo }
 ---
 
 ## Why choose TeamDynamix iPaaS?

@@ -4,6 +4,7 @@ description: "Ivanti Neurons implementation and support: self-healing, automated
 eyebrow: Ivanti
 heading: "Ivanti Neurons"
 intro: "A cloud platform that uses machine learning to automate, secure and self-heal employee devices across your network."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Experience a comprehensive cloud solution

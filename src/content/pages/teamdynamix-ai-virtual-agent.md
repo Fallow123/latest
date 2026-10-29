@@ -6,12 +6,13 @@ heading: Empower Customer Conversations with TeamDynamix Virtual Agent
 intro: "Conversational AI that handles customer conversations across every channel. TeamDynamix customers deflect 30-60% of their tickets."
 cardsTitle: Features
 cards:
-  - { title: Omnichannel Messaging, text: "Web, mobile, social and messaging platforms, all in one place for a consistent experience." }
-  - { title: AI-Powered Chat Agent, text: "Answers common questions around the clock so staff can focus on complex interactions." }
-  - { title: Intelligent Routing, text: "Routes chats by skill, availability or department so no customer waits unnecessarily." }
-  - { title: Personalized Service, text: "Authenticates users so the agent can see their assets and take action, not just search a knowledge base." }
-  - { title: Customizable Chat, text: "Branding, language options, widgets and proactive messaging triggers." }
-  - { title: Performance Analytics, text: "Response time, satisfaction and agent performance insights for ongoing improvement." }
+  - { title: Omnichannel Messaging, icon: /images/teamdynamix-ai-virtual-agent/omnichannel-messaging.png, text: "Web, mobile, social and messaging platforms, all in one place for a consistent experience." }
+  - { title: AI-Powered Chat Agent, icon: /images/teamdynamix-ai-virtual-agent/ai-power-chat-bot.png, text: "Answers common questions around the clock so staff can focus on complex interactions." }
+  - { title: Intelligent Routing, icon: /images/teamdynamix-ai-virtual-agent/team-inbox.png, text: "Routes chats by skill, availability or department so no customer waits unnecessarily." }
+  - { title: Personalized Service, icon: /images/teamdynamix-ai-virtual-agent/customer.png, text: "Authenticates users so the agent can see their assets and take action, not just search a knowledge base." }
+  - { title: Customizable Chat, icon: /images/teamdynamix-ai-virtual-agent/custom.png, text: "Branding, language options, widgets and proactive messaging triggers." }
+  - { title: Performance Analytics, icon: /images/shared/performance-analytics.png, text: "Response time, satisfaction and agent performance insights for ongoing improvement." }
+heroImage: { src: /images/shared/teamdynamix-logo-reversed.png, alt: TeamDynamix logo }
 ---
 
 ## Why choose TeamDynamix's Virtual Agent?
