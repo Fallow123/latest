@@ -60,7 +60,8 @@ const { Content } = await render(page);
           <div class="logo-wall">
             {d.logos.map((l) => (
               <a href={l.href} target="_blank" rel="noopener">
-                {l.image ? <img src={l.image} alt={l.name} /> : l.name}
+                {l.image && <img src={l.image} alt="" />}
+                <span>{l.name}</span>
               </a>
             ))}
           </div>

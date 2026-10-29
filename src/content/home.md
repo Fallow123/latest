@@ -8,16 +8,16 @@ whatWeDo:
   text: We don't just sell software. We implement it seamlessly and affordably, and we stay with you until your team gets real value from it. Our consultants are former Ivanti employees and certified Ivanti experts, we are a TeamDynamix partner, and we help firms run NetDocuments as their document management system.
 services:
   - title: Strategic Consulting
-    icon: https://static.wixstatic.com/media/c1d865_df69abec22f84d968d30e927d2b81517~mv2.png
+    icon: /icons/compass.svg
     text: We work one-on-one with your team to understand your processes and current systems, then build an IT roadmap tied to your business goals.
   - title: Tech Support
-    icon: https://static.wixstatic.com/media/c1d865_1c4c1b4e40574bdc9a71fb7cf2b3aeb7~mv2.png
+    icon: /icons/headset.svg
     text: Patient, highly trained remote technicians who resolve complex technology issues quickly.
   - title: Solution Specialists
-    icon: https://static.wixstatic.com/media/c1d865_14359aae8559496c8557d902459d52b3~mv2.png
+    icon: /icons/puzzle.svg
     text: Assessment, IT strategy and infrastructure optimization to increase adoption and reach your goals.
   - title: Latest TechFusion
-    icon: https://static.wixstatic.com/media/fdd389_538a092dc81645f4a869b4f57ce29065~mv2.png
+    icon: /icons/handshake.svg
     text: An embedded consulting partner that works alongside your team for continuous improvement.
 benefits:
   - title: Rapid Implementation
