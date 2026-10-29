@@ -1,0 +1,112 @@
+---
+// Home page. The words live in src/content/home.md; this file only lays them out.
+import { getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { site } from '../site';
+
+const home = (await getEntry('home', 'home'))!;
+const d = home.data;
+---
+
+<Base title={d.title} description={d.description}>
+  <section class="hero">
+    <div class="container hero-split">
+      <div>
+        <p class="eyebrow">Ivanti Premier Partner</p>
+        <h1>{d.heading}</h1>
+        <p class="lead">{d.intro}</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Request a discovery call</a>
+          <a class="btn btn-outline" href="/about">More about us</a>
+        </div>
+      </div>
+      <img src={site.ivantiBadge} alt="Ivanti Premier Partner badge" width="411" height="139" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow">Who we are</p>
+        <h2>{d.whatWeDo.title}</h2>
+      </div>
+      <div class="lead"><p set:html={d.whatWeDo.text} /></div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <p class="eyebrow center">Our services</p>
+      <h2 class="center">How we help</h2>
+      <div class="grid">
+        {
+          d.services.map((s) => (
+            <div class="card">
+              {s.icon && <img class="icon" src={s.icon} alt="" />}
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <p class="eyebrow">Why work with us</p>
+      <h2>Benefits of Consulting and Implementation Services</h2>
+      <div class="grid">
+        {
+          d.benefits.map((b, i) => (
+            <div class="card">
+              <span class="num">0{i + 1}</span>
+              <h3>{b.title}</h3>
+              <p>{b.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container center">
+      <h2>{d.cta.title}</h2>
+      <p class="lead">{d.cta.text}</p>
+      <a class="btn" href="#contact">Get started</a>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <p class="eyebrow">Ivanti Premier Partner</p>
+      <h2>Certified across the Ivanti portfolio</h2>
+      <div class="two-col">
+        {
+          d.credentials.map((c) => (
+            <div>
+              <h3>{c.title}</h3>
+              <ul class="pill-list">{c.items.map((i) => <li>{i}</li>)}</ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow">Our culture</p>
+        <blockquote class="quote">{d.culture.quote}</blockquote>
+        <ul class="pill-list">{d.culture.values.map((v) => <li>{v}</li>)}</ul>
+      </div>
+      <div>
+        <p class="eyebrow">Customer journey</p>
+        <h2>{d.journey.title}</h2>
+        <p>{d.journey.text}</p>
+      </div>
+    </div>
+  </section>
+</Base>

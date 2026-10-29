@@ -1,0 +1,43 @@
+---
+import { nav, site } from '../site';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) => href === path || (href !== '/' && path.startsWith(href));
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" aria-label={`${site.name} home`}>
+      <img src={site.logo} alt={site.name} width="190" height="35" />
+    </a>
+
+    <details class="mobile-toggle">
+      <summary aria-label="Menu"><span></span><span></span><span></span></summary>
+    </details>
+
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        {
+          nav.map((item) => (
+            <li class={item.children ? 'has-children' : ''}>
+              <a href={item.href} class={isActive(item.href) ? 'active' : ''}>
+                {item.label}
+              </a>
+              {item.children && (
+                <ul class="submenu">
+                  {item.children.map((child) => (
+                    <li>
+                      <a href={child.href} class={isActive(child.href) ? 'active' : ''}>
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+      <a href="#contact" class="btn btn-small">Free consultation</a>
+    </nav>
+  </div>
+</header>

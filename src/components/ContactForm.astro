@@ -1,0 +1,43 @@
+---
+import { site } from '../site';
+const interests = ['Asset tracking', 'Device management', 'Improving security posture', 'Other'];
+---
+
+<section id="contact" class="section contact">
+  <div class="container contact-grid">
+    <div>
+      <p class="eyebrow">Let's talk</p>
+      <h2>Request Your Discovery or Demo Call Today!</h2>
+      <p>
+        Fill out the form and a member of our team will reach out within 2 business days. Need help right away?
+        Email us at <a href={`mailto:${site.email}`}>{site.email}</a>.
+      </p>
+    </div>
+    <form class="card form" name="discovery-call" method="POST" action={site.formAction || undefined} data-netlify="true">
+      <input type="hidden" name="form-name" value="discovery-call" />
+      <div class="form-row">
+        <label>First name<input name="first_name" required /></label>
+        <label>Last name<input name="last_name" required /></label>
+      </div>
+      <div class="form-row">
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Phone<input type="tel" name="phone" /></label>
+      </div>
+      <div class="form-row">
+        <label>Company<input name="company" /></label>
+        <label>Title<input name="title" /></label>
+      </div>
+      <label>Product of interest<input name="product" placeholder="e.g. Ivanti Neurons, TeamDynamix ITAM" /></label>
+      <fieldset>
+        <legend>I'm interested in</legend>
+        {interests.map((i) => <label class="check"><input type="checkbox" name="interests" value={i} /> {i}</label>)}
+      </fieldset>
+      <label>Best time to reach you<input name="availability" /></label>
+      <label>Anything else?<textarea name="message" rows="3"></textarea></label>
+      <label class="check">
+        <input type="checkbox" name="newsletter" value="yes" /> Send me news, offers and partner product information
+      </label>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+---
+import { site, socials } from '../site';
+const year = new Date().getFullYear();
+const links = [
+  { label: 'Home', href: '/' },
+  { label: 'Ivanti', href: '/ivanti' },
+  { label: 'TeamDynamix', href: '/teamdynamix' },
+  { label: 'NetDocuments', href: '/netdocuments' },
+  { label: 'Intercom', href: '/intercom' },
+  { label: 'Partners', href: '/partners' },
+  { label: 'About Us', href: '/about' },
+];
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src={site.footerLogo} alt={site.name} width="220" height="40" class="footer-logo" />
+      <p>{site.address}</p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <h4>Site</h4>
+      <ul>{links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+    </nav>
+    <div>
+      <h4>Follow us</h4>
+      <ul>{socials.map((s) => <li><a href={s.href} rel="noopener" target="_blank">{s.label}</a></li>)}</ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {year} {site.name}. All rights reserved.</span>
+    <a href="/privacy-policy">Privacy Policy</a>
+  </div>
+</footer>

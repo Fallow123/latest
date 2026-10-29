@@ -1,0 +1,77 @@
+---
+// Renders every Markdown file in src/content/pages as its own page.
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => ({ params: { slug: page.id }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const d = page.data;
+const { Content } = await render(page);
+---
+
+<Base title={d.title} description={d.description} contactForm={d.contactForm}>
+  <section class="hero">
+    <div class="container">
+      {d.eyebrow && <p class="eyebrow">{d.eyebrow}</p>}
+      <h1>{d.heading}</h1>
+      {d.intro && <p class="lead">{d.intro}</p>}
+      <div class="hero-actions">
+        <a class="btn" href={d.cta?.href ?? '#contact'}>{d.cta?.label ?? 'Free consultation'}</a>
+      </div>
+    </div>
+  </section>
+
+  {
+    d.cards && (
+      <section class="section soft">
+        <div class="container">
+          {d.cardsTitle && <h2 class="center">{d.cardsTitle}</h2>}
+          <div class="grid">
+            {d.cards.map((c) =>
+              c.href ? (
+                <a class="card card-link" href={c.href}>
+                  {c.icon && <img class="icon" src={c.icon} alt="" />}
+                  <h3>{c.title}</h3>
+                  {c.text && <p>{c.text}</p>}
+                </a>
+              ) : (
+                <div class="card">
+                  {c.icon && <img class="icon" src={c.icon} alt="" />}
+                  <h3>{c.title}</h3>
+                  {c.text && <p>{c.text}</p>}
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    d.logos && (
+      <section class="section">
+        <div class="container">
+          <h2 class="center">Our Partners</h2>
+          <div class="logo-wall">
+            {d.logos.map((l) => (
+              <a href={l.href} target="_blank" rel="noopener">
+                {l.image ? <img src={l.image} alt={l.name} /> : l.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section">
+    <div class="container prose">
+      <Content />
+    </div>
+  </section>
+</Base>
