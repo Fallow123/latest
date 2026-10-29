@@ -6,12 +6,14 @@ heading: Transform Customer Conversations with Intercom
 intro: Deliver faster, more personal and more effective interactions across every digital channel, combining conversational AI and automation while keeping a human touch.
 cardsTitle: Why Intercom?
 cards:
-  - { title: Provide Conversational Support, text: AI chatbots and live chat that resolve issues quickly. }
-  - { title: Engage Proactively, text: Targeted, behavior-based messages at the right moment. }
-  - { title: Boost Sales & Conversions, text: Turn conversations into revenue by engaging leads in real time. }
-  - { title: Unify Communication Channels, text: Email, in-app, web and social messaging in one place. }
-  - { title: Automate with AI, text: Lower support costs while improving response times and satisfaction. }
-  - { title: Best AI Agent, text: Fin sets the standard for AI customer support with accurate answers around the clock. }
+  - { title: Provide Conversational Support, icon: /images/intercom/conversations.png, text: AI chatbots and live chat that resolve issues quickly. }
+  - { title: Engage Proactively, icon: /images/intercom/engage.png, text: Targeted, behavior-based messages at the right moment. }
+  - { title: Boost Sales & Conversions, icon: /images/intercom/improve.png, text: Turn conversations into revenue by engaging leads in real time. }
+  - { title: Unify Communication Channels, icon: /images/intercom/unify.png, text: Email, in-app, web and social messaging in one place. }
+  - { title: Automate with AI, icon: /images/intercom/ai.png, text: Lower support costs while improving response times and satisfaction. }
+  - { title: Best AI Agent, icon: /images/intercom/fin.png, text: Fin sets the standard for AI customer support with accurate answers around the clock. }
+cardsDark: true
+heroImage: { src: /images/intercom/intercom-logo.png, alt: Intercom logo }
 ---
 
 ## Customer expectations are rising

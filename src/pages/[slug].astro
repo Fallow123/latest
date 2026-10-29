@@ -15,19 +15,22 @@ const { Content } = await render(page);
 
 <Base title={d.title} description={d.description} contactForm={d.contactForm}>
   <section class="hero">
-    <div class="container">
-      {d.eyebrow && <p class="eyebrow">{d.eyebrow}</p>}
-      <h1>{d.heading}</h1>
-      {d.intro && <p class="lead">{d.intro}</p>}
-      <div class="hero-actions">
-        <a class="btn" href={d.cta?.href ?? '#contact'}>{d.cta?.label ?? 'Free consultation'}</a>
+    <div class={d.heroImage ? 'container hero-split' : 'container'}>
+      <div>
+        {d.eyebrow && <p class="eyebrow">{d.eyebrow}</p>}
+        <h1>{d.heading}</h1>
+        {d.intro && <p class="lead">{d.intro}</p>}
+        <div class="hero-actions">
+          <a class="btn" href={d.cta?.href ?? '#contact'}>{d.cta?.label ?? 'Free consultation'}</a>
+        </div>
       </div>
+      {d.heroImage && <img class="hero-image" src={d.heroImage.src} alt={d.heroImage.alt} />}
     </div>
   </section>
 
   {
     d.cards && (
-      <section class="section soft">
+      <section class={d.cardsDark ? 'section dark' : 'section soft'}>
         <div class="container">
           {d.cardsTitle && <h2 class="center">{d.cardsTitle}</h2>}
           <div class="grid">
@@ -60,8 +63,7 @@ const { Content } = await render(page);
           <div class="logo-wall">
             {d.logos.map((l) => (
               <a href={l.href} target="_blank" rel="noopener">
-                {l.image && <img src={l.image} alt="" />}
-                <span>{l.name}</span>
+                {l.image ? <img src={l.image} alt={l.name} /> : <span>{l.name}</span>}
               </a>
             ))}
           </div>

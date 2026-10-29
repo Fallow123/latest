@@ -21,9 +21,13 @@ const pages = defineCollection({
     heading: z.string(),
     intro: z.string().optional(),
     cta: z.object({ label: z.string(), href: z.string() }).optional(),
+    // Optional picture shown beside the hero text (path under /public)
+    heroImage: z.object({ src: z.string(), alt: z.string() }).optional(),
     // Optional grid of cards shown under the hero
     cardsTitle: z.string().optional(),
     cards: z.array(card).optional(),
+    // Show the cards on a dark background (for white or light icons)
+    cardsDark: z.boolean().default(false),
     // Optional logo wall (used on Partners)
     logos: z.array(z.object({ name: z.string(), image: z.string().optional(), href: z.string() })).optional(),
     // Show the "Request your discovery call" form at the bottom (default yes)
@@ -38,7 +42,7 @@ const home = defineCollection({
     description: z.string(),
     heading: z.string(),
     intro: z.string(),
-    whatWeDo: z.object({ title: z.string(), text: z.string() }),
+    whatWeDo: z.object({ title: z.string(), text: z.string(), image: z.string().optional() }),
     services: z.array(card),
     benefits: z.array(card),
     cta: z.object({ title: z.string(), text: z.string() }),

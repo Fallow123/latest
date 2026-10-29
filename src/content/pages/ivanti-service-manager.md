@@ -4,6 +4,7 @@ description: "Ivanti Service Manager implementation: modernize your IT service d
 eyebrow: Ivanti
 heading: "Ivanti Service Manager"
 intro: "A help desk and service management suite that modernizes your IT service desk and aligns IT with your organization's goals."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Help customers more efficiently and effectively

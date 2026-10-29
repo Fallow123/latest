@@ -7,15 +7,19 @@ intro: As a NetDocuments partner, we help businesses manage documents with cloud
 cta: { label: Request a demo, href: '#contact' }
 cardsTitle: The NetDocuments platform
 cards:
-  - { title: Organize, text: Cloud storage, email management, OCR, automation, file sync and DocuSign integration. }
-  - { title: Protect, text: Ethical walls, data loss prevention, FlexStore secure storage and encryption key management. }
-  - { title: Plan, text: Microsoft Teams chat, real-time messaging, legal task management and collaborative document viewing. }
-  - { title: Deliver, text: Document automation, extranet solutions and document bundling. }
-  - { title: Learn, text: Enterprise search and analytics. }
-  - { title: AI, text: An AI-powered legal assistant and an AI app builder. }
+  - { title: Organize, icon: /images/netdocuments/organize-white.png, text: Cloud storage, email management, OCR, automation, file sync and DocuSign integration. }
+  - { title: Protect, icon: /images/netdocuments/protect-white.png, text: Ethical walls, data loss prevention, FlexStore secure storage and encryption key management. }
+  - { title: Plan, icon: /images/netdocuments/plan-white.png, text: Microsoft Teams chat, real-time messaging, legal task management and collaborative document viewing. }
+  - { title: Deliver, icon: /images/netdocuments/deliver-white.png, text: Document automation, extranet solutions and document bundling. }
+  - { title: Learn, icon: /images/netdocuments/learn-white.png, text: Enterprise search and analytics. }
+  - { title: AI, icon: /images/netdocuments/ai-icon.png, text: An AI-powered legal assistant and an AI app builder. }
+cardsDark: true
+heroImage: { src: /images/netdocuments/netdocuments-logo-white.png, alt: NetDocuments logo }
 ---
 
 ## What is NetDocuments?
+
+![NetDocuments illustration](/images/netdocuments/illustration.png)
 
 NetDocuments is a secure, cloud-based vault for managing critical documents. It is the central source of truth for law firms, legal teams and financial institutions, supporting access, organization and compliance.
 

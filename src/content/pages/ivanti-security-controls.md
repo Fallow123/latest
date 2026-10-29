@@ -4,6 +4,7 @@ description: "Ivanti Security Controls implementation: unified, agentless patch 
 eyebrow: Ivanti
 heading: "Ivanti Security Controls"
 intro: "One patch management system to protect all your IT assets, implemented by staff trained on Ivanti products."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Secure your IT assets with ease

@@ -4,6 +4,7 @@ description: "Implementation and support for Ivanti Asset Manager, the cloud-bas
 eyebrow: Ivanti
 heading: "Ivanti Asset Manager"
 intro: "A cloud-based tool for tracking every IT asset through its full lifecycle, with implementation and support from former Ivanti employees."
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Stay on top of your IT assets

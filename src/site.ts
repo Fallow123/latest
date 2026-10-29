@@ -1,8 +1,6 @@
 // Site-wide settings: company info, navigation, social links and the contact form.
 // Edit this file to change anything that appears in the header or footer.
 
-const wix = 'https://static.wixstatic.com/media/';
-
 export const site = {
   name: 'Latest Solutions',
   tagline: 'IT Consulting & Ivanti Implementation Services',
@@ -10,10 +8,10 @@ export const site = {
   careersEmail: 'careers@latestsolutions.io',
   address: '2443 Fillmore St, San Francisco, CA 94115, USA',
 
-  // TODO: move these images into /public/images once the repo exists.
-  logo: wix + 'fdd389_f624c4b67e7147b2b65824006041c997~mv2.png',
-  footerLogo: wix + 'fdd389_a2859e07650f4b6fa6005e5818fee439~mv2.png',
-  ivantiBadge: wix + 'ded7dc_f12d4ecc72ec46a39bfc4651f4c833c5~mv2.png',
+  // Images live in /public/images (copied from the old Wix site).
+  logo: '/images/shared/ls-logo-white.png',
+  footerLogo: '/images/shared/latest-solutions-full-white.png',
+  ivantiBadge: '/images/shared/ivanti-premier-partner-badge.png',
 
   // Where the "Request a discovery call" form sends submissions.
   // Set this to a Formspree / Netlify / Basin endpoint once hosting is chosen.
@@ -54,11 +52,12 @@ export const nav: NavItem[] = [
   { label: 'About', href: '/about' },
 ];
 
-// TODO: fill in the real profile URLs (not captured from the current site).
+// Profile links, as listed in the footer of the old site.
 export const socials = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-  { label: 'X', href: 'https://x.com/' },
-  { label: 'Facebook', href: 'https://www.facebook.com/' },
-  { label: 'YouTube', href: 'https://www.youtube.com/' },
-  { label: 'Instagram', href: 'https://www.instagram.com/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/latestsolutions/' },
+  { label: 'X', href: 'https://x.com/SolutionsLatest' },
+  { label: 'Facebook', href: 'https://www.facebook.com/LatestSolutions/' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@LatestSolutionsYT' },
+  { label: 'Instagram', href: 'https://www.instagram.com/latestsolutions/' },
+  { label: 'WhatsApp', href: 'https://wa.me/5219871181086' },
 ];

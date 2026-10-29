@@ -10,9 +10,12 @@ cards:
   - { title: AI Virtual Agent, text: AI and automation for self-service support and faster resolutions., href: /teamdynamix-ai-virtual-agent }
   - { title: TeamDynamix ITAM, text: Asset management for security, cost reduction and compliance., href: /teamdynamix-itam }
   - { title: TeamDynamix iPaaS, text: No-code integration and workflow automation from one hub., href: /teamdynamix-ipaas }
+heroImage: { src: /images/shared/teamdynamix-logo-reversed.png, alt: TeamDynamix logo }
 ---
 
 ## Comprehensive TeamDynamix solutions
+
+![A team reviewing work together](/images/teamdynamix/team-meeting.jpg)
 
 The platform adapts to your specific needs, and we make sure it improves your workflows.
 
@@ -24,6 +27,8 @@ The platform adapts to your specific needs, and we make sure it improves your wo
 - **Customization & Optimization:** TeamDynamix shaped around your requirements
 
 ## Our process
+
+![Why choose Latest Solutions](/images/teamdynamix/why-latest-solutions.png)
 
 1. **Consultation:** we assess your needs and how TeamDynamix fits your strategy
 2. **Customized Integration:** we tailor the products to your operations
