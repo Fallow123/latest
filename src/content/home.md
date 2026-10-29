@@ -2,36 +2,41 @@
 title: IT Consulting & Ivanti Implementation Services | Latest Solutions
 description: Expert IT consulting, implementation and support for Ivanti, TeamDynamix, NetDocuments and Intercom, from former Ivanti employees and a Premier Ivanti Partner.
 heading: IT Consultancy and Services From Experienced IT Solution Architects
-intro: Seamless implementation, training and support for Ivanti, TeamDynamix, NetDocuments and Intercom, at a price that makes sense.
+intro: "Our team of consultants provides companies with seamless IT implementation services at an affordable price."
 whatWeDo:
   title: What Exactly Do We Do?
-  text: We don't just sell software. We implement it seamlessly and affordably, and we stay with you until your team gets real value from it. Our consultants are former Ivanti employees and certified Ivanti experts, we are a TeamDynamix partner, and we help firms run NetDocuments as their document management system.
+  text: |
+    We don’t just sell software. Software is nothing if not utilized well. That’s why we will plan a successful organization-wide installation of your products, customized for your unique systems.
+
+    We are former Ivanti employees and have the necessary technical expertise and business acumen to align your product usage with best practices. We help you strategize to achieve goals with your software, such as a high employee usage rate. Plus, we provide IT support to ensure your employees know how to use your new software. We are also certified TeamDynamix partners and work closely with them on iPaaS and workflows to help customers maximize their investment.
+
+    Need the best DMS (Document Management System)? Look no further than NetDocuments. We specialize in implementations, continued support, and administration. With a DMS, you have more control, security, and organization than a SharePoint product. Let us help your organization's IT, Operations, and Legal departments. We will help you un-silo and create a more enhanced business ecosystem.
   image: /images/home/workspace.jpg
 services:
   - title: Strategic Consulting
     icon: /images/home/strategic-consulting.png
-    text: We work one-on-one with your team to understand your processes and current systems, then build an IT roadmap tied to your business goals.
+    text: "We can help you develop and execute a strategic IT roadmap aligned with your business goals. We work one-on-one with your team to understand your goals, business processes, and current information systems capabilities."
   - title: Tech Support
     icon: /images/home/tech-support.png
-    text: Patient, highly trained remote technicians who resolve complex technology issues quickly.
+    text: "Even the best users and solutions need support sometimes. Latest Solutions technicians are highly-trained, patient and quick to resolve complex technology issues. For safety, we can help you remotely without visiting your home or business."
   - title: Solution Specialists
     icon: /images/home/solution-specialists.png
-    text: Assessment, IT strategy and infrastructure optimization to increase adoption and reach your goals.
+    text: "We are here to help you with assessment, IT strategy, and infrastructure optimization. With our consistent guidance, we can help you maximize adoption and ultimately achieve your goals."
   - title: Latest TechFusion
     icon: /images/home/techfusion.png
-    text: An embedded consulting partner that works alongside your team for continuous improvement.
+    text: "Your team\u2019s consulting edge. Latest TechFusion, rooted in the legacy of Latest Solutions, is your tech consulting partner designed to join your team seamlessly, working side by side with you as your consulting crew."
 benefits:
   - title: Rapid Implementation
-    text: Experienced consultants plan and finish implementations quickly, freeing up your own resources.
+    text: "Drawing on wide experience with past projects, your IT consultant will plan and complete your implementation quickly. This lets you put your resources toward other tasks. The faster the implementation, the more seamless the process will feel to your employees."
   - title: Better Security
-    text: Learn to find and patch security risks and set policies that protect your IT assets and data.
+    text: "We'll show you how to discover and patch security risks like never before. Set up new policies and practices that will protect your IT assets and data in the future. Save your organization from major disruptions by building a strong security foundation."
   - title: Reduced Costs
-    text: A specialist often costs less than a salaried employee, with an upfront estimate and no ongoing payroll.
+    text: "Your specialist can often finish your implementation at a lower price tag than the cost of paying an employee. Your specialist will give you an accurate pre-project estimate, finish quickly, and leave you with no ongoing payroll costs."
   - title: New Skills + Processes
-    text: We apply industry best practices and leave behind training, checklists and IT playbooks.
+    text: "Our consultants focus on using the best practices in our industry. And they\u2019ll leave new skills and processes with your team through training, checklists, IT playbooks, and more."
 cta:
   title: Let us improve the collective brilliance of your team.
-  text: Get both IT consultancy and software in one place, bundled with implementation, training and support.
+  text: "We sell top IT software AND provide a complete IT consulting services list, which includes implementation, training, and ongoing support. Get both IT consultancy and services with Latest Solutions\u2014and get the best results from your new software."
 credentials:
   - title: Solution Architects
     items: [Service Manager, Asset Manager, Automation, Neurons, Endpoint Management, GRC, Security Controls, Integrations, Reporting, Cloud vs. On-Premises, Patching, Ivanti Product, MSP Provider]
@@ -41,6 +46,6 @@ culture:
   quote: We believe in the power of recognition and empowerment leading to great engagements.
   values: [Customer Service, Product Adoption, ITIL Best Practices, IAITAM Best Practices, PMP Best Practices, Collaboration]
 journey:
-  title: Mapping your customer journey
-  text: Mapping an Ivanti customer journey is important to the customer's experience and success. It lets you set outcomes and spot gaps in a controlled setting, and we bring the perspective and experience to deliver results in implementation and adoption.
+  title: The Customer Journey
+  text: "Mapping an Ivanti customer journey is important to the customers experience and success. It enables the customer to establish its outcomes and recognize its deficiencies in a positive and controlled setting. We have the perspective, wisdom, and moxie that leads to real results in implementations and adoption."
 ---

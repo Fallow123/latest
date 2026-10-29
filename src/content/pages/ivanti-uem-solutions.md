@@ -3,35 +3,94 @@ title: "Ivanti UEM Solutions | Latest Solutions"
 description: "Ivanti Unified Endpoint Management implementation: manage Windows, macOS, Linux, iOS and Android devices from one console."
 eyebrow: Ivanti
 heading: "Unified Endpoint Management Solutions"
-intro: "One console for your IT team to manage every type of user device, with implementation services to get more from it."
+intro: "Endpoint management software to oversee all user devices."
 heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 ---
 
 ## Manage all your devices in one place
 
-- Keep a current inventory of networked devices and installed software
-- Distribute software and patches to the right devices automatically
-- Handle full operating system updates without manual effort
-- Coordinate user profiles across devices
-- Visual reports with tools to normalize diverse data
-- Create and enforce policies
-- Remote control of devices when needed
-- Counter security threats on remote devices
-- Windows, macOS, Android, iOS and Linux from one console
+What is endpoint management software? It’s a comprehensive tool for IT departments to oversee all user devices via one console. The software shows every device—even if they’re running different operating systems—including desktops, laptops, servers, virtual environments, and mobile devices.
+
+With Ivanti’s Unified Endpoint Manager, you will be able to:
+
+- Automatically compile an accurate list of all devices connected to your network, along with their software
+- Send out new software and patches automatically to appropriate devices
+- Update entire operating systems on devices automatically
+- Manage user profiles between multiple devices
+- See all your endpoint management data in visual reports, with data normalization tools making diverse data understandable
+- Update and enforce policies
+- Take remote control of devices, when necessary
+- Fight security threats on remote devices more easily
+- Manage Windows, Mac, Android, iOS, and Linux devices from one console
+
+These endpoint management solutions can save your IT personnel significant time, which they can put toward improvements to their department and your organization. You may even be able to let a single person manage all the devices in the whole enterprise.
 
 ## Services for implementation
 
-Our consultants are former Ivanti employees who know the product inside out, from planning and implementation to day-to-day use.
+Ivanti’s unified endpoint management solutions bring you more features than common endpoint management software can. These tools will connect IT seamlessly with vendors, enable you to discover and inventory more of your assets, migrate user profiles between systems, and much more.
 
-- **Consulting:** a custom configuration and a step-by-step implementation plan built around your environment
-- **Tech Support:** a knowledgeable team on call for quick answers and how-to guidance
-- **Expert Solutions Architecture:** ongoing help to reach your goals, such as full team adoption
+But will your employees know how to access these tools? Will they be integrated into your workflows? With Latest Solutions, you can get the most from your new software, through our:
+
+We provide:
+
+### Consulting
+
+Let us craft a complete implementation plan to make sure your installation is customized to your organization’s specific needs.
+
+### Tech Support
+
+Get quick answers to any question and step-by-step instructions for any feature of your unified endpoint management software.
+
+### Expert Solutions Architecture
+
+Our experienced team members will help you reach your ongoing goals to make sure you get the best ROI from Ivanti Unified Endpoint Manager.
 
 ## FAQ
 
-<details><summary>What is UEM?</summary>
-Unified endpoint management is a toolset for controlling and protecting employee devices and servers from one place.
+<details><summary>What does UEM mean?</summary>
+
+UEM means unified endpoint management. It is a set of tools for controlling and protecting an organization’s employee devices and servers from a single location within the IT department.
+
 </details>
-<details><summary>What counts as an endpoint?</summary>
-Any device served by your network, including cloud-connected devices and, often, servers.
+
+<details><summary>What is an endpoint management system?</summary>
+
+It is software that helps IT managers perform remote management tasks on users’ endpoint devices, including discovering, updating, troubleshooting, patching, and provisioning them.
+
+</details>
+
+<details><summary>What is a UEM solution?</summary>
+
+This refers to unified endpoint management software that integrates common endpoint management features with other IT systems. These tools can help IT to manage and protect devices, software, data, and users.
+
+</details>
+
+<details><summary>Why is endpoint security important?</summary>
+
+An organization’s devices, particularly when in remote locations, are vulnerable to cybersecurity threats. Endpoint security tools can protect them from threats and remediate them after attacks.
+
+</details>
+
+<details><summary>How does endpoint security work?</summary>
+
+An organization’s endpoint security software maintains and updates a centralized database of current possible threats. The system then pushes relevant security solutions out to affected devices, as well as scanning for threats in the flow of files through the network.
+
+</details>
+
+<details><summary>What is a system endpoint?</summary>
+
+An endpoint is any device or virtual device that is served by an organization’s network. This can include devices that are connected to an organization through the cloud.
+
+</details>
+
+<details><summary>Is a server an endpoint?</summary>
+
+Any device can be an endpoint if it is connected to an organization’s network. A server can be an endpoint, along with desktop computers, laptops, mobile devices, and others.
+
+</details>
+
+<details><summary>What is advanced endpoint protection?</summary>
+
+Traditional endpoint protection software only reacts to known threats, such as current viruses. But advanced endpoint protection uses machine learning to additionally protect endpoints from novel threats.
+
 </details>
