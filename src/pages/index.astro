@@ -67,6 +67,7 @@ const partners = [
       <div class="section-head center reveal">
         <p class="eyebrow">Our solutions</p>
         <h2 class="title-line">Platforms we implement and support</h2>
+        <p>{d.platformsIntro}</p>
       </div>
       <div class="grid solutions stagger">
         {
@@ -114,27 +115,6 @@ const partners = [
       </section>
     )
   }
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head center reveal">
-        <p class="eyebrow">Our services</p>
-        <h2 class="title-line">{d.cta.title}</h2>
-        <p>{d.cta.text}</p>
-      </div>
-      <div class="grid stagger">
-        {
-          d.services.map((s) => (
-            <div class="card reveal">
-              {s.icon && <img class="icon" src={s.icon} alt="" />}
-              <h3>{s.title}</h3>
-              <p>{s.text}</p>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
 
   <section class="section dark">
     <div class="container">
