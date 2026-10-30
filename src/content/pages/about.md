@@ -2,8 +2,8 @@
 title: About Us | Latest Solutions
 description: Latest Solutions is a boutique IT consultancy founded in 2011, offering implementation, project management and support. Former Ivanti employees and an Ivanti Premier Partner, NetDocuments and certified TeamDynamix partners, and behavioral science for leadership.
 eyebrow: About Us
-heading: Experts in Top IT Solutions in the Industry
-intro: "Latest Solutions is a highly skilled group of IT software consultants offering boutique-style services. We architect, implement and optimize leading IT platforms, manage the projects end to end, and help the people using them adopt them, with a cost-effective, user-oriented approach."
+heading: Technology That Works. People Who Know How to Use It.
+intro: "Latest Solutions is a team of experienced IT consultants delivering personalized, cost-effective solutions. We design, implement, and optimize leading technology platforms, helping your people confidently adopt and get the most out of them."
 cta: { label: 'Schedule Free, No-Obligation Consultation', href: '#contact' }
 checklist: true
 heroImage: { src: /images/brand/emblem-glimmer.webp, still: /images/brand/emblem.png, alt: Latest Solutions emblem }
