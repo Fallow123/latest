@@ -566,6 +566,8 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
 .site-footer > .container { position: relative; z-index: 1; }
 .site-footer { overflow: hidden; }
 @media (max-width: 860px) { .footer-waves { inset: 0; opacity: 0.16; background-size: 900px auto; background-repeat: repeat-y; } }
+/* The Ivanti Premier badge is a white rectangle, so keep its corners square-ish instead of the round emblem crop */
+.hero-split > picture .hero-image[src*="premier-partner-badge"] { width: clamp(220px, 28vw, 360px); border-radius: 14px; filter: drop-shadow(0 0 32px rgba(92,176,108,0.25)); }
 
 /* Chatbot (src/components/ChatWidget.astro) */
 .chat { position: fixed; right: 20px; bottom: 20px; z-index: 90; font-family: var(--font-body); }
