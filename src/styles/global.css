@@ -560,3 +560,9 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
 /* The animated emblem floats free on a soft halo instead of sitting in a frosted box */
 .hero-split > picture { padding: clamp(16px, 3vw, 40px); border-radius: 50%; background: radial-gradient(circle, rgba(143,209,156,0.16), rgba(36,100,108,0.08) 45%, transparent 70%); }
 .hero-split > picture .hero-image { box-sizing: border-box; width: clamp(140px, 22vw, 280px); max-width: none; max-height: none; height: auto; padding: 0; background: none; border: 0; border-radius: 50%; box-shadow: none; filter: brightness(1.25) drop-shadow(0 0 32px rgba(92,176,108,0.25)); }
+
+/* Brand wave pattern (from the emblem) in the footer */
+.footer-waves { position: absolute; inset: 0 0 0 40%; background: url(/images/brand/waves.svg) center / cover no-repeat; opacity: 0.3; pointer-events: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 35%, #000 80%, transparent), linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(90deg, transparent, #000 35%, #000 80%, transparent), linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent); mask-composite: intersect; }
+.site-footer > .container { position: relative; z-index: 1; }
+.site-footer { overflow: hidden; }
+@media (max-width: 860px) { .footer-waves { inset: 0; opacity: 0.16; background-size: 900px auto; background-repeat: repeat-y; } }
