@@ -31,16 +31,16 @@ solutions:
     text: "AI-first customer service and conversations, configured and connected to the tools you already use."
 services:
   - title: Strategic Consulting
-    icon: /images/home/strategic-consulting.png
+    icon: /icons/compass.svg
     text: "We can help you develop and execute a strategic IT roadmap aligned with your business goals. We work one-on-one with your team to understand your goals, business processes, and current information systems capabilities."
   - title: Tech Support
-    icon: /images/home/tech-support.png
+    icon: /icons/headset.svg
     text: "Even the best users and solutions need support sometimes. Latest Solutions technicians are highly-trained, patient and quick to resolve complex technology issues. For safety, we can help you remotely without visiting your home or business."
   - title: Solution Specialists
-    icon: /images/home/solution-specialists.png
+    icon: /icons/users.svg
     text: "We are here to help you with assessment, IT strategy, and infrastructure optimization. With our consistent guidance, we can help you maximize adoption and ultimately achieve your goals."
   - title: Latest TechFusion
-    icon: /images/home/techfusion.png
+    icon: /icons/handshake.svg
     text: "Your team\u2019s consulting edge. Latest TechFusion, rooted in the legacy of Latest Solutions, is your tech consulting partner designed to join your team seamlessly, working side by side with you as your consulting crew."
 benefits:
   - title: Rapid Implementation

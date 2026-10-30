@@ -101,17 +101,17 @@ export const stats = [
 export const implementationServices = [
   {
     title: 'Consulting',
-    icon: '/images/home/strategic-consulting.png',
+    icon: '/icons/compass.svg',
     text: 'Tell us your unique needs and how your systems work. We plan and configure your implementation so it goes right at every step.',
   },
   {
     title: 'Tech Support',
-    icon: '/images/home/tech-support.png',
+    icon: '/icons/headset.svg',
     text: 'Quick answers and step-by-step help with any feature, from a team that knows the product inside out.',
   },
   {
     title: 'Expert Solutions Architecture',
-    icon: '/images/home/solution-specialists.png',
+    icon: '/icons/puzzle.svg',
     text: 'Ongoing help to reach your goals, such as getting your whole team to adopt the software and use it well.',
   },
 ];
