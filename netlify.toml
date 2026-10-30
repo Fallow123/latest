@@ -1,3 +1,9 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+# The Intercom page was retired; send old links to Partners
+[[redirects]]
+  from = "/intercom"
+  to = "/partners"
+  status = 301
