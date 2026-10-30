@@ -14,7 +14,7 @@ cards:
   - { title: Ivanti Security Controls, text: One patch management system for all your assets., href: /ivanti-security-controls }
   - { title: Ivanti Service Manager, text: A modern IT service desk., href: /ivanti-service-manager }
   - { title: Ivanti UEM Solutions, text: Manage every device from one console., href: /ivanti-uem-solutions }
-heroImage: { src: /images/ivanti/ivanti-elite-partner.png, alt: Ivanti Elite Partner badge }
+heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti Partner Network Premier Partner badge }
 ---
 
 ## Our experienced team is able to provide:
