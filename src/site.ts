@@ -53,6 +53,7 @@ export const nav: NavItem[] = [
       },
       { label: 'NetDocuments', href: '/netdocuments' },
       { label: 'Intercom', href: '/intercom' },
+      { label: 'Project Management', href: '/project-management' },
     ],
   },
   {

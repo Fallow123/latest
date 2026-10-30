@@ -12,7 +12,7 @@ cards:
   - { title: Ivanti, href: /ivanti, icon: /icons/shield-check.svg, text: "Premier Partner. Former Ivanti employees with 100+ years of combined Ivanti experience across the whole portfolio." }
   - { title: TeamDynamix, href: /teamdynamix, icon: /icons/workflow.svg, text: "Certified partner for ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, from no-code workflows to integrations." }
   - { title: NetDocuments, href: /netdocuments, icon: /icons/folder-tree.svg, text: "Implementation, migration and day-to-day administration of the leading cloud document management system (DMS)." }
-  - { title: Project Management, icon: /icons/square-kanban.svg, text: "Experienced project managers who plan, run and report on your rollout, keeping timelines, budgets and stakeholders on track." }
+  - { title: Project Management, href: /project-management, icon: /icons/square-kanban.svg, text: "Experienced project managers who plan, run and report on your rollout, keeping timelines, budgets and stakeholders on track." }
   - { title: Behavioral Science for Leadership, href: /behavioral-science-leadership, icon: /icons/brain.svg, text: "With behavioral scientist Kip Jon, we help leaders turn change, including AI, into how their teams actually work." }
 ---
 
