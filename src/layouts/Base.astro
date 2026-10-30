@@ -4,6 +4,7 @@ import Announcement from '../components/Announcement.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ContactForm from '../components/ContactForm.astro';
+import ChatWidget from '../components/ChatWidget.astro';
 
 interface Props {
   title: string;
@@ -43,6 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       {contactForm && <ContactForm />}
     </main>
     <Footer />
+    <ChatWidget />
     <script>
       // Fade sections in as they scroll into view (once each), and count the stats up from 0.
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
