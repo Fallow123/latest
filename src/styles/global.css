@@ -261,6 +261,7 @@ blockquote.quote { font-family: var(--font-head); font-size: clamp(1.3rem, 2.4vw
 
 /* Speaker cards */
 .speakers { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.speakers:has(> :only-child) { max-width: 720px; }
 @media (max-width: 400px) { .speakers { grid-template-columns: minmax(0, 1fr); } }
 .speaker { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
 .avatar { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; object-fit: cover; background: var(--grad); color: var(--white); font-family: var(--font-head); font-weight: 800; font-size: 1.5rem; flex: none; }
