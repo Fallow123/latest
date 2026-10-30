@@ -33,7 +33,12 @@ const faqSchema = d.faqs && {
           <a class="btn" href={d.cta?.href ?? '#contact'}>{d.cta?.label ?? 'Free consultation'}</a>
         </div>
       </div>
-      {d.heroImage && <img class="hero-image" src={d.heroImage.src} alt={d.heroImage.alt} />}
+      {d.heroImage && (
+        <picture>
+          {d.heroImage.still && <source media="(prefers-reduced-motion: reduce)" srcset={d.heroImage.still} />}
+          <img class="hero-image" src={d.heroImage.src} alt={d.heroImage.alt} />
+        </picture>
+      )}
     </div>
   </section>
 
@@ -42,7 +47,7 @@ const faqSchema = d.faqs && {
       <section class={d.cardsDark ? 'section dark' : 'section soft'}>
         <div class="container">
           {d.cardsTitle && <h2 class="center title-line reveal">{d.cardsTitle}</h2>}
-          <div class:list={["grid stagger", { "grid-3": d.cards.length % 3 === 0 }]}>
+          <div class:list={["grid stagger", { "grid-3": d.cards.length % 3 === 0 || d.cards.length === 5 }]}>
             {d.cards.map((c) =>
               c.href ? (
                 <a class="card card-link reveal" href={c.href}>

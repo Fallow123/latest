@@ -1,17 +1,18 @@
 ---
 title: About Us | Latest Solutions
-description: Latest Solutions is a boutique IT consultancy founded in 2011. Former Ivanti employees and an Ivanti Premier Partner, certified TeamDynamix and NetDocuments partners, and behavioral science for leadership.
+description: Latest Solutions is a boutique IT consultancy founded in 2011, offering implementation, project management and support. Former Ivanti employees and an Ivanti Premier Partner, certified TeamDynamix and NetDocuments partners, and behavioral science for leadership.
 eyebrow: About Us
 heading: Experts in Top IT Solutions in the Industry
-intro: "Latest Solutions is a highly skilled group of IT software consultants offering boutique-style services. We architect, implement and optimize leading IT platforms, and help the people using them adopt them, with a cost-effective, user-oriented approach."
+intro: "Latest Solutions is a highly skilled group of IT software consultants offering boutique-style services. We architect, implement and optimize leading IT platforms, manage the projects end to end, and help the people using them adopt them, with a cost-effective, user-oriented approach."
 cta: { label: 'Schedule Free, No-Obligation Consultation', href: '#contact' }
 checklist: true
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
+heroImage: { src: /images/brand/emblem-glimmer.webp, still: /images/brand/emblem.png, alt: Latest Solutions emblem }
 cardsTitle: What we bring
 cards:
   - { title: Ivanti, href: /ivanti, icon: /icons/shield-check.svg, text: "Premier Partner. Former Ivanti employees with 100+ years of combined Ivanti experience across the whole portfolio." }
   - { title: TeamDynamix, href: /teamdynamix, icon: /icons/workflow.svg, text: "Certified partner for ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, from no-code workflows to integrations." }
   - { title: NetDocuments, href: /netdocuments, icon: /icons/folder-tree.svg, text: "Implementation, migration and day-to-day administration of the leading cloud document management system (DMS)." }
+  - { title: Project Management, icon: /icons/square-kanban.svg, text: "Experienced project managers who plan, run and report on your rollout, keeping timelines, budgets and stakeholders on track." }
   - { title: Behavioral Science for Leadership, href: /behavioral-science-leadership, icon: /icons/brain.svg, text: "With behavioral scientist Kip Jon, we help leaders turn change, including AI, into how their teams actually work." }
 ---
 
@@ -20,6 +21,7 @@ Latest Solutions began in 2011 with the idea to fill the gaps we saw all too oft
 ## We help businesses to:
 
 - Implement, configure and automate their IT service, asset and endpoint management
+- Deliver IT projects on time and on budget with experienced project management
 - Connect systems and automate workflows with no-code tools and integrations
 - Move documents to a secure, well-organized cloud DMS
 - Improve the security of their systems and data

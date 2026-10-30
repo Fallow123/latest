@@ -553,3 +553,10 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
 .hero-text > * { animation: rise-in 1s var(--ease-out) both; }
 @keyframes rise-in { from { opacity: 0; transform: translateY(14px); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
 @media (prefers-reduced-motion: reduce) { .js .reveal { filter: none; } }
+
+/* Hero images wrapped in <picture> (animated emblem with a still fallback) */
+.hero-split > picture { display: grid; justify-self: center; }
+@media (max-width: 860px) { .hero-split > picture { justify-self: start; } }
+/* The animated emblem floats free on a soft halo instead of sitting in a frosted box */
+.hero-split > picture { padding: clamp(16px, 3vw, 40px); border-radius: 50%; background: radial-gradient(circle, rgba(143,209,156,0.16), rgba(36,100,108,0.08) 45%, transparent 70%); }
+.hero-split > picture .hero-image { box-sizing: border-box; width: clamp(140px, 22vw, 280px); max-width: none; max-height: none; height: auto; padding: 0; background: none; border: 0; border-radius: 50%; box-shadow: none; filter: brightness(1.25) drop-shadow(0 0 32px rgba(92,176,108,0.25)); }
