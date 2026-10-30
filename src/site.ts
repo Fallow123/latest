@@ -41,6 +41,7 @@ export const nav: NavItem[] = [
           { label: 'UEM Solutions', href: '/ivanti-uem-solutions' },
         ],
       },
+      { label: 'NetDocuments', href: '/netdocuments' },
       {
         label: 'TeamDynamix',
         href: '/teamdynamix',
@@ -51,8 +52,6 @@ export const nav: NavItem[] = [
           { label: 'iPaaS', href: '/teamdynamix-ipaas' },
         ],
       },
-      { label: 'NetDocuments', href: '/netdocuments' },
-      { label: 'Intercom', href: '/intercom' },
       { label: 'Project Management', href: '/project-management' },
     ],
   },
@@ -95,7 +94,7 @@ export const stats = [
   { value: '2011', label: 'Helping IT teams since' },
   { value: '100+', label: 'Years of combined Ivanti experience' },
   { value: 'Premier', label: 'Ivanti Partner' },
-  { value: '4', label: 'Platforms we implement and support' },
+  { value: '3', label: 'Platforms we implement and support' },
 ];
 
 // The three services shown on every Ivanti product page.

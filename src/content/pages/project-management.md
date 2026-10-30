@@ -1,6 +1,6 @@
 ---
 title: "IT Project Management Services | Latest Solutions"
-description: "IT project management from PMP, Certified Scrum Master and ITIL certified project managers. We plan, run and report on your Ivanti, TeamDynamix and NetDocuments projects so they land on time and on budget."
+description: "IT project management from PMP, Certified Scrum Master and ITIL certified project managers. We plan, run and report on your Ivanti, NetDocuments and TeamDynamix projects so they land on time and on budget."
 eyebrow: Project Management
 heading: Certified Project Managers Who Get Your IT Projects Over the Line
 intro: "Our project managers are PMP, Scrum Master and ITIL certified. They plan, run and report on your rollout from kickoff to go-live, keeping timelines, budgets and stakeholders on track while our engineers do the technical work."
@@ -18,7 +18,7 @@ faqs:
   - q: What certifications do your project managers hold?
     a: Our project managers are PMP (Project Management Professional), Certified Scrum Master and ITIL certified, so they can run a project the way your organization prefers, whether that is a structured waterfall plan, agile sprints or a mix of both.
   - q: Can you manage a project on a platform you don't implement?
-    a: Yes. We know Ivanti, TeamDynamix and NetDocuments best, but our project managers can lead other IT and service management projects too. Tell us about your project and we'll be upfront about fit.
+    a: Yes. We know Ivanti, NetDocuments and TeamDynamix best, but our project managers can lead other IT and service management projects too. Tell us about your project and we'll be upfront about fit.
   - q: Can you work alongside our internal team or PMO?
     a: Absolutely. We can lead the whole project, co-manage with your project manager, or support your PMO with governance, reporting and templates.
 ---
@@ -31,7 +31,7 @@ faqs:
 
 ## Project management plus platform expertise
 
-Most project managers know the method but not the tool. Ours work side by side with our Ivanti, TeamDynamix and NetDocuments engineers, so the plan reflects how the platform actually behaves. That means fewer surprises, realistic timelines and a go-live your team is ready for.
+Most project managers know the method but not the tool. Ours work side by side with our Ivanti, NetDocuments and TeamDynamix engineers, so the plan reflects how the platform actually behaves. That means fewer surprises, realistic timelines and a go-live your team is ready for.
 
 ## How we run a project
 
