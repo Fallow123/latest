@@ -36,6 +36,8 @@ const pages = defineCollection({
     servicesIntro: z.string().optional(),
     // Questions and answers shown, collapsed, near the bottom of the page
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+    // Show bullet lists as a 2-column checklist (on by default when services is on)
+    checklist: z.boolean().optional(),
     // Show the "Request your discovery call" form at the bottom (default yes)
     contactForm: z.boolean().default(true),
   }),
@@ -49,12 +51,12 @@ const home = defineCollection({
     heading: z.string(),
     intro: z.string(),
     whatWeDo: z.object({ title: z.string(), text: z.string(), image: z.string().optional() }),
+    solutions: z.array(card), // the four platforms, linked to their pages
     services: z.array(card),
     benefits: z.array(card),
     cta: z.object({ title: z.string(), text: z.string() }),
-    credentials: z.array(z.object({ title: z.string(), items: z.array(z.string()) })),
-    culture: z.object({ quote: z.string(), values: z.array(z.string()) }),
-    journey: z.object({ title: z.string(), text: z.string() }),
+    expertise: z.array(z.string()), // Ivanti skills shown as tags
+
   }),
 });
 

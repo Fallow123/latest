@@ -4,7 +4,6 @@ description: "Ivanti Identity Director implementation: automate onboarding, role
 eyebrow: Ivanti
 heading: "Ivanti Identity Director (powered by RES)"
 intro: "Modern identity and access management system for greater productivity and security."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: Enterprise software is only as good as its implementation and adoption. Since each organization is unique, we provide high-quality services to ensure your identity management solutions are effective and well-received.
 faqs:

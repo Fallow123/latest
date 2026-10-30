@@ -29,7 +29,3 @@ TeamDynamix ESM & PPM is designed to empower businesses with tools that increase
 ## How Latest Solutions Can Help
 
 As trusted TeamDynamix partners, Latest Solutions provides end-to-end ESM & PPM integration and support. We help configure ESM & PPM to match your operations processes, customize workflows, train your team, and provide ongoing support to ensure maximum ROI from your ESM & PPM investment.
-
-## Ready to Transform Your ESM Strategy?
-
-Unlock your organization's potential with TeamDynamix ESM. Contact Latest Solutions today for a consultation and see how TeamDynamix can empower your IT & operations.

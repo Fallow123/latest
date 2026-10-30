@@ -19,7 +19,3 @@ Sassafras (ITAM) IT Asset Management is a complete solution from discovery to se
 ## How Latest Solutions Can Help
 
 As certified ITAM TeamDynamix partners, Latest Solutions specializes in integrating its ITAM solutions into your business framework. Our team will help you configure Asset Management to align with your customer engagement goals, providing customization, training, and ongoing support to ensure you get the most out of the platform.
-
-## Get Started with TeamDynamix ITAM Today!
-
-Ready to elevate your customer experience with TeamDynamix? Contact Latest Solutions for a consultation and discover how ITAM can help you build stronger security, more meaningful reporting, and user satisfaction. Latest Solutions can help you crawl, walk, and run with ITAM implementation and program. Let's mature together!

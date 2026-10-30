@@ -43,6 +43,27 @@ const d = home.data;
   </section>
 
   <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Our solutions</p>
+        <h2 class="title-line">Platforms we implement and support</h2>
+      </div>
+      <div class="grid solutions stagger">
+        {
+          d.solutions.map((s) => (
+            <a class="card card-link solution reveal" href={s.href}>
+              <span class="solution-logo">{s.icon && <img src={s.icon} alt={s.title} loading="lazy" />}</span>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+              <span class="more">Learn more →</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
     <div class="container two-col">
       <div class="reveal">
         <p class="eyebrow">Who we are</p>
@@ -53,11 +74,12 @@ const d = home.data;
     </div>
   </section>
 
-  <section class="section soft">
+  <section class="section">
     <div class="container">
       <div class="section-head center reveal">
         <p class="eyebrow">Our services</p>
-        <h2 class="title-line">How we help</h2>
+        <h2 class="title-line">{d.cta.title}</h2>
+        <p>{d.cta.text}</p>
       </div>
       <div class="grid stagger">
         {
@@ -90,47 +112,9 @@ const d = home.data;
           ))
         }
       </div>
-    </div>
-  </section>
-
-  <section class="section cta-band">
-    <div class="container center reveal">
-      <h2>{d.cta.title}</h2>
-      <p class="lead">{d.cta.text}</p>
-      <a class="btn" href="#contact">Get started</a>
-    </div>
-  </section>
-
-  <section class="section soft">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Ivanti Premier Partner</p>
-        <h2 class="title-line">Certified across the Ivanti portfolio</h2>
-      </div>
-      <div class="two-col stagger">
-        {
-          d.credentials.map((c) => (
-            <div class="reveal">
-              <h3>{c.title}</h3>
-              <ul class="pill-list">{c.items.map((i) => <li>{i}</li>)}</ul>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container two-col">
-      <div class="reveal">
-        <p class="eyebrow">Our culture</p>
-        <blockquote class="quote">{d.culture.quote}</blockquote>
-        <ul class="pill-list">{d.culture.values.map((v) => <li>{v}</li>)}</ul>
-      </div>
-      <div class="reveal">
-        <p class="eyebrow">Customer journey</p>
-        <h2 class="title-line">{d.journey.title}</h2>
-        <p>{d.journey.text}</p>
+      <div class="expertise reveal">
+        <h3>Certified across the Ivanti portfolio</h3>
+        <ul class="pill-list">{d.expertise.map((i) => <li>{i}</li>)}</ul>
       </div>
     </div>
   </section>

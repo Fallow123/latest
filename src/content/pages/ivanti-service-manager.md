@@ -4,7 +4,6 @@ description: "Ivanti Service Manager implementation: modernize your IT service d
 eyebrow: Ivanti
 heading: "Ivanti Service Manager"
 intro: "A help desk software suite to modernize your IT service desk."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: At Latest Solutions, we offer much more than products. We provide solutions that ensure your Ivanti Service Manager software will work for you immediately. Plus, you’ll receive help when you need it and get full value out of your software’s features.
 faqs:

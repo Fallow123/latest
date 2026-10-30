@@ -4,7 +4,6 @@ description: "Ivanti Automation implementation services: automate provisioning, 
 eyebrow: Ivanti
 heading: "Ivanti Automation Solutions"
 intro: "Cloud automation solutions for increased efficiency and productivity."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: Could your staff members benefit from help with the implementation of Ivanti Automation? Organizations often need more support when distributing new and different software.
 faqs:
