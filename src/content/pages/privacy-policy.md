@@ -3,7 +3,7 @@ title: Privacy Policy | Latest Solutions
 description: How Latest Solutions collects, uses and protects information on this website.
 eyebrow: Legal
 heading: Latest Solutions Privacy Policy
-intro: "Last updated August 11, 2025"
+intro: "Last updated October 29, 2026"
 contactForm: false
 ---
 
@@ -21,11 +21,7 @@ We collect such Non-personal and Personal Information for the following purposes
 - To create aggregated statistical data and other aggregated and/or inferred Non-personal Information, which we or our business partners may use to provide and improve our respective services;
 - To comply with any applicable laws and regulations.
 
-<!-- TODO (FalloW): the two paragraphs below were written for Wix. Update them for the new host (Netlify) before switching the domain. -->
-
-Our company is hosted on the Wix.com platform. Wix.com provides us with the online platform that allows us to sell our products and services to you. Your data may be stored through Wix.com’s data storage, databases and the general Wix.com applications. They store your data on secure servers behind a firewall.
-
-All direct payment gateways offered by Wix.com and used by our company adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express and Discover. PCI-DSS requirements help ensure the secure handling of credit card information by our store and its service providers.
+Our website is hosted on Netlify. Information you submit through our contact form is stored securely by Netlify and shared only with our team.
 
 We may contact you to notify you regarding your account, to troubleshoot problems with your account, to resolve a dispute, to collect fees or monies owed, to poll your opinions through surveys or questionnaires, to send updates about our company, or as otherwise necessary to contact you to enforce our User Agreement, applicable national laws, and any agreement we may have with you. For these purposes we may contact you via email, telephone, text messages, and postal mail.
 
