@@ -8,7 +8,7 @@ The source for www.latestsolutions.io, built with [Astro](https://astro.build). 
 | --- | --- |
 | Home page text | `src/content/home.md` |
 | Any other page (Ivanti, TeamDynamix, About, Partners…) | `src/content/pages/<page-name>.md` |
-| Menu, footer, email, address, social links, form destination | `src/site.ts` |
+| Menu, footer, email, address, social links, home page stats, the shared Ivanti services cards | `src/site.ts` |
 | Colours and fonts | the top of `src/styles/global.css` |
 | Images | `public/images/` |
 
@@ -29,6 +29,11 @@ intro: The paragraph under the headline
 cardsTitle: Heading for an optional grid of cards
 cards:
   - { title: Card title, text: Card text, href: /optional-link }
+services: true      # show the shared Consulting / Tech Support / Architecture cards
+servicesIntro: Text shown above those cards
+faqs:               # questions shown, collapsed, near the bottom
+  - q: The question?
+    a: The answer.
 contactForm: true   # show the "Request your discovery call" form (default)
 ```
 
