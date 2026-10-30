@@ -74,9 +74,8 @@ const home = defineCollection({
     heading: z.string(),
     intro: z.string(),
         solutions: z.array(card), // the four platforms, linked to their pages
-    services: z.array(card),
     benefits: z.array(card),
-    cta: z.object({ title: z.string(), text: z.string() }),
+    platformsIntro: z.string(), // short line under the platforms heading
     expertise: z.array(z.string()), // Ivanti skills shown as tags
     // "The human side of AI" band: links to the consulting page and the webinars
     humanSide: z.object({ title: z.string(), text: z.string(), cards: z.array(card) }).optional(),

@@ -20,19 +20,6 @@ solutions:
     href: /intercom
     icon: /logos/intercom-white.svg
     text: "AI-first customer service and conversations, configured and connected to the tools you already use."
-services:
-  - title: Strategic Consulting
-    icon: /icons/compass.svg
-    text: "We can help you develop and execute a strategic IT roadmap aligned with your business goals. We work one-on-one with your team to understand your goals, business processes, and current information systems capabilities."
-  - title: Tech Support
-    icon: /icons/headset.svg
-    text: "Even the best users and solutions need support sometimes. Latest Solutions technicians are highly-trained, patient and quick to resolve complex technology issues. For safety, we can help you remotely without visiting your home or business."
-  - title: Solution Specialists
-    icon: /icons/users.svg
-    text: "We are here to help you with assessment, IT strategy, and infrastructure optimization. With our consistent guidance, we can help you maximize adoption and ultimately achieve your goals."
-  - title: Latest TechFusion
-    icon: /icons/handshake.svg
-    text: "Your team\u2019s consulting edge. Latest TechFusion, rooted in the legacy of Latest Solutions, is your tech consulting partner designed to join your team seamlessly, working side by side with you as your consulting crew."
 benefits:
   - title: Rapid Implementation
     text: "Drawing on wide experience with past projects, your IT consultant will plan and complete your implementation quickly. This lets you put your resources toward other tasks. The faster the implementation, the more seamless the process will feel to your employees."
@@ -42,9 +29,7 @@ benefits:
     text: "Your specialist can often finish your implementation at a lower price tag than the cost of paying an employee. Your specialist will give you an accurate pre-project estimate, finish quickly, and leave you with no ongoing payroll costs."
   - title: New Skills + Processes
     text: "Our consultants focus on using the best practices in our industry. And they\u2019ll leave new skills and processes with your team through training, checklists, IT playbooks, and more."
-cta:
-  title: Let us improve the collective brilliance of your team.
-  text: "We sell top IT software AND provide a complete IT consulting services list, which includes implementation, training, and ongoing support. Get both IT consultancy and services with Latest Solutions\u2014and get the best results from your new software. As former Ivanti employees, certified TeamDynamix partners and NetDocuments DMS specialists, we plan every organization-wide rollout around your systems and stay on to support it."
+platformsIntro: "Implementation, training and ongoing support from one team. As former Ivanti employees, certified TeamDynamix partners and NetDocuments DMS specialists, we plan every organization-wide rollout around your systems and stay on to support it."
 humanSide:
   title: The human side of AI
   text: "Rolling out AI is a technology project and a people project. Together with applied behavioral scientist Kip Jon, we help leaders with the part that usually decides whether it works: how people actually behave."
