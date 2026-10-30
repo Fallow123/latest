@@ -73,8 +73,7 @@ const home = defineCollection({
     description: z.string(),
     heading: z.string(),
     intro: z.string(),
-    whatWeDo: z.object({ title: z.string(), text: z.string(), image: z.string().optional() }),
-    solutions: z.array(card), // the four platforms, linked to their pages
+        solutions: z.array(card), // the four platforms, linked to their pages
     services: z.array(card),
     benefits: z.array(card),
     cta: z.object({ title: z.string(), text: z.string() }),

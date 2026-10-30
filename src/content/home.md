@@ -3,15 +3,6 @@ title: IT Consulting & Ivanti Implementation Services | Latest Solutions
 description: Expert IT consulting, implementation and support for Ivanti, TeamDynamix, NetDocuments and Intercom, from former Ivanti employees and a Premier Ivanti Partner.
 heading: IT Consultancy and Services From Experienced IT Solution Architects
 intro: "Our team of consultants provides companies with seamless IT implementation services at an affordable price."
-whatWeDo:
-  title: What Exactly Do We Do?
-  text: |
-    We don’t just sell software. Software is nothing if not utilized well. That’s why we will plan a successful organization-wide installation of your products, customized for your unique systems.
-
-    We are former Ivanti employees and have the necessary technical expertise and business acumen to align your product usage with best practices. We help you strategize to achieve goals with your software, such as a high employee usage rate. Plus, we provide IT support to ensure your employees know how to use your new software. We are also certified TeamDynamix partners and work closely with them on iPaaS and workflows to help customers maximize their investment.
-
-    Need the best DMS (Document Management System)? Look no further than NetDocuments. We specialize in implementations, continued support, and administration. With a DMS, you have more control, security, and organization than a SharePoint product. Let us help your organization's IT, Operations, and Legal departments. We will help you un-silo and create a more enhanced business ecosystem.
-  image: /images/home/workspace.jpg
 solutions:
   - title: Ivanti
     href: /ivanti
@@ -53,7 +44,7 @@ benefits:
     text: "Our consultants focus on using the best practices in our industry. And they\u2019ll leave new skills and processes with your team through training, checklists, IT playbooks, and more."
 cta:
   title: Let us improve the collective brilliance of your team.
-  text: "We sell top IT software AND provide a complete IT consulting services list, which includes implementation, training, and ongoing support. Get both IT consultancy and services with Latest Solutions\u2014and get the best results from your new software."
+  text: "We sell top IT software AND provide a complete IT consulting services list, which includes implementation, training, and ongoing support. Get both IT consultancy and services with Latest Solutions\u2014and get the best results from your new software. As former Ivanti employees, certified TeamDynamix partners and NetDocuments DMS specialists, we plan every organization-wide rollout around your systems and stay on to support it."
 humanSide:
   title: The human side of AI
   text: "Rolling out AI is a technology project and a people project. Together with applied behavioral scientist Kip Jon, we help leaders with the part that usually decides whether it works: how people actually behave."
