@@ -2,6 +2,7 @@
 // Renders every Markdown file in src/content/pages as its own page.
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { implementationServices } from '../site';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -11,12 +12,19 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const d = page.data;
 const { Content } = await render(page);
+
+// Lets Google show the questions and answers directly in search results.
+const faqSchema = d.faqs && {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: d.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
 ---
 
 <Base title={d.title} description={d.description} contactForm={d.contactForm}>
   <section class="hero">
     <div class={d.heroImage ? 'container hero-split' : 'container'}>
-      <div>
+      <div class="hero-text">
         {d.eyebrow && <p class="eyebrow">{d.eyebrow}</p>}
         <h1>{d.heading}</h1>
         {d.intro && <p class="lead">{d.intro}</p>}
@@ -32,17 +40,17 @@ const { Content } = await render(page);
     d.cards && (
       <section class={d.cardsDark ? 'section dark' : 'section soft'}>
         <div class="container">
-          {d.cardsTitle && <h2 class="center">{d.cardsTitle}</h2>}
-          <div class="grid">
+          {d.cardsTitle && <h2 class="center title-line reveal">{d.cardsTitle}</h2>}
+          <div class="grid stagger">
             {d.cards.map((c) =>
               c.href ? (
-                <a class="card card-link" href={c.href}>
+                <a class="card card-link reveal" href={c.href}>
                   {c.icon && <img class="icon" src={c.icon} alt="" />}
                   <h3>{c.title}</h3>
                   {c.text && <p>{c.text}</p>}
                 </a>
               ) : (
-                <div class="card">
+                <div class="card reveal">
                   {c.icon && <img class="icon" src={c.icon} alt="" />}
                   <h3>{c.title}</h3>
                   {c.text && <p>{c.text}</p>}
@@ -59,10 +67,10 @@ const { Content } = await render(page);
     d.logos && (
       <section class="section">
         <div class="container">
-          <h2 class="center">Our Partners</h2>
-          <div class="logo-wall">
+          <h2 class="center title-line reveal">Our Partners</h2>
+          <div class="logo-wall stagger">
             {d.logos.map((l) => (
-              <a href={l.href} target="_blank" rel="noopener">
+              <a class="reveal" href={l.href} target="_blank" rel="noopener">
                 {l.image ? <img src={l.image} alt={l.name} /> : <span>{l.name}</span>}
               </a>
             ))}
@@ -73,8 +81,53 @@ const { Content } = await render(page);
   }
 
   <section class="section">
-    <div class="container prose">
+    <div class:list={['container prose reveal', { checklist: d.services }]}>
       <Content />
     </div>
   </section>
+
+  {
+    d.services && (
+      <section class={d.faqs ? 'section soft' : 'section cta-band'}>
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">How we help</p>
+            <h2 class="title-line">Services for implementation</h2>
+            {d.servicesIntro?.split(/\n\s*\n/).map((p) => <p>{p}</p>)}
+          </div>
+          <div class="grid grid-3 stagger">
+            {implementationServices.map((s) => (
+              <div class="card reveal">
+                <img class="icon" src={s.icon} alt="" />
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    d.faqs && (
+      <section class="section">
+        <div class="container faq">
+          <div class="reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2 class="title-line">Common questions</h2>
+          </div>
+          <div class="faq-list reveal">
+            {d.faqs.map((f) => (
+              <details>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+        <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+      </section>
+    )
+  }
 </Base>

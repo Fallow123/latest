@@ -2,7 +2,7 @@
 // Home page. The words live in src/content/home.md; this file only lays them out.
 import { getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { site } from '../site';
+import { site, stats } from '../site';
 
 const home = (await getEntry('home', 'home'))!;
 const d = home.data;
@@ -11,7 +11,7 @@ const d = home.data;
 <Base title={d.title} description={d.description}>
   <section class="hero">
     <div class="container hero-split">
-      <div>
+      <div class="hero-text">
         <p class="eyebrow">Ivanti Premier Partner</p>
         <h1>{d.heading}</h1>
         <p class="lead">{d.intro}</p>
@@ -20,29 +20,49 @@ const d = home.data;
           <a class="btn btn-outline" href="/about">More about us</a>
         </div>
       </div>
-      <img src={site.ivantiBadge} alt="Ivanti Premier Partner badge" width="411" height="139" />
+      <img class="hero-badge" src={site.ivantiBadge} alt="Ivanti Premier Partner badge" width="411" height="139" />
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Latest Solutions at a glance">
+    <div class="container stats-grid stagger">
+      {
+        stats.map((s) => {
+          const m = s.value.match(/^(\d+)(\D*)$/);
+          return (
+            <div class="stat reveal">
+              <span class="stat-value" data-count={m && s.value !== '2011' ? m[1] : undefined} data-suffix={m ? m[2] : undefined}>
+                {s.value}
+              </span>
+              <span class="stat-label">{s.label}</span>
+            </div>
+          );
+        })
+      }
     </div>
   </section>
 
   <section class="section">
     <div class="container two-col">
-      <div>
+      <div class="reveal">
         <p class="eyebrow">Who we are</p>
-        <h2>{d.whatWeDo.title}</h2>
+        <h2 class="title-line">{d.whatWeDo.title}</h2>
         <div>{d.whatWeDo.text.split(/\n\s*\n/).map((p) => <p>{p}</p>)}</div>
       </div>
-      {d.whatWeDo.image && <img class="rounded" src={d.whatWeDo.image} alt="" loading="lazy" />}
+      {d.whatWeDo.image && <img class="rounded reveal" src={d.whatWeDo.image} alt="" loading="lazy" />}
     </div>
   </section>
 
   <section class="section soft">
     <div class="container">
-      <p class="eyebrow center">Our services</p>
-      <h2 class="center">How we help</h2>
-      <div class="grid">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Our services</p>
+        <h2 class="title-line">How we help</h2>
+      </div>
+      <div class="grid stagger">
         {
           d.services.map((s) => (
-            <div class="card">
+            <div class="card reveal">
               {s.icon && <img class="icon" src={s.icon} alt="" />}
               <h3>{s.title}</h3>
               <p>{s.text}</p>
@@ -55,12 +75,14 @@ const d = home.data;
 
   <section class="section dark">
     <div class="container">
-      <p class="eyebrow">Why work with us</p>
-      <h2>Benefits of Consulting and Implementation Services</h2>
-      <div class="grid">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why work with us</p>
+        <h2 class="title-line">Benefits of Consulting and Implementation Services</h2>
+      </div>
+      <div class="grid stagger">
         {
           d.benefits.map((b, i) => (
-            <div class="card">
+            <div class="card reveal">
               <span class="num">0{i + 1}</span>
               <h3>{b.title}</h3>
               <p>{b.text}</p>
@@ -71,8 +93,8 @@ const d = home.data;
     </div>
   </section>
 
-  <section class="section">
-    <div class="container center">
+  <section class="section cta-band">
+    <div class="container center reveal">
       <h2>{d.cta.title}</h2>
       <p class="lead">{d.cta.text}</p>
       <a class="btn" href="#contact">Get started</a>
@@ -81,12 +103,14 @@ const d = home.data;
 
   <section class="section soft">
     <div class="container">
-      <p class="eyebrow">Ivanti Premier Partner</p>
-      <h2>Certified across the Ivanti portfolio</h2>
-      <div class="two-col">
+      <div class="section-head reveal">
+        <p class="eyebrow">Ivanti Premier Partner</p>
+        <h2 class="title-line">Certified across the Ivanti portfolio</h2>
+      </div>
+      <div class="two-col stagger">
         {
           d.credentials.map((c) => (
-            <div>
+            <div class="reveal">
               <h3>{c.title}</h3>
               <ul class="pill-list">{c.items.map((i) => <li>{i}</li>)}</ul>
             </div>
@@ -98,14 +122,14 @@ const d = home.data;
 
   <section class="section">
     <div class="container two-col">
-      <div>
+      <div class="reveal">
         <p class="eyebrow">Our culture</p>
         <blockquote class="quote">{d.culture.quote}</blockquote>
         <ul class="pill-list">{d.culture.values.map((v) => <li>{v}</li>)}</ul>
       </div>
-      <div>
+      <div class="reveal">
         <p class="eyebrow">Customer journey</p>
-        <h2>{d.journey.title}</h2>
+        <h2 class="title-line">{d.journey.title}</h2>
         <p>{d.journey.text}</p>
       </div>
     </div>

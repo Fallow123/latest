@@ -1,7 +1,8 @@
 ---
-import { nav, site } from '../site';
+import { nav, site, type NavItem } from '../site';
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
-const isActive = (href: string) => href === path || (href !== '/' && path.startsWith(href));
+const isActive = (item: NavItem): boolean =>
+  item.href === path || (item.href !== '/' && path.startsWith(item.href)) || !!item.children?.some(isActive);
 ---
 
 <header class="site-header">
@@ -19,19 +20,30 @@ const isActive = (href: string) => href === path || (href !== '/' && path.starts
         {
           nav.map((item) => (
             <li class={item.children ? 'has-children' : ''}>
-              <a href={item.href} class={isActive(item.href) ? 'active' : ''}>
+              <a href={item.href} class={isActive(item) ? 'active' : ''} aria-haspopup={item.children ? 'true' : undefined}>
                 {item.label}
               </a>
               {item.children && (
-                <ul class="submenu">
-                  {item.children.map((child) => (
-                    <li>
-                      <a href={child.href} class={isActive(child.href) ? 'active' : ''}>
-                        {child.label}
+                <div class="mega">
+                  {item.children.map((group) => (
+                    <div class="mega-col">
+                      <a href={group.href} class:list={['mega-title', { active: group.href === path }]}>
+                        {group.label}
                       </a>
-                    </li>
+                      {group.children && (
+                        <ul>
+                          {group.children.map((child) => (
+                            <li>
+                              <a href={child.href} class={child.href === path ? 'active' : ''}>
+                                {child.label}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   ))}
-                </ul>
+                </div>
               )}
             </li>
           ))
@@ -41,3 +53,11 @@ const isActive = (href: string) => href === path || (href !== '/' && path.starts
     </nav>
   </div>
 </header>
+
+<script>
+  // Shrink the header and add a shadow once the page is scrolled.
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header?.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>

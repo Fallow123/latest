@@ -1,9 +1,10 @@
 ---
 title: "Ivanti Neurons for RBVM | Latest Solutions"
 description: "Ivanti Neurons for Risk-Based Vulnerability Management (formerly RiskSense): prioritize and remediate the vulnerabilities that matter."
-eyebrow: Ivanti
-heading: "Ivanti Neurons for Risk-Based Vulnerability Management (RBVM)"
+eyebrow: "Ivanti · Risk-Based Vulnerability Management"
+heading: "Ivanti Neurons for RBVM"
 intro: "Cloud-based RiskSense management platform provides vulnerability and prioritization to control and measure security risk. RiskSense platform continuously correlates customer infrastructure with comprehensive internal and external vulnerability data, threat intelligence, human pen test findings, and business asset criticality to identify your security weaknesses with corresponding remediation action plans, dramatically improving security and IT team efficiency and effectiveness."
+services: true
 ---
 
 ![RiskSense, acquired by Ivanti](/images/ivanti-risksense/risksense-logo.png)

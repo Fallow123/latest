@@ -20,36 +20,71 @@ export const site = {
 
 export type NavItem = { label: string; href: string; children?: NavItem[] };
 
+// The top menu. "Solutions" opens one wide dropdown with a column per platform.
 export const nav: NavItem[] = [
   { label: 'Home', href: '/' },
   {
-    label: 'Ivanti',
+    label: 'Solutions',
     href: '/ivanti',
     children: [
-      { label: 'Ivanti Asset Manager', href: '/ivanti-asset-manager' },
-      { label: 'Ivanti Automation', href: '/ivanti-automation' },
-      { label: 'Ivanti Identity Director', href: '/ivanti-identity-director' },
-      { label: 'Ivanti Neurons', href: '/ivanti-neurons' },
-      { label: 'Ivanti Neurons for RBVM', href: '/ivanti-risksense' },
-      { label: 'Ivanti Security Controls', href: '/ivanti-security-controls' },
-      { label: 'Ivanti Service Manager', href: '/ivanti-service-manager' },
-      { label: 'Ivanti UEM Solutions', href: '/ivanti-uem-solutions' },
-    ],
-  },
-  { label: 'NetDocuments', href: '/netdocuments' },
-  { label: 'Intercom', href: '/intercom' },
-  {
-    label: 'TeamDynamix',
-    href: '/teamdynamix',
-    children: [
-      { label: 'TeamDynamix ESM & PPM', href: '/teamdynamix-esm' },
-      { label: 'AI Virtual Agent', href: '/teamdynamix-ai-virtual-agent' },
-      { label: 'TeamDynamix ITAM', href: '/teamdynamix-itam' },
-      { label: 'TeamDynamix iPaaS', href: '/teamdynamix-ipaas' },
+      {
+        label: 'Ivanti',
+        href: '/ivanti',
+        children: [
+          { label: 'Asset Manager', href: '/ivanti-asset-manager' },
+          { label: 'Automation', href: '/ivanti-automation' },
+          { label: 'Identity Director', href: '/ivanti-identity-director' },
+          { label: 'Neurons', href: '/ivanti-neurons' },
+          { label: 'Neurons for RBVM', href: '/ivanti-risksense' },
+          { label: 'Security Controls', href: '/ivanti-security-controls' },
+          { label: 'Service Manager', href: '/ivanti-service-manager' },
+          { label: 'UEM Solutions', href: '/ivanti-uem-solutions' },
+        ],
+      },
+      {
+        label: 'TeamDynamix',
+        href: '/teamdynamix',
+        children: [
+          { label: 'ESM & PPM', href: '/teamdynamix-esm' },
+          { label: 'AI Virtual Agent', href: '/teamdynamix-ai-virtual-agent' },
+          { label: 'ITAM', href: '/teamdynamix-itam' },
+          { label: 'iPaaS', href: '/teamdynamix-ipaas' },
+        ],
+      },
+      { label: 'NetDocuments', href: '/netdocuments' },
+      { label: 'Intercom', href: '/intercom' },
     ],
   },
   { label: 'Partners', href: '/partners' },
   { label: 'About', href: '/about' },
+];
+
+// Numbers shown in the strip under the home page hero.
+// A number with a "+" or plain digits counts up when it scrolls into view.
+export const stats = [
+  { value: '2011', label: 'Helping IT teams since' },
+  { value: '100+', label: 'Years of combined Ivanti experience' },
+  { value: 'Premier', label: 'Ivanti Partner' },
+  { value: '4', label: 'Platforms we implement and support' },
+];
+
+// The three services shown on every Ivanti product page.
+export const implementationServices = [
+  {
+    title: 'Consulting',
+    icon: '/images/home/strategic-consulting.png',
+    text: 'Tell us your unique needs and how your systems work. We plan and configure your implementation so it goes right at every step.',
+  },
+  {
+    title: 'Tech Support',
+    icon: '/images/home/tech-support.png',
+    text: 'Quick answers and step-by-step help with any feature, from a team that knows the product inside out.',
+  },
+  {
+    title: 'Expert Solutions Architecture',
+    icon: '/images/home/solution-specialists.png',
+    text: 'Ongoing help to reach your goals, such as getting your whole team to adopt the software and use it well.',
+  },
 ];
 
 // Profile links, as listed in the footer of the old site.

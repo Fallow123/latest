@@ -5,6 +5,23 @@ eyebrow: Ivanti
 heading: "Ivanti Automation Solutions"
 intro: "Cloud automation solutions for increased efficiency and productivity."
 heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
+services: true
+servicesIntro: Could your staff members benefit from help with the implementation of Ivanti Automation? Organizations often need more support when distributing new and different software.
+faqs:
+- q: What is cloud automation?
+  a: This includes software tools that exist in a cloud-based environment and can automatically perform routine IT tasks, such as configuring and provisioning.
+- q: What tools help create cloud services?
+  a: Cloud services can be created in an organization through simple access to an outside infrastructure (infrastructure as a service, or IaaS), a platform that runs applications (platform as a service, or PaaS), or a complete software package (software as a service, or SaaS).
+- q: What is an orchestrator in the cloud?
+  a: A cloud orchestrator is a software tool that automatically delivers a variety of cloud-based resources to users, along with helping to manage and coordinate systems, middleware, and services.
+- q: What are automation tools?
+  a: Automation tools include software that can take over certain repetitive, manual tasks from IT workers.
+- q: What are orchestration tools?
+  a: These are software tools that coordinate the use of IT resources that are connected through the cloud.
+- q: What is the difference between automation and orchestration?
+  a: Automation refers to letting software take over particular tasks, whereas orchestration refers to the creation of entire workflows that manage the connections between software, networks, and users.
+- q: What is the main benefit of automated provisioning?
+  a: It reduces the time needed to complete IT service requests, achieving changes or activations within impressive time frames—even minutes.
 ---
 
 ## Automate your workload with ease
@@ -28,65 +45,3 @@ With enterprise automation solutions, you can:
 - Add automation to cloud-based services
 
 Organizations can be severely damaged by lost or distorted data caused by human errors. Reduce or eliminate these risks—along with freeing your employees for important innovations—using Ivanti cloud automation solutions. Your employees will love a system that takes over repetitive tasks.
-
-## Services for implementation
-
-Could your staff members benefit from help with the implementation of Ivanti Automation? Organizations often need more support when distributing new and different software. Our experienced Ivanti-trained consultants will help you be more successful through:
-
-We provide:
-
-### Consulting
-
-You’ll have consultative advice before and during your software setup, ensuring Ivanti Automation is customized for your unique systems and the entire rollout is planned in every detail.
-
-### Tech Support
-
-Get quick answers to your questions about Ivanti Automation, along with being walked through how to use it.
-
-### Expert Solutions Architecture
-
-Software is only useful if it is adopted. We will help you get an increased number of your employees to use the helpful features of Ivanti Automation.
-
-## FAQ
-
-<details><summary>What is cloud automation?</summary>
-
-This includes software tools that exist in a cloud-based environment and can automatically perform routine IT tasks, such as configuring and provisioning.
-
-</details>
-
-<details><summary>What tools help create cloud services?</summary>
-
-Cloud services can be created in an organization through simple access to an outside infrastructure (infrastructure as a service, or IaaS), a platform that runs applications (platform as a service, or PaaS), or a complete software package (software as a service, or SaaS).
-
-</details>
-
-<details><summary>What is an orchestrator in the cloud?</summary>
-
-A cloud orchestrator is a software tool that automatically delivers a variety of cloud-based resources to users, along with helping to manage and coordinate systems, middleware, and services.
-
-</details>
-
-<details><summary>What are automation tools?</summary>
-
-Automation tools include software that can take over certain repetitive, manual tasks from IT workers.
-
-</details>
-
-<details><summary>What are orchestration tools?</summary>
-
-These are software tools that coordinate the use of IT resources that are connected through the cloud.
-
-</details>
-
-<details><summary>What is the difference between automation and orchestration?</summary>
-
-Automation refers to letting software take over particular tasks, whereas orchestration refers to the creation of entire workflows that manage the connections between software, networks, and users.
-
-</details>
-
-<details><summary>What is the main benefit of automated provisioning?</summary>
-
-It reduces the time needed to complete IT service requests, achieving changes or activations within impressive time frames—even minutes.
-
-</details>

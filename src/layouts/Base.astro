@@ -24,6 +24,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <!-- Marks that JavaScript runs, so scroll animations only hide content when they can show it again. -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,5 +41,37 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       {contactForm && <ContactForm />}
     </main>
     <Footer />
+    <script>
+      // Fade sections in as they scroll into view (once each), and count the stats up from 0.
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const countUp = (el: HTMLElement) => {
+        const target = Number(el.dataset.count);
+        const suffix = el.dataset.suffix ?? '';
+        if (reduceMotion || !target) return;
+        const start = performance.now();
+        const step = (now: number) => {
+          const t = Math.min((now - start) / 1200, 1);
+          el.textContent = Math.round(target * (1 - Math.pow(1 - t, 3))) + suffix;
+          if (t < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      };
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            const el = entry.target as HTMLElement;
+            el.classList.add('in');
+            el.querySelectorAll<HTMLElement>('[data-count]').forEach(countUp);
+            observer.unobserve(el);
+          }
+        },
+        { rootMargin: '0px 0px -8% 0px', threshold: 0.1 }
+      );
+
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
   </body>
 </html>

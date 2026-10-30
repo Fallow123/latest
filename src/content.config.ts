@@ -30,6 +30,12 @@ const pages = defineCollection({
     cardsDark: z.boolean().default(false),
     // Optional logo wall (used on Partners)
     logos: z.array(z.object({ name: z.string(), image: z.string().optional(), href: z.string() })).optional(),
+    // Show the shared Consulting / Tech Support / Solutions Architecture cards
+    // (text lives in src/site.ts), with an optional page-specific intro above them
+    services: z.boolean().default(false),
+    servicesIntro: z.string().optional(),
+    // Questions and answers shown, collapsed, near the bottom of the page
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     // Show the "Request your discovery call" form at the bottom (default yes)
     contactForm: z.boolean().default(true),
   }),
