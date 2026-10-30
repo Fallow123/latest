@@ -4,7 +4,6 @@ description: "Ivanti Security Controls implementation: unified, agentless patch 
 eyebrow: Ivanti
 heading: "Ivanti Security Controls"
 intro: "Patch management tools to automate and enhance IT security."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: With Latest Solutions, you’re not just buying software, you’re buying a team of experts who want to make your IT assets more secure. All of our staff members have worked at Ivanti and are trained in Ivanti software.
 faqs:

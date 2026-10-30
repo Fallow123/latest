@@ -81,7 +81,7 @@ const faqSchema = d.faqs && {
   }
 
   <section class="section">
-    <div class:list={['container prose reveal', { checklist: d.services }]}>
+    <div class:list={['container prose reveal', { checklist: d.checklist ?? d.services }]}>
       <Content />
     </div>
   </section>

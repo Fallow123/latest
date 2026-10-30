@@ -28,8 +28,6 @@ What RiskSense will do for your company:
 
 ![RiskSense dashboard in Ivanti Neurons for RBVM](/images/ivanti-risksense/risksense-dashboard.png)
 
-![Ivanti Neurons for RBVM overview](/images/ivanti-risksense/risksense-overview.png)
-
 ## RBVM - Integrations
 
 ![Ivanti Neurons for RBVM integrations](/images/ivanti-risksense/risksense-integrations.png)

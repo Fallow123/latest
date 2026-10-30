@@ -12,6 +12,23 @@ whatWeDo:
 
     Need the best DMS (Document Management System)? Look no further than NetDocuments. We specialize in implementations, continued support, and administration. With a DMS, you have more control, security, and organization than a SharePoint product. Let us help your organization's IT, Operations, and Legal departments. We will help you un-silo and create a more enhanced business ecosystem.
   image: /images/home/workspace.jpg
+solutions:
+  - title: Ivanti
+    href: /ivanti
+    icon: /images/partners/ivanti.png
+    text: "Service, asset, endpoint and security management, implemented by former Ivanti employees and a Premier Partner."
+  - title: TeamDynamix
+    href: /teamdynamix
+    icon: /images/shared/teamdynamix-logo-reversed.png
+    text: "ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, set up and supported by certified specialists."
+  - title: NetDocuments
+    href: /netdocuments
+    icon: /images/partners/netdocuments.png
+    text: "Secure cloud document management for legal, compliance and finance teams, from migration to day-to-day support."
+  - title: Intercom
+    href: /intercom
+    icon: /logos/intercom-white.svg
+    text: "AI-first customer service and conversations, configured and connected to the tools you already use."
 services:
   - title: Strategic Consulting
     icon: /images/home/strategic-consulting.png
@@ -37,15 +54,5 @@ benefits:
 cta:
   title: Let us improve the collective brilliance of your team.
   text: "We sell top IT software AND provide a complete IT consulting services list, which includes implementation, training, and ongoing support. Get both IT consultancy and services with Latest Solutions\u2014and get the best results from your new software."
-credentials:
-  - title: Solution Architects
-    items: [Service Manager, Asset Manager, Automation, Neurons, Endpoint Management, GRC, Security Controls, Integrations, Reporting, Cloud vs. On-Premises, Patching, Ivanti Product, MSP Provider]
-  - title: Certified Services
-    items: [Endpoint Manager, Service Manager, Automation, Asset Manager, Neurons, Xtraction, Ivanti Legacy Products, Security Control, Patch Solutions, Project Management]
-culture:
-  quote: We believe in the power of recognition and empowerment leading to great engagements.
-  values: [Customer Service, Product Adoption, ITIL Best Practices, IAITAM Best Practices, PMP Best Practices, Collaboration]
-journey:
-  title: The Customer Journey
-  text: "Mapping an Ivanti customer journey is important to the customers experience and success. It enables the customer to establish its outcomes and recognize its deficiencies in a positive and controlled setting. We have the perspective, wisdom, and moxie that leads to real results in implementations and adoption."
+expertise: [Service Manager, Asset Manager, Endpoint Management, Security Controls, Patching, Neurons, Automation, GRC, Xtraction, Integrations, Reporting, Cloud and On-Premises, Ivanti Legacy Products, MSP Provider, Project Management]
 ---

@@ -4,7 +4,6 @@ description: "Implementation and support for Ivanti Asset Manager, the cloud-bas
 eyebrow: Ivanti
 heading: "Ivanti Asset Manager"
 intro: "Asset tracking software to manage your IT lifecycles."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: 'Out of all the asset management services providers available, why choose Latest Solutions? Because we do much more than provide software. As former Ivanti employees, we have deep expertise in every feature of Asset Manager—both obvious and hidden.
 

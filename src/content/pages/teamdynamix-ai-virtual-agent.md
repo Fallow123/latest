@@ -25,7 +25,3 @@ heroImage: { src: /images/shared/teamdynamix-logo-reversed.png, alt: TeamDynamix
 ## How Latest Solutions Can Help
 
 As certified TeamDynamix partners, Latest Solutions specializes in integrating the Virtual Agent or CAI into your business framework. Our team will help you configure TeamDynamix's conversational AI to align with your customer engagement goals, providing customization, training, and ongoing support to ensure you get the most out of the platform.
-
-## Get Started with TeamDynamix's Conversational AI Today!
-
-Ready to elevate your customer experience with TeamDynamix's Conversational AI? Contact Latest Solutions for a consultation and discover how CAI agent can help you build stronger, more meaningful customer relationships along with more precise help.

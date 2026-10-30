@@ -5,6 +5,7 @@ eyebrow: About Us
 heading: Experts in Top IT Solutions in the Industry
 intro: "Latest Solutions is made of highly-skilled group of IT software consultants offering boutique-style services. Our consultants are skilled to architect, implement, and optimize top IT software solutions focused on a cost-effective and user-oriented experience."
 cta: { label: 'Schedule Free, No-Obligation Consultation', href: '#contact' }
+checklist: true
 heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti Premier Partner badge }
 ---
 
@@ -14,7 +15,7 @@ Latest Solutions began with the idea to fill the gaps we saw all-too-often in th
 
 - Implement, configure, and automate their Ivanti investment
 - Improve the level of cyber security for their systems and data
-- Greatly reduce Windows 10 migration times
+- Greatly reduce Windows 11 migration times
 - Minimize disruptions in business operations + maintain continuous business operations
 - Simplify desktop deployment and administration, reducing IT costs
 - Mitigate the risk of any revenue losses from technology issues or disruptions
@@ -29,19 +30,13 @@ We are a proud Ivanti Premier Partner. Our team offers expertise in the entire I
 
 We provide a bridge between your business requirements and the functionality of Ivanti products. The LS staff are all former Ivanti employees and have the necessary technical expertise and business acumen to align your product usage with best practices.
 
-## Meet Our Team
+## Our Team
 
 Latest Solutions is a collaboration of high-caliber, independent consultants with a proven track record in the technology field. Our staff features a strategic mix of experience as partners, customers and former Ivanti employees.
 
 We offer on-demand consulting to ensure your business can implement and integrate IT products into your organization. We can help you implement, configure, and automate your IT products while building new processes and workflows to increase product maturity. We make sure you are getting the full value from your IT software by offering professional services and solutions.
 
 We are certified experts in TeamDynamix, Ivanti, NetDocuments, and Intercom.
-
-- **Jonathan Lavigne**, CEO
-- **Jared Carver**, President
-- **Gary Lyon**, Director of Technology
-- **Darren Dorsey**, VP Sales
-- **Tania Rodrigues**, Account Executive
 
 ## Interested in working with us?
 

@@ -4,7 +4,6 @@ description: "Ivanti Neurons implementation and support: self-healing, automated
 eyebrow: Ivanti
 heading: "Ivanti Neurons"
 intro: "Cloud service management for automation, security, self healing, and more."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: Ivanti’s new cloud service management solution is a scalable, reliable way to improve your cloud services. But will you implement it in the most effective way for your particular system? Will your staff members adopt it and use it optimally?
 faqs:

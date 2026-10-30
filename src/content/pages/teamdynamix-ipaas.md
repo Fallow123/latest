@@ -27,7 +27,3 @@ iPaaS empowers your team to create impactful workflows, optimize user outcomes, 
 ## How Latest Solutions Can Help
 
 As certified TeamDynamix iPaaS partners, Latest Solutions specializes in implementing iPaaS to help you achieve your integration & request goals. From custom configurations and targeted workflows to hands-on training, we support your team every step of the way. We ensure iPaaS integrates smoothly with your systems, maximizing your API efficiency and impact.
-
-## Ready to Transform Your System Strategy?
-
-Get started with iPaaS and unlock the full potential of your integration efforts. Contact Latest Solutions today to schedule a consultation and discover how TeamDynamix can help you easily integrate systems and orgs.

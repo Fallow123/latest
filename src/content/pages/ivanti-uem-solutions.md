@@ -4,7 +4,6 @@ description: "Ivanti Unified Endpoint Management implementation: manage Windows,
 eyebrow: Ivanti
 heading: "Unified Endpoint Management Solutions"
 intro: "Endpoint management software to oversee all user devices."
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 services: true
 servicesIntro: 'Ivanti’s unified endpoint management solutions bring you more features than common endpoint management software can. These tools will connect IT seamlessly with vendors, enable you to discover and inventory more of your assets, migrate user profiles between systems, and much more.
 
