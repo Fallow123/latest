@@ -1,6 +1,6 @@
 ---
 title: About Us | Latest Solutions
-description: Latest Solutions is a boutique IT consultancy founded in 2011, offering implementation, project management and support. Former Ivanti employees and an Ivanti Premier Partner, certified TeamDynamix and NetDocuments partners, and behavioral science for leadership.
+description: Latest Solutions is a boutique IT consultancy founded in 2011, offering implementation, project management and support. Former Ivanti employees and an Ivanti Premier Partner, NetDocuments and certified TeamDynamix partners, and behavioral science for leadership.
 eyebrow: About Us
 heading: Experts in Top IT Solutions in the Industry
 intro: "Latest Solutions is a highly skilled group of IT software consultants offering boutique-style services. We architect, implement and optimize leading IT platforms, manage the projects end to end, and help the people using them adopt them, with a cost-effective, user-oriented approach."
@@ -10,9 +10,9 @@ heroImage: { src: /images/brand/emblem-glimmer.webp, still: /images/brand/emblem
 cardsTitle: What we bring
 cards:
   - { title: Ivanti, href: /ivanti, icon: /icons/shield-check.svg, text: "Premier Partner. Former Ivanti employees with 100+ years of combined Ivanti experience across the whole portfolio." }
-  - { title: TeamDynamix, href: /teamdynamix, icon: /icons/workflow.svg, text: "Certified partner for ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, from no-code workflows to integrations." }
   - { title: NetDocuments, href: /netdocuments, icon: /icons/folder-tree.svg, text: "Implementation, migration and day-to-day administration of the leading cloud document management system (DMS)." }
-  - { title: Project Management, icon: /icons/square-kanban.svg, text: "Experienced project managers who plan, run and report on your rollout, keeping timelines, budgets and stakeholders on track." }
+  - { title: TeamDynamix, href: /teamdynamix, icon: /icons/workflow.svg, text: "Certified partner for ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, from no-code workflows to integrations." }
+  - { title: Project Management, href: /project-management, icon: /icons/square-kanban.svg, text: "Experienced project managers who plan, run and report on your rollout, keeping timelines, budgets and stakeholders on track." }
   - { title: Behavioral Science for Leadership, href: /behavioral-science-leadership, icon: /icons/brain.svg, text: "With behavioral scientist Kip Jon, we help leaders turn change, including AI, into how their teams actually work." }
 ---
 
@@ -34,9 +34,9 @@ Latest Solutions began in 2011 with the idea to fill the gaps we saw all too oft
 
 We are a proud, long-time Ivanti Premier Partner with expertise across the entire Ivanti portfolio. Our team are former Ivanti employees with 100+ years of combined Ivanti experience, bridging your business requirements and the functionality of Ivanti products.
 
-## TeamDynamix and NetDocuments
+## NetDocuments and TeamDynamix
 
-We are certified TeamDynamix partners and work closely with them on enterprise service management, iPaaS and workflows, helping customers get full value from one no-code platform across IT, HR and operations. For legal, compliance and finance teams, we implement and support NetDocuments, giving you more control, security and organization than a SharePoint-based setup.
+For legal, compliance and finance teams, we implement and support NetDocuments, giving you more control, security and organization than a SharePoint-based setup. We are also certified TeamDynamix partners and work closely with them on enterprise service management, iPaaS and workflows, helping customers get full value from one no-code platform across IT, HR and operations.
 
 ## Behavioral science for leadership
 
@@ -44,7 +44,7 @@ Technology projects succeed or fail on how people behave. Together with applied 
 
 ## Our Team
 
-Latest Solutions is a collaboration of high-caliber consultants with a proven track record in technology, mixing experience as partners, customers and former Ivanti employees. We are certified experts in Ivanti, TeamDynamix, NetDocuments and Intercom.
+Latest Solutions is a collaboration of high-caliber consultants with a proven track record in technology, mixing experience as partners, customers and former Ivanti employees. We are certified experts in Ivanti, NetDocuments and TeamDynamix.
 
 ## Interested in working with us?
 

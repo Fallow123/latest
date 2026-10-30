@@ -1,6 +1,6 @@
 ---
 title: IT Consulting & Ivanti Implementation Services | Latest Solutions
-description: Expert IT consulting, implementation, project management and support for Ivanti, TeamDynamix, NetDocuments and Intercom, from former Ivanti employees and a Premier Ivanti Partner.
+description: Expert IT consulting, implementation, project management and support for Ivanti, NetDocuments and TeamDynamix, from former Ivanti employees and a Premier Ivanti Partner.
 heading: IT Consultancy and Services From Experienced IT Solution Architects
 intro: "Our team of consultants provides companies with seamless IT implementation services at an affordable price."
 solutions:
@@ -8,18 +8,14 @@ solutions:
     href: /ivanti
     icon: /images/partners/ivanti.png
     text: "Service, asset, endpoint and security management, implemented by former Ivanti employees and a Premier Partner."
-  - title: TeamDynamix
-    href: /teamdynamix
-    icon: /images/shared/teamdynamix-logo-reversed.png
-    text: "ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, set up and supported by certified specialists."
   - title: NetDocuments
     href: /netdocuments
     icon: /images/partners/netdocuments.png
     text: "Secure cloud document management for legal, compliance and finance teams, from migration to day-to-day support."
-  - title: Intercom
-    href: /intercom
-    icon: /logos/intercom-white.svg
-    text: "AI-first customer service and conversations, configured and connected to the tools you already use."
+  - title: TeamDynamix
+    href: /teamdynamix
+    icon: /images/shared/teamdynamix-logo-reversed.png
+    text: "ESM, PPM, ITAM, iPaaS and the AI Virtual Agent, set up and supported by certified specialists."
 benefits:
   - title: Rapid Implementation
     text: "Drawing on wide experience with past projects, your IT consultant will plan and complete your implementation quickly. This lets you put your resources toward other tasks. The faster the implementation, the more seamless the process will feel to your employees."
@@ -29,7 +25,7 @@ benefits:
     text: "Your specialist can often finish your implementation at a lower price tag than the cost of paying an employee. Your specialist will give you an accurate pre-project estimate, finish quickly, and leave you with no ongoing payroll costs."
   - title: New Skills + Processes
     text: "Our consultants focus on using the best practices in our industry. And they\u2019ll leave new skills and processes with your team through training, checklists, IT playbooks, and more."
-platformsIntro: "Implementation, project management, training and ongoing support from one team. As former Ivanti employees, certified TeamDynamix partners and NetDocuments DMS specialists, we plan every organization-wide rollout around your systems and stay on to support it."
+platformsIntro: "Implementation, project management, training and ongoing support from one team. As former Ivanti employees, NetDocuments DMS specialists and certified TeamDynamix partners, we plan every organization-wide rollout around your systems and stay on to support it."
 humanSide:
   title: The human side of AI
   text: "Rolling out AI is a technology project and a people project. Together with applied behavioral scientist Kip Jon, we help leaders with the part that usually decides whether it works: how people actually behave."

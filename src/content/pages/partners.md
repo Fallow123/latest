@@ -13,8 +13,8 @@ cards:
   - { title: Security, icon: /icons/shield-check.svg, text: "Privileged access, threat intelligence and vulnerability management that protect your people and data." }
 logos:
   - { name: Ivanti, href: 'https://www.ivanti.com/', image: /images/partners/ivanti.png }
-  - { name: TeamDynamix, href: 'https://www.teamdynamix.com/', image: /images/shared/teamdynamix-logo-reversed.png }
   - { name: NetDocuments, href: 'https://www.netdocuments.com/', image: /images/partners/netdocuments.png }
+  - { name: TeamDynamix, href: 'https://www.teamdynamix.com/', image: /images/shared/teamdynamix-logo-reversed.png }
   - { name: Intercom, href: 'https://www.intercom.com/', image: /images/partners/intercom.webp }
   - { name: Bright Pattern, href: 'https://www.brightpattern.com/', image: /images/partners/bright-pattern.png }
   - { name: GitLab, href: 'https://about.gitlab.com/', image: /images/partners/gitlab.png }
