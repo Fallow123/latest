@@ -14,7 +14,7 @@ cards:
   - title: The Heart of Leadership
     text: "Six months of 1:1 coaching for each manager plus team sessions, assessed before and after so you can see the change."
 speakersTitle: Who you'll work with
-speakers: [kip, jonathan]
+speakers: [kip]
 faqs:
   - q: How is this different from leadership training?
     a: "Training shares information; most of it doesn't change what people do on Monday. We start from the behaviors you need to see, find out what is really driving the current ones, and change the conditions around them. Then we measure whether it worked."

@@ -86,13 +86,6 @@ export const speakers: Record<string, Speaker> = {
     href: 'https://www.kipjon.com',
     linkLabel: 'kipjon.com',
   },
-  jonathan: {
-    name: 'Jonathan Lavigne',
-    role: 'CEO, Latest Solutions',
-    bio: 'Jonathan leads Latest Solutions, which has helped IT teams roll out and adopt platforms like Ivanti and TeamDynamix since 2011, now including their AI features. He sees first-hand why the technology is rarely the hard part.',
-    href: '/about',
-    linkLabel: 'About Latest Solutions',
-  },
 };
 
 // Numbers shown in the strip under the home page hero.
