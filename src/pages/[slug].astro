@@ -42,7 +42,7 @@ const faqSchema = d.faqs && {
       <section class={d.cardsDark ? 'section dark' : 'section soft'}>
         <div class="container">
           {d.cardsTitle && <h2 class="center title-line reveal">{d.cardsTitle}</h2>}
-          <div class="grid stagger">
+          <div class:list={["grid stagger", { "grid-3": d.cards.length % 3 === 0 }]}>
             {d.cards.map((c) =>
               c.href ? (
                 <a class="card card-link reveal" href={c.href}>
