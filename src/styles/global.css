@@ -449,3 +449,29 @@ blockquote.quote { color: var(--heading); }
 .section.human { background: radial-gradient(ellipse 55% 70% at 0% 100%, rgba(76,154,113,0.3), transparent 65%), radial-gradient(ellipse 55% 70% at 100% 0%, rgba(42,110,106,0.35), transparent 65%), var(--bg-2); border-block: 1px solid var(--hair); }
 .section.human::before { content: none; }
 .section.human .hero-actions { margin-top: 32px; }
+
+/* Toggles that fold the mobile menu's sub-links; desktop uses hover dropdowns instead. */
+.sub-toggle { display: none; }
+@media (max-width: 860px) {
+  /* The open menu scrolls on its own, so long link lists never trap the screen. */
+  .main-nav { max-height: calc(100dvh - 72px); overflow-y: auto; overscroll-behavior: contain; padding: 4px 0 20px; }
+  .main-nav > ul { gap: 2px; }
+  .main-nav > ul > li, .mega-col { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+  .main-nav > ul > li > .mega, .mega-col > ul { grid-column: 1 / -1; }
+  .main-nav a { padding: 12px 12px; font-size: 1rem; border-radius: 10px; }
+  .main-nav > ul > li > a.active { background: rgba(255,255,255,0.06); }
+  .sub-toggle { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; color: var(--text); cursor: pointer; }
+  .sub-toggle::before { content: ''; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform 0.25s var(--ease); }
+  .open > .sub-toggle::before { transform: translateY(2px) rotate(-135deg); }
+  .sub-toggle:hover { background: rgba(255,255,255,0.06); }
+  .mega, .mega.mega-simple { display: none; width: auto; margin: 0 0 6px; padding: 4px 0 4px 12px; background: transparent; border: 0; border-left: 1px solid var(--hair); border-radius: 0; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .has-children .mega, .has-children:hover .mega, .has-children:focus-within .mega { position: static; transform: none; opacity: 1; visibility: visible; transition: none; }
+  .mega::before { content: none; }
+  .open > .mega { display: block; }
+  .mega-col > ul { display: none; padding: 0 0 6px 12px !important; border-left: 1px solid var(--hair); margin-left: 12px; }
+  .mega-col.open > ul { display: block; }
+  .main-nav .mega a { font-size: 0.95rem; padding: 10px 12px; color: var(--text); }
+  .main-nav .mega .mega-title { color: var(--white); font-weight: 500; font-size: 0.98rem; }
+  .main-nav a.btn { margin: 12px 0 0; padding: 0.9em 1.4em; }
+  .hero-image, .hero-badge { box-sizing: border-box; max-width: 100%; }
+}

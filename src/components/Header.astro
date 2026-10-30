@@ -24,12 +24,18 @@ const isActive = (item: NavItem): boolean =>
                 {item.label}
               </a>
               {item.children && (
+                <button type="button" class="sub-toggle" aria-expanded="false" aria-label={`Show ${item.label} links`}></button>
+              )}
+              {item.children && (
                 <div class:list={['mega', { 'mega-simple': !item.children.some((c) => c.children) }]}>
                   {item.children.map((group) => (
                     <div class="mega-col">
                       <a href={group.href} class:list={['mega-title', { active: group.href === path }]}>
                         {group.label}
                       </a>
+                      {group.children && (
+                        <button type="button" class="sub-toggle" aria-expanded="false" aria-label={`Show ${group.label} links`}></button>
+                      )}
                       {group.children && (
                         <ul>
                           {group.children.map((child) => (
@@ -60,4 +66,16 @@ const isActive = (item: NavItem): boolean =>
   const onScroll = () => header?.classList.toggle('scrolled', window.scrollY > 40);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Mobile menu: each platform's links fold away behind a small toggle so the menu stays short.
+  document.querySelectorAll<HTMLButtonElement>('.sub-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const open = btn.parentElement!.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+
+  // Close the mobile menu after picking a link (matters for on-page links like #contact).
+  const menu = document.querySelector<HTMLDetailsElement>('.mobile-toggle');
+  document.querySelectorAll('.main-nav a').forEach((a) => a.addEventListener('click', () => menu?.removeAttribute('open')));
 </script>

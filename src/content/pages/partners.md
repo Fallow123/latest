@@ -4,12 +4,13 @@ description: Explore the technology partners Latest Solutions works with to deli
 eyebrow: Partners
 heading: Technology partners we trust
 intro: We work with best-in-class vendors across customer sales and management, IT, operations and security.
+heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
 cardsTitle: Industry Pillars
 cards:
-  - { title: Customer Sales + Management, icon: /images/partners/customer.png }
-  - { title: IT, icon: /images/partners/it.png }
-  - { title: Operations, icon: /images/partners/operations.png }
-  - { title: Security, icon: /images/partners/security.png }
+  - { title: Customer Sales + Management, icon: /icons/users.svg, text: "CRM, customer service and conversation platforms that keep every customer interaction in one place." }
+  - { title: IT, icon: /icons/monitor-cog.svg, text: "Service, asset and endpoint management that keeps your IT team and your users running smoothly." }
+  - { title: Operations, icon: /icons/settings.svg, text: "Workflow automation and integrations that connect departments and cut manual work." }
+  - { title: Security, icon: /icons/shield-check.svg, text: "Privileged access, threat intelligence and vulnerability management that protect your people and data." }
 logos:
   - { name: Ivanti, href: 'https://www.ivanti.com/', image: /images/partners/ivanti.png }
   - { name: TeamDynamix, href: 'https://www.teamdynamix.com/', image: /images/shared/teamdynamix-logo-reversed.png }

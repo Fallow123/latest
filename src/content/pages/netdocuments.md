@@ -7,12 +7,12 @@ intro: "At Latest Solutions, we specialize in integrating top-tier business solu
 cta: { label: 'Request a Demo', href: '#contact' }
 cardsTitle: The NetDocuments platform
 cards:
-  - { title: "Organize", icon: /images/netdocuments/organize-white.png, text: "NetDocuments streamlines document management with cloud storage, email management, OCR, automation, file sync, and DocuSign integration." }
-  - { title: "Protect", icon: /images/netdocuments/protect-white.png, text: "Ethical walls, data loss prevention, secure storage (FlexStore), and encryption key management." }
-  - { title: "Plan", icon: /images/netdocuments/plan-white.png, text: "Chat integration with Microsoft Teams, real-time messaging, legal task management, and collaborative document viewing." }
-  - { title: "Deliver", icon: /images/netdocuments/deliver-white.png, text: "Document automation, extranet solutions, and document bundling." }
-  - { title: "Learn", icon: /images/netdocuments/learn-white.png, text: "Enterprise search and analytics for smarter document insights." }
-  - { title: "AI", icon: /images/netdocuments/ai-icon.png, text: "AI-powered legal assistant and AI app builder." }
+  - { title: "Organize", icon: /icons/folder-tree.svg, text: "NetDocuments streamlines document management with cloud storage, email management, OCR, automation, file sync, and DocuSign integration." }
+  - { title: "Protect", icon: /icons/shield-check.svg, text: "Ethical walls, data loss prevention, secure storage (FlexStore), and encryption key management." }
+  - { title: "Plan", icon: /icons/calendar-check.svg, text: "Chat integration with Microsoft Teams, real-time messaging, legal task management, and collaborative document viewing." }
+  - { title: "Deliver", icon: /icons/send.svg, text: "Document automation, extranet solutions, and document bundling." }
+  - { title: "Learn", icon: /icons/graduation-cap.svg, text: "Enterprise search and analytics for smarter document insights." }
+  - { title: "AI", icon: /icons/sparkles.svg, text: "AI-powered legal assistant and AI app builder." }
 cardsDark: true
 heroImage: { src: /images/netdocuments/netdocuments-logo-white.png, alt: NetDocuments logo }
 ---

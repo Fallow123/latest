@@ -6,12 +6,12 @@ heading: Transform Customer Conversations with Intercom
 intro: "At Latest Solutions, we help organizations modernize the way they connect with their customers. With Intercom, you can deliver faster, more personal, and more effective interactions across every digital channel. From support to sales to engagement, Intercom brings conversational AI and automation together so your team can scale without losing the human touch."
 cardsTitle: Why Intercom?
 cards:
-  - { title: "Provide Conversation Support", icon: /images/intercom/conversations.png, text: "Use AI chatbots and live chat to resolve issues instantly." }
-  - { title: "Engage Proactively", icon: /images/intercom/engage.png, text: "Send targeted, behavior-based messages that guide customers at the right moment." }
-  - { title: "Boost Sales & Conversions", icon: /images/intercom/improve.png, text: "Turn conversations into revenue by engaging leads in real time." }
-  - { title: "Unify Communication Channels", icon: /images/intercom/unify.png, text: "Manage email, in-app, web, and social messaging in one place." }
-  - { title: "Automate with AI", icon: /images/intercom/ai.png, text: "Reduce support costs while improving response times and satisfaction." }
-  - { title: "Best AI Agent", icon: /images/intercom/fin.png, text: "Deliver instant, accurate answers 24/7. Fin set the standard for AI-powered customer support." }
+  - { title: "Provide Conversation Support", icon: /icons/messages-square.svg, text: "Use AI chatbots and live chat to resolve issues instantly." }
+  - { title: "Engage Proactively", icon: /icons/megaphone.svg, text: "Send targeted, behavior-based messages that guide customers at the right moment." }
+  - { title: "Boost Sales & Conversions", icon: /icons/trending-up.svg, text: "Turn conversations into revenue by engaging leads in real time." }
+  - { title: "Unify Communication Channels", icon: /icons/layers.svg, text: "Manage email, in-app, web, and social messaging in one place." }
+  - { title: "Automate with AI", icon: /icons/bot.svg, text: "Reduce support costs while improving response times and satisfaction." }
+  - { title: "Best AI Agent", icon: /icons/sparkles.svg, text: "Deliver instant, accurate answers 24/7. Fin set the standard for AI-powered customer support." }
 cardsDark: true
 heroImage: { src: /images/intercom/intercom-logo.png, alt: Intercom logo }
 ---
