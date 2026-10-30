@@ -74,6 +74,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       );
 
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+      // Cards get a soft spotlight that follows the pointer (see .card::after).
+      document.querySelectorAll<HTMLElement>('.card').forEach((card) => {
+        card.addEventListener('pointermove', (e) => {
+          const r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+          card.style.setProperty('--my', `${e.clientY - r.top}px`);
+        });
+      });
     </script>
   </body>
 </html>

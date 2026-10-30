@@ -475,3 +475,81 @@ blockquote.quote { color: var(--heading); }
   .main-nav a.btn { margin: 12px 0 0; padding: 0.9em 1.4em; }
   .hero-image, .hero-badge { box-sizing: border-box; max-width: 100%; }
 }
+
+/* ===================================================================
+   Sleek pass: quieter colour, finer type, crisper surfaces, softer motion.
+   =================================================================== */
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --edge: rgba(255, 255, 255, 0.08);
+  --edge-hi: rgba(255, 255, 255, 0.16);
+}
+
+/* A whisper of film grain over the whole page, so the flat navy reads as a material */
+body::after { content: ''; position: fixed; inset: 0; z-index: 100; pointer-events: none; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+/* Type: lighter, tighter headings and calmer body copy */
+h1, h2, h3 { font-weight: 600; }
+h1 { letter-spacing: -0.04em; line-height: 1.04; font-size: clamp(2.3rem, 5.2vw, 4rem); }
+h2 { letter-spacing: -0.032em; line-height: 1.1; }
+h3 { letter-spacing: -0.015em; font-weight: 500; }
+.hero h1 { background: linear-gradient(180deg, #ffffff 30%, #b9d7cf 100%); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 0.04em; }
+.lead, .section-head p:not(.eyebrow) { font-weight: 400; letter-spacing: -0.005em; }
+.card p, .prose p, .faq-list details p { line-height: 1.7; }
+
+/* Spacing rhythm: one scale for every section */
+.section { padding: clamp(80px, 9vw, 120px) 0; }
+.section-head { margin-bottom: clamp(36px, 4vw, 56px); }
+
+/* Eyebrows go neutral, so green is reserved for actions and a single accent dot */
+.eyebrow, .hero .eyebrow, .section.dark .eyebrow { color: #c3cfdc; background: rgba(255,255,255,0.04); border-color: var(--edge); font-weight: 500; letter-spacing: 0.01em; }
+.eyebrow-link:hover { background: rgba(255,255,255,0.08); border-color: var(--edge-hi); color: var(--white); }
+
+/* Hero: a slow, drifting mesh of brand colour under the grid */
+.hero::before { inset: -35% -20% auto auto; background: radial-gradient(circle at 30% 30%, rgba(76,154,113,0.28), transparent 55%), radial-gradient(circle at 70% 60%, rgba(36,100,108,0.32), transparent 55%), radial-gradient(circle at 40% 80%, rgba(3,63,99,0.55), transparent 60%); filter: blur(40px); animation: mesh 22s ease-in-out infinite alternate; }
+@keyframes mesh { 0% { transform: translate(0, 0) rotate(0deg) scale(1); } 50% { transform: translate(-10vw, 6vh) rotate(12deg) scale(1.1); } 100% { transform: translate(-18vw, 12vh) rotate(-6deg) scale(1.05); } }
+.hero::after { background-size: 64px 64px; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); }
+.hero .lead { color: #9fb1c6; }
+
+/* Surfaces: hairline borders with a lit top edge, and a soft spotlight that follows the cursor */
+.card, .partner-panel, .stats-grid, .form.card, .signup { border-color: var(--edge); background-clip: padding-box; }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.012)); box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 1px 2px rgba(0,0,0,0.2); overflow: hidden; }
+.card::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity 0.4s var(--ease-out); background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), rgba(143,209,156,0.09), transparent 45%); }
+.card:hover::after { opacity: 1; }
+.grid .card:hover, .section.dark .grid .card:hover { transform: translateY(-3px); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.018)); border-color: var(--edge-hi); box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 24px 48px -24px rgba(0,0,0,0.7); }
+.card .icon, .section.dark .card .icon { background: rgba(255,255,255,0.04); box-shadow: inset 0 0 0 1px var(--edge); }
+.num, .section.dark .num { background: rgba(255,255,255,0.04); box-shadow: inset 0 0 0 1px var(--edge); }
+.solution-logo { background: radial-gradient(ellipse at 100% 0%, rgba(42,110,106,0.35), transparent 65%), rgba(255,255,255,0.025); box-shadow: inset 0 0 0 1px var(--edge); }
+.pill-list li, .section.dark .pill-list li { background: transparent; border-color: var(--edge); color: #a9b8ca; }
+
+/* Buttons: a softer green with a lit edge; the secondary button is pure outline */
+.btn { background: linear-gradient(180deg, #6fc27d, #55a865); color: #04261b; box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(0,0,0,0.12), 0 8px 24px -10px rgba(92,176,108,0.6); }
+.btn:hover { background: linear-gradient(180deg, #7dcd8a, #5fb36f); }
+.btn-outline, .btn-outline:hover { background: transparent; }
+.btn-outline { color: var(--white); box-shadow: inset 0 0 0 1px var(--edge-hi); }
+.btn-outline:hover { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4); }
+
+/* Header: thinner and quieter */
+.site-header { background: rgba(2, 26, 45, 0.72); border-bottom-color: var(--edge); }
+.site-header.scrolled { background: rgba(2, 26, 45, 0.85); }
+.header-inner { min-height: 68px; }
+.scrolled .header-inner { min-height: 60px; }
+.main-nav a { font-size: 0.88rem; color: #aebdcf; }
+.main-nav > ul > li > a.active { background: rgba(255,255,255,0.06); color: var(--white); }
+.announce { font-size: 0.82rem; }
+
+/* Footer: calmer columns and a quiet bottom bar */
+.site-footer { background: #01131f; color: #7f91a7; }
+.site-footer::before { background: linear-gradient(90deg, transparent, var(--edge-hi), transparent); }
+.site-footer a { color: #aebdcf; }
+.site-footer a:hover { color: var(--white); }
+.site-footer h4 { color: #7f91a7; font-weight: 500; }
+.footer-bottom { border-top-color: var(--edge); color: #64768c; }
+
+/* Motion: content eases up with a slight blur, like coming into focus */
+.js .reveal { opacity: 0; transform: translateY(16px); filter: blur(6px); transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out), filter 0.9s var(--ease-out); }
+.js .reveal.in { opacity: 1; transform: none; filter: none; }
+.js .grid .card.reveal, .js .logo-wall a.reveal { transition: opacity 0.9s var(--ease-out), transform 0.6s var(--ease-out), filter 0.9s var(--ease-out), box-shadow 0.3s, border-color 0.3s, background 0.3s; }
+.hero-text > * { animation: rise-in 1s var(--ease-out) both; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+@media (prefers-reduced-motion: reduce) { .js .reveal { filter: none; } }
