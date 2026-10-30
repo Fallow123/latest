@@ -4,7 +4,7 @@ description: Explore the technology partners Latest Solutions works with to deli
 eyebrow: Partners
 heading: Technology partners we trust
 intro: We work with best-in-class vendors across customer sales and management, IT, operations and security.
-heroImage: { src: /images/shared/ls-emblem-white.png, alt: Latest Solutions emblem }
+heroImage: { src: /images/brand/emblem-glimmer.webp, still: /images/brand/emblem.png, alt: Latest Solutions emblem }
 cardsTitle: Industry Pillars
 cards:
   - { title: Customer Sales + Management, icon: /icons/users.svg, text: "CRM, customer service and conversation platforms that keep every customer interaction in one place." }

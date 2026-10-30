@@ -22,7 +22,7 @@ const pages = defineCollection({
     intro: z.string().optional(),
     cta: z.object({ label: z.string(), href: z.string() }).optional(),
     // Optional picture shown beside the hero text (path under /public)
-    heroImage: z.object({ src: z.string(), alt: z.string() }).optional(),
+    heroImage: z.object({ src: z.string(), alt: z.string(), still: z.string().optional() }).optional(), // still: shown instead of an animated src to visitors who prefer less motion
     // Optional grid of cards shown under the hero
     cardsTitle: z.string().optional(),
     cards: z.array(card).optional(),
