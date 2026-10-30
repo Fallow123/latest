@@ -38,8 +38,31 @@ const pages = defineCollection({
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     // Show bullet lists as a 2-column checklist (on by default when services is on)
     checklist: z.boolean().optional(),
+    // People shown as speaker cards near the bottom (keys from `speakers` in src/site.ts)
+    speakersTitle: z.string().optional(),
+    speakers: z.array(z.string()).optional(),
     // Show the "Request your discovery call" form at the bottom (default yes)
     contactForm: z.boolean().default(true),
+  }),
+});
+
+// Every Markdown file in src/content/webinars becomes a session page at /webinars/<file-name>.
+// Leave out `date` until it is set; the session shows as "Date coming soon".
+// Leave out `registerUrl` until registration opens; visitors can sign up to be notified instead.
+// Once the date has passed, the session moves to "Past sessions" and shows `recordingUrl` if set.
+const webinars = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/webinars' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(), // Google snippet
+    summary: z.string(), // one or two lines shown on cards
+    date: z.coerce.date().optional(), // e.g. 2026-11-20T17:00:00Z (the start time, in UTC)
+    time: z.string().optional(), // shown as written, e.g. "12:00 PM ET / 9:00 AM PT"
+    format: z.string().default('Live online · 60 minutes · Free'),
+    speakers: z.array(z.string()),
+    takeaways: z.array(z.string()).optional(),
+    registerUrl: z.string().optional(),
+    recordingUrl: z.string().optional(),
   }),
 });
 
@@ -56,8 +79,10 @@ const home = defineCollection({
     benefits: z.array(card),
     cta: z.object({ title: z.string(), text: z.string() }),
     expertise: z.array(z.string()), // Ivanti skills shown as tags
+    // "The human side of AI" band: links to the consulting page and the webinars
+    humanSide: z.object({ title: z.string(), text: z.string(), cards: z.array(card) }).optional(),
 
   }),
 });
 
-export const collections = { pages, home };
+export const collections = { pages, webinars, home };

@@ -24,7 +24,7 @@ const isActive = (item: NavItem): boolean =>
                 {item.label}
               </a>
               {item.children && (
-                <div class="mega">
+                <div class:list={['mega', { 'mega-simple': !item.children.some((c) => c.children) }]}>
                   {item.children.map((group) => (
                     <div class="mega-col">
                       <a href={group.href} class:list={['mega-title', { active: group.href === path }]}>

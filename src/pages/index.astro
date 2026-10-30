@@ -2,10 +2,11 @@
 // Home page. The words live in src/content/home.md; this file only lays them out.
 import { getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { site, stats } from '../site';
+import { site, speakers, stats } from '../site';
 
 const home = (await getEntry('home', 'home'))!;
 const d = home.data;
+const humanHosts = [speakers.kip, speakers.jonathan];
 ---
 
 <Base title={d.title} description={d.description}>
@@ -62,6 +63,35 @@ const d = home.data;
       </div>
     </div>
   </section>
+
+  {
+    d.humanSide && (
+      <section class="section dark human">
+        <div class="container human-grid">
+          <div class="reveal">
+            <p class="eyebrow">New · Leadership &amp; AI</p>
+            <h2 class="title-line">{d.humanSide.title}</h2>
+            <p>{d.humanSide.text}</p>
+            <div class="host-row">
+              {humanHosts.map((h) =>
+                h.photo ? <img class="avatar" src={h.photo} alt="" /> : <span class="avatar" aria-hidden="true">{h.name.split(' ').map((w) => w[0]).join('')}</span>
+              )}
+              <span>{humanHosts.map((h) => h.name).join(' & ')}</span>
+            </div>
+          </div>
+          <div class="human-cards stagger">
+            {d.humanSide.cards.map((c) => (
+              <a class="card card-link reveal" href={c.href}>
+                <h3>{c.title}</h3>
+                <p>{c.text}</p>
+                <span class="more">Learn more →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   <section class="section soft">
     <div class="container two-col">

@@ -1,0 +1,28 @@
+---
+// "Notify me" signup for the webinar series. Submissions go to Netlify Forms (form name: webinar-signup).
+interface Props { session?: string; title?: string; text?: string }
+const {
+  session = 'Whole series',
+  title = 'Get notified about new sessions',
+  text = 'Leave your email and we will send you the date and registration link for each session. No spam, unsubscribe any time.',
+} = Astro.props;
+---
+
+<div class="signup card reveal">
+  <div>
+    <h3>{title}</h3>
+    <p>{text}</p>
+  </div>
+  <form class="form" name="webinar-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="webinar-signup" />
+    <input type="hidden" name="session" value={session} />
+    <p class="visually-hidden" aria-hidden="true">
+      <label>Leave this empty<input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+    </p>
+    <div class="form-row">
+      <label>Name<input name="name" autocomplete="name" required /></label>
+      <label>Work email<input type="email" name="email" autocomplete="email" required /></label>
+    </div>
+    <button type="submit" class="btn">Notify me</button>
+  </form>
+</div>

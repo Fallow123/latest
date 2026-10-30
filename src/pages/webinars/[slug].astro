@@ -1,0 +1,95 @@
+---
+// One page per webinar session, from src/content/webinars/<slug>.md.
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import SpeakerCards from '../../components/SpeakerCards.astro';
+import WebinarSignup from '../../components/WebinarSignup.astro';
+import { speakers, webinarSeries } from '../../site';
+import { isUpcoming, formatDate, type Webinar } from '../../webinars';
+
+export async function getStaticPaths() {
+  const webinars = await getCollection('webinars');
+  return webinars.map((w) => ({ params: { slug: w.id }, props: { w } }));
+}
+
+const { w } = Astro.props as { w: Webinar };
+const d = w.data;
+const { Content } = await render(w);
+const upcoming = isUpcoming(w);
+const hosts = d.speakers.map((k) => speakers[k]?.name).filter(Boolean).join(' & ');
+
+// Lets Google show the session as an event in search results.
+const eventSchema = d.date && {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: d.title,
+  description: d.description,
+  startDate: d.date.toISOString(),
+  eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+  location: { '@type': 'VirtualLocation', url: d.registerUrl ?? Astro.url.href },
+  organizer: { '@type': 'Organization', name: 'Latest Solutions', url: 'https://www.latestsolutions.io' },
+  isAccessibleForFree: true,
+};
+---
+
+<Base title={`${d.title} | Webinar | Latest Solutions`} description={d.description} contactForm={false}>
+  <section class="hero">
+    <div class="container hero-split">
+      <div class="hero-text">
+        <p class="eyebrow"><a href="/webinars">{webinarSeries.name}</a></p>
+        <h1>{d.title}</h1>
+        <p class="lead">{d.summary}</p>
+        <div class="hero-actions">
+          {upcoming && d.registerUrl && <a class="btn" href={d.registerUrl} target="_blank" rel="noopener">Register free</a>}
+          {upcoming && !d.registerUrl && <a class="btn" href="#signup">Notify me when registration opens</a>}
+          {!upcoming && d.recordingUrl && <a class="btn" href={d.recordingUrl} target="_blank" rel="noopener">Watch the recording</a>}
+        </div>
+      </div>
+      <dl class="event-facts">
+        <div><dt>When</dt><dd>{formatDate(w)}{d.time && <br />}{d.time}</dd></div>
+        <div><dt>Format</dt><dd>{d.format}</dd></div>
+        <div><dt>Hosts</dt><dd>{hosts}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div class="prose reveal"><Content /></div>
+      {
+        d.takeaways && (
+          <div class="card takeaways reveal">
+            <p class="eyebrow">You'll leave with</p>
+            <ul>{d.takeaways.map((t) => <li>{t}</li>)}</ul>
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Speakers</p>
+        <h2 class="title-line">Who you'll hear from</h2>
+      </div>
+      <SpeakerCards keys={d.speakers} />
+    </div>
+  </section>
+
+  {
+    upcoming && !d.registerUrl && (
+      <section id="signup" class="section cta-band">
+        <div class="container">
+          <WebinarSignup
+            session={d.title}
+            title="Be first to hear when registration opens"
+            text="We are finalizing the date. Leave your email and we will send you the registration link as soon as it is live."
+          />
+        </div>
+      </section>
+    )
+  }
+
+  {eventSchema && <script type="application/ld+json" set:html={JSON.stringify(eventSchema)} />}
+</Base>

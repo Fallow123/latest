@@ -1,0 +1,29 @@
+---
+// Slim bar above the header promoting the next webinar. Hidden when there is none,
+// and hidden in the browser once the session's start time has passed.
+import { speakers } from '../site';
+import { getWebinars, shortDate } from '../webinars';
+const next = (await getWebinars()).upcoming[0];
+const hosts = next?.data.speakers.map((k) => speakers[k]?.name).filter(Boolean).join(' & ');
+---
+
+{
+  next && (
+    <div class="announce" data-ends={next.data.date?.toISOString()}>
+      <div class="container">
+        <span class="announce-tag">Free webinar</span>
+        <a href={`/webinars/${next.id}`}>
+          <strong>{next.data.title}</strong>
+          <span class="announce-date">{next.data.date ? ` · ${shortDate(next)}` : ` · with ${hosts}`}</span>
+          <span class="announce-cta">{next.data.registerUrl ? 'Register' : 'Learn more'} →</span>
+        </a>
+      </div>
+    </div>
+  )
+}
+
+<script>
+  const bar = document.querySelector<HTMLElement>('.announce');
+  const ends = bar?.dataset.ends;
+  if (bar && ends && new Date(ends).getTime() < Date.now()) bar.remove();
+</script>

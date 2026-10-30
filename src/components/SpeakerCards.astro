@@ -1,0 +1,31 @@
+---
+// Speaker / collaborator cards. Pass keys from `speakers` in src/site.ts.
+import { speakers } from '../site';
+interface Props { keys: string[] }
+const people = Astro.props.keys.map((k) => speakers[k]).filter(Boolean);
+const initials = (name: string) => name.split(' ').map((w) => w[0]).join('').slice(0, 2);
+---
+
+<div class="speakers stagger">
+  {
+    people.map((p) => (
+      <div class="speaker card reveal">
+        {p.photo ? (
+          <img class="avatar" src={p.photo} alt={p.name} width="96" height="96" loading="lazy" />
+        ) : (
+          <span class="avatar" aria-hidden="true">{initials(p.name)}</span>
+        )}
+        <div>
+          <h3>{p.name}</h3>
+          <p class="speaker-role">{p.role}</p>
+          <p>{p.bio}</p>
+          {p.href && (
+            <a class="more" href={p.href} target={p.href.startsWith('http') ? '_blank' : undefined} rel="noopener">
+              {p.linkLabel ?? 'Learn more'} →
+            </a>
+          )}
+        </div>
+      </div>
+    ))
+  }
+</div>
