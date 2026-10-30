@@ -59,6 +59,9 @@ const suggestions = [
   const STORE = 'ls-chat';
 
   const root = document.querySelector<HTMLElement>('[data-chat]')!;
+  // Netlify adds a "Powered by Netlify" badge to the bottom-right corner (it can't be
+  // hidden on the free plan). When its script is on the page, lift the chat above it.
+  if (document.querySelector('script[data-nf-variant]')) root.classList.add('above-badge');
   const toggle = root.querySelector<HTMLButtonElement>('[data-chat-toggle]')!;
   const panel = root.querySelector<HTMLElement>('[data-chat-panel]')!;
   const log = root.querySelector<HTMLElement>('[data-chat-log]')!;
