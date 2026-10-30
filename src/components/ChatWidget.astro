@@ -1,0 +1,215 @@
+---
+// The "Ask us anything" chat bubble shown on every page. Answers come from
+// netlify/functions/chat.mts, which reads the site's own content.
+const suggestions = [
+  'Which Ivanti products do you support?',
+  'Can you help us with NetDocuments?',
+  'How do I book a discovery call?',
+];
+---
+
+<div class="chat" data-chat>
+  <button class="chat-toggle" type="button" aria-expanded="false" aria-controls="chat-panel" data-chat-toggle>
+    <svg class="chat-icon-open" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+      <path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 6.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z" />
+    </svg>
+    <svg class="chat-icon-close" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18" />
+    </svg>
+    <span class="chat-toggle-label">Ask us</span>
+  </button>
+
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-label="Chat with Latest Solutions" hidden data-chat-panel>
+    <header class="chat-head">
+      <div>
+        <p class="chat-title">Ask Latest Solutions</p>
+        <p class="chat-sub">Answers from our site, with links to the right page.</p>
+      </div>
+      <button class="chat-close" type="button" aria-label="Close chat" data-chat-close>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18" />
+        </svg>
+      </button>
+    </header>
+
+    <div class="chat-log" aria-live="polite" data-chat-log>
+      <div class="chat-msg bot">
+        <p>Hi! Ask me about our Ivanti, NetDocuments or TeamDynamix services, or anything else on this site.</p>
+      </div>
+      <div class="chat-suggestions" data-chat-suggestions>
+        {suggestions.map((s) => <button type="button" class="chat-chip">{s}</button>)}
+      </div>
+    </div>
+
+    <form class="chat-form" data-chat-form>
+      <label class="visually-hidden" for="chat-input">Your question</label>
+      <textarea id="chat-input" rows="1" maxlength="1000" placeholder="Type your question…" required data-chat-input></textarea>
+      <button type="submit" class="chat-send" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12.6 2-12.6 2z" />
+        </svg>
+      </button>
+    </form>
+    <p class="chat-note">AI answers can be wrong. For anything important, email <a href="mailto:hello@latestsolutions.io">hello@latestsolutions.io</a>.</p>
+  </section>
+</div>
+
+<script>
+  type Turn = { role: 'user' | 'assistant'; content: string };
+  const STORE = 'ls-chat';
+
+  const root = document.querySelector<HTMLElement>('[data-chat]')!;
+  const toggle = root.querySelector<HTMLButtonElement>('[data-chat-toggle]')!;
+  const panel = root.querySelector<HTMLElement>('[data-chat-panel]')!;
+  const log = root.querySelector<HTMLElement>('[data-chat-log]')!;
+  const form = root.querySelector<HTMLFormElement>('[data-chat-form]')!;
+  const input = root.querySelector<HTMLTextAreaElement>('[data-chat-input]')!;
+  const suggestions = root.querySelector<HTMLElement>('[data-chat-suggestions]')!;
+
+  // The conversation survives moving between pages (until the tab is closed).
+  let history: Turn[] = [];
+  try {
+    history = JSON.parse(sessionStorage.getItem(STORE) || '[]');
+  } catch {}
+  const save = () => {
+    try {
+      sessionStorage.setItem(STORE, JSON.stringify(history.slice(-20)));
+    } catch {}
+  };
+
+  const escape = (s: string) =>
+    s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+  // A small Markdown subset: paragraphs, bullet lists, **bold** and links.
+  // Only on-site paths and our email address become links.
+  const inline = (s: string) =>
+    escape(s)
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (match, label, href) => {
+        const safe = /^\/(?!\/)[\w\-/#]*$/.test(href) || /^#[\w-]+$/.test(href) || href === 'mailto:hello@latestsolutions.io';
+        return safe ? `<a href="${href}">${label}</a>` : label;
+      });
+  const render = (text: string) => {
+    let html = '';
+    let list = false;
+    for (const raw of text.split('\n')) {
+      const line = raw.trim();
+      const item = line.match(/^(?:[-*•]|\d+\.)\s+(.*)$/);
+      if (item) {
+        if (!list) (html += '<ul>'), (list = true);
+        html += `<li>${inline(item[1])}</li>`;
+        continue;
+      }
+      if (list) (html += '</ul>'), (list = false);
+      if (line) html += `<p>${inline(line.replace(/^#+\s*/, ''))}</p>`;
+    }
+    return html + (list ? '</ul>' : '');
+  };
+
+  const addBubble = (role: Turn['role'], text = '') => {
+    const el = document.createElement('div');
+    el.className = `chat-msg ${role === 'user' ? 'user' : 'bot'}`;
+    if (role === 'user') el.textContent = text;
+    else el.innerHTML = render(text);
+    log.append(el);
+    log.scrollTop = log.scrollHeight;
+    return el;
+  };
+
+  history.forEach((t) => addBubble(t.role, t.content));
+  if (history.length) suggestions.hidden = true;
+
+  const setOpen = (open: boolean) => {
+    panel.hidden = !open;
+    root.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) {
+      log.scrollTop = log.scrollHeight;
+      if (matchMedia('(min-width: 640px)').matches) input.focus();
+    }
+  };
+  toggle.addEventListener('click', () => setOpen(panel.hidden));
+  root.querySelector('[data-chat-close]')!.addEventListener('click', () => {
+    setOpen(false);
+    toggle.focus();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !panel.hidden) setOpen(false);
+  });
+
+  // A link to the contact form scrolls to it when this page has one.
+  log.addEventListener('click', (e) => {
+    const a = (e.target as HTMLElement).closest('a');
+    const hash = a?.getAttribute('href')?.match(/^\/?#([\w-]+)$/)?.[1];
+    const target = hash && document.getElementById(hash);
+    if (target) {
+      e.preventDefault();
+      if (!matchMedia('(min-width: 640px)').matches) setOpen(false);
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  let busy = false;
+  const ask = async (question: string) => {
+    if (busy || !question.trim()) return;
+    busy = true;
+    suggestions.hidden = true;
+    history.push({ role: 'user', content: question.trim() });
+    addBubble('user', question.trim());
+    const bubble = addBubble('assistant');
+    bubble.classList.add('typing');
+    bubble.innerHTML = '<span></span><span></span><span></span>';
+
+    let answer = '';
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: history }),
+      });
+      if (!res.ok || !res.body) throw new Error(String(res.status));
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        answer += decoder.decode(value, { stream: true });
+        bubble.classList.remove('typing');
+        bubble.innerHTML = render(answer);
+        log.scrollTop = log.scrollHeight;
+      }
+    } catch {
+      answer = '';
+    }
+    if (!answer.trim()) {
+      history.pop();
+      bubble.classList.remove('typing');
+      bubble.innerHTML = render(
+        "Sorry, I couldn't answer just now. Please try again, or email us at [hello@latestsolutions.io](mailto:hello@latestsolutions.io)."
+      );
+    } else {
+      history.push({ role: 'assistant', content: answer });
+      save();
+    }
+    busy = false;
+  };
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = input.value;
+    input.value = '';
+    input.style.height = '';
+    ask(q);
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      form.requestSubmit();
+    }
+  });
+  input.addEventListener('input', () => {
+    input.style.height = '';
+    input.style.height = `${Math.min(input.scrollHeight, 120)}px`;
+  });
+  suggestions.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => ask(b.textContent || '')));
+</script>
