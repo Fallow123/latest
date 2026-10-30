@@ -1,0 +1,92 @@
+---
+// The webinar series hub. Sessions live in src/content/webinars; series text in src/site.ts.
+import Base from '../../layouts/Base.astro';
+import SpeakerCards from '../../components/SpeakerCards.astro';
+import WebinarSignup from '../../components/WebinarSignup.astro';
+import { webinarSeries } from '../../site';
+import { getWebinars, formatDate } from '../../webinars';
+
+const { upcoming, past } = await getWebinars();
+---
+
+<Base
+  title={`Webinars: ${webinarSeries.name} | Latest Solutions`}
+  description="Free webinars on behavioral science, leadership and AI adoption, co-hosted by Latest Solutions and applied behavioral scientist Kip Jon."
+  contactForm={false}
+>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <p class="eyebrow">Webinar series</p>
+        <h1>{webinarSeries.name}</h1>
+        <p class="lead">{webinarSeries.intro}</p>
+        <div class="hero-actions">
+          <a class="btn" href={upcoming[0] ? `/webinars/${upcoming[0].id}` : '#signup'}>See the next session</a>
+          <a class="btn btn-outline" href="#signup">Get notified</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Upcoming</p>
+        <h2 class="title-line">Upcoming sessions</h2>
+      </div>
+      {upcoming.length === 0 && <p class="reveal">New sessions are being scheduled. Sign up below and we will let you know.</p>}
+      <div class="sessions stagger">
+        {
+          upcoming.map((w) => (
+            <a class="card card-link session reveal" href={`/webinars/${w.id}`}>
+              <span class="session-date">{formatDate(w)}{w.data.time && ` · ${w.data.time}`}</span>
+              <h3>{w.data.title}</h3>
+              <p>{w.data.summary}</p>
+              <span class="more">{w.data.registerUrl ? 'Register' : 'Details'} →</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Your hosts</p>
+        <h2 class="title-line">Technology meets behavioral science</h2>
+        <p>Latest Solutions brings two decades of rolling out IT and AI platforms. Kip brings the science of why people do what they do. Together we cover both halves of change.</p>
+      </div>
+      <SpeakerCards keys={['kip', 'jonathan']} />
+    </div>
+  </section>
+
+  {
+    past.length > 0 && (
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">On demand</p>
+            <h2 class="title-line">Past sessions</h2>
+          </div>
+          <div class="sessions stagger">
+            {past.map((w) => (
+              <a class="card card-link session reveal" href={`/webinars/${w.id}`}>
+                <span class="session-date">{formatDate(w)}</span>
+                <h3>{w.data.title}</h3>
+                <p>{w.data.summary}</p>
+                <span class="more">{w.data.recordingUrl ? 'Watch the recording' : 'Details'} →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <section id="signup" class="section cta-band">
+    <div class="container">
+      <WebinarSignup />
+    </div>
+  </section>
+</Base>

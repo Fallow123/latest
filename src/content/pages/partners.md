@@ -22,3 +22,7 @@ logos:
 ---
 
 Want to know which partner fits your environment? Book a free consultation and we'll map it out with you.
+
+## Collaborators
+
+**[Kip Jon](https://www.kipjon.com)** is a leadership coach and applied behavioral scientist. Together we offer [Behavioral Science for Leadership](/behavioral-science-leadership) consulting and co-host the free webinar series [Staying Human in the Age of AI](/webinars).

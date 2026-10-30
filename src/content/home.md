@@ -54,5 +54,15 @@ benefits:
 cta:
   title: Let us improve the collective brilliance of your team.
   text: "We sell top IT software AND provide a complete IT consulting services list, which includes implementation, training, and ongoing support. Get both IT consultancy and services with Latest Solutions\u2014and get the best results from your new software."
+humanSide:
+  title: The human side of AI
+  text: "Rolling out AI is a technology project and a people project. Together with applied behavioral scientist Kip Jon, we help leaders with the part that usually decides whether it works: how people actually behave."
+  cards:
+    - title: Behavioral Science for Leadership
+      href: /behavioral-science-leadership
+      text: "Working sessions, programs and coaching that help leaders turn change, including AI, into how their teams actually work."
+    - title: "Webinar series: Staying Human in the Age of AI"
+      href: /webinars
+      text: "Free live sessions on behavioral science, leadership and AI adoption. First up: The Humaning Side of AI."
 expertise: [Service Manager, Asset Manager, Endpoint Management, Security Controls, Patching, Neurons, Automation, GRC, Xtraction, Integrations, Reporting, Cloud and On-Premises, Ivanti Legacy Products, MSP Provider, Project Management]
 ---

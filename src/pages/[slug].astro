@@ -2,6 +2,7 @@
 // Renders every Markdown file in src/content/pages as its own page.
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import SpeakerCards from '../components/SpeakerCards.astro';
 import { implementationServices } from '../site';
 
 export async function getStaticPaths() {
@@ -104,6 +105,20 @@ const faqSchema = d.faqs && {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    d.speakers && (
+      <section class="section soft">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">The team</p>
+            <h2 class="title-line">{d.speakersTitle ?? 'Who you will work with'}</h2>
+          </div>
+          <SpeakerCards keys={d.speakers} />
         </div>
       </section>
     )

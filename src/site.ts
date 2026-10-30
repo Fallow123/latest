@@ -55,9 +55,45 @@ export const nav: NavItem[] = [
       { label: 'Intercom', href: '/intercom' },
     ],
   },
+  {
+    label: 'Leadership & AI',
+    href: '/behavioral-science-leadership',
+    children: [
+      { label: 'Behavioral Science for Leadership', href: '/behavioral-science-leadership' },
+      { label: 'Webinars', href: '/webinars' },
+    ],
+  },
   { label: 'Partners', href: '/partners' },
   { label: 'About', href: '/about' },
 ];
+
+// The webinar series. Each session is a Markdown file in src/content/webinars.
+export const webinarSeries = {
+  name: 'Staying Human in the Age of AI',
+  intro:
+    'A free webinar series on behavioral science, leadership and AI, co-hosted by Latest Solutions and applied behavioral scientist Kip Jon. Why people adopt (or quietly avoid) new technology, and what leaders can do about it.',
+};
+
+// Speakers and collaborators, referred to by their key (e.g. "kip") in webinar
+// and page front matter. Add a photo by dropping a square image in
+// /public/images/speakers and setting photo to its path.
+export type Speaker = { name: string; role: string; bio: string; photo?: string; href?: string; linkLabel?: string };
+export const speakers: Record<string, Speaker> = {
+  kip: {
+    name: 'Kip Jon',
+    role: 'Leadership coach and applied behavioral scientist',
+    bio: 'Kip is an award-winning executive coach with more than 20 years working with leaders on what sits underneath behavior. He has spoken for organizations including AstraZeneca, Novartis, Pepsi and Ford, and his work starts from one idea: look beneath the behavior.',
+    href: 'https://www.kipjon.com',
+    linkLabel: 'kipjon.com',
+  },
+  jonathan: {
+    name: 'Jonathan Lavigne',
+    role: 'CEO, Latest Solutions',
+    bio: 'Jonathan leads Latest Solutions, which has helped IT teams roll out and adopt platforms like Ivanti and TeamDynamix since 2011, now including their AI features. He sees first-hand why the technology is rarely the hard part.',
+    href: '/about',
+    linkLabel: 'About Latest Solutions',
+  },
+};
 
 // Numbers shown in the strip under the home page hero.
 // A number with a "+" or plain digits counts up when it scrolls into view.
