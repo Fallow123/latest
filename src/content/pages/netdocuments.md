@@ -4,6 +4,7 @@ description: Migrate, customize and support NetDocuments, the secure cloud docum
 heading: Revolutionizing Document Management with NetDocuments & Latest Solutions
 intro: "At Latest Solutions, we specialize in integrating top-tier business solutions to enhance efficiency, security, and compliance for organizations worldwide. As a trusted NetDocuments partner, we help businesses streamline their document management workflows with cloud-based, AI-powered, and highly secure solutions tailored to their needs."
 cta: { label: 'Request a Demo', href: '#contact' }
+overviewId: document-management-system
 overview: |
   **Document Management System:** NetDocuments is a leading Document Management System (DMS), providing a secure, cloud-based vault for managing critical documents.
 

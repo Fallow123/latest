@@ -41,7 +41,15 @@ export const nav: NavItem[] = [
           { label: 'UEM Solutions', href: '/ivanti-uem-solutions' },
         ],
       },
-      { label: 'NetDocuments', href: '/netdocuments' },
+      {
+        label: 'NetDocuments',
+        href: '/netdocuments',
+        children: [
+          { label: 'Overview', href: '/netdocuments' },
+          { label: 'Document Management System', href: '/netdocuments#document-management-system' },
+          { label: 'ndMAX AI', href: '/netdocuments#ndmax-the-revolutionary-artificial-intelligence' },
+        ],
+      },
       {
         label: 'TeamDynamix',
         href: '/teamdynamix',
