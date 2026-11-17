@@ -17,6 +17,7 @@ showcaseTitle: See it in action
 showcase:
   - { title: Self-healing that fixes issues for you, image: /images/ivanti-aem/self-healing.webp, alt: Ivanti Neurons self-healing bots library, text: "Pick from a library of ready-made bots, like cleaning a full disk or flagging aged user profiles, and let them run on every device. Problems are fixed before anyone opens a ticket." }
   - { title: Every asset in one view, image: /images/ivanti-aem/asset-visibility.webp, alt: Ivanti Neurons asset visibility dashboard, text: "Neurons discovers managed and unmanaged devices across your network and shows them in one dashboard, so you can spot devices that have not been seen and close the gaps." }
+patchCatalog: true
 services: true
 servicesIntro: Ivanti’s new cloud service management solution is a scalable, reliable way to improve your cloud services. But will you implement it in the most effective way for your particular system? Will your staff members adopt it and use it optimally?
 faqs:

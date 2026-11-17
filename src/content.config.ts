@@ -34,6 +34,8 @@ const pages = defineCollection({
     cards: z.array(card).optional(),
     // Show the cards on a dark background (for white or light icons)
     cardsDark: z.boolean().default(false),
+    // Show the shared patch catalog band (text in src/site.ts) right under the hero
+    patchCatalog: z.boolean().default(false),
     // Optional highlight band shown right under the hero (big numbers + a row of tags)
     spotlight: z.object({
       eyebrow: z.string().optional(),
