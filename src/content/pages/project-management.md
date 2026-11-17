@@ -1,6 +1,6 @@
 ---
 title: "IT Project Management Services | Latest Solutions"
-description: "IT project management from PMP, Certified Scrum Master and ITIL certified project managers. We plan, run and report on your Ivanti, NetDocuments and TeamDynamix projects so they land on time and on budget."
+description: "IT project management from PMP, Scrum Master and ITIL certified PMs. We run your Ivanti, NetDocuments and TeamDynamix projects on time and on budget."
 eyebrow: Project Management
 heading: Certified Project Managers Who Get Your IT Projects Over the Line
 intro: "Our project managers are PMP, Scrum Master and ITIL certified. They plan, run and report on your rollout from kickoff to go-live, keeping timelines, budgets and stakeholders on track while our engineers do the technical work."
