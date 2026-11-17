@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- Source for public/og-image.png (1200x630 link preview). Re-render with: node scripts/og/render-og-image.mjs -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0}
+  .card{width:1200px;height:630px;position:relative;overflow:hidden;background:#03233c;font-family:Poppins,sans-serif;color:#fff;box-sizing:border-box;padding:72px 80px}
+  .waves{position:absolute;left:0;right:0;bottom:-110px;height:260px;width:100%;opacity:.45}
+  .glow{position:absolute;right:-180px;top:-220px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(92,176,108,.35),rgba(3,35,60,0) 65%)}
+  .logo{height:62px;position:relative}
+  h1{position:relative;font-size:62px;line-height:1.1;font-weight:700;margin:72px 0 26px;letter-spacing:-.01em;max-width:1040px}
+  h1 span{background:linear-gradient(120deg,#7fd08c,#5cb06c 40%,#48b4c2);-webkit-background-clip:text;background-clip:text;color:transparent}
+  p{position:relative;font-size:26px;line-height:1.45;font-weight:500;color:#c9d4e3;margin:0}
+  .badge{position:absolute;right:80px;bottom:64px;height:84px}
+</style></head>
+<body><div class="card">
+  <div class="glow"></div>
+  <img class="waves" src="../../public/images/brand/waves.svg">
+  <img class="logo" src="../../public/images/shared/latest-solutions-full-white.png">
+  <h1>IT consultancy from experienced <span>solution architects</span></h1>
+  <p>Implementation, project management and support<br>Certified partner: Ivanti · NetDocuments · TeamDynamix</p>
+  <img class="badge" src="../../public/images/shared/ivanti-premier-partner-badge.png">
+</div></body></html>

@@ -1,6 +1,6 @@
 ---
 title: Behavioral Science for Leadership | Latest Solutions
-description: Leadership consulting grounded in applied behavioral science, from Latest Solutions and Kip Jon. Help leaders and teams turn change, including AI adoption, into how they actually work.
+description: "Leadership consulting grounded in applied behavioral science, from Latest Solutions and Kip Jon. Turn change, including AI adoption, into how teams work."
 eyebrow: Leadership & AI
 heading: Behavioral science for leadership
 intro: "New tools and new strategies only work when people change how they work. We help leaders understand what is really driving behavior on their teams, and change what happens next."

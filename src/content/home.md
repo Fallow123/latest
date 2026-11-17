@@ -1,6 +1,6 @@
 ---
 title: IT Consulting & Ivanti Implementation Services | Latest Solutions
-description: Expert IT consulting, implementation, project management and support for Ivanti, NetDocuments and TeamDynamix, from former Ivanti employees and a Premier Ivanti Partner.
+description: "Certified partner for Ivanti (Premier Partner), NetDocuments and TeamDynamix. IT implementation, project management and support since 2011."
 heading: IT Consultancy and Services From Experienced IT Solution Architects
 intro: "Our team of consultants provides companies with seamless IT implementation services at an affordable price."
 solutions:

@@ -13,6 +13,13 @@ interface Props {
 }
 const { title, description, contactForm = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+// Link previews use the host the page is actually served from (Netlify sets URL / DEPLOY_PRIME_URL),
+// so they work on the Netlify site and deploy previews before the domain switch.
+// Using the www domain here would make Facebook/LinkedIn fetch the old Wix page instead.
+const env = process.env;
+const host = (env.CONTEXT === 'production' ? env.URL : env.DEPLOY_PRIME_URL) ?? env.URL ?? Astro.site;
+const pageUrl = new URL(Astro.url.pathname, host).href;
+const ogImage = new URL('/og-image.png', host).href; // source: scripts/og/og-image.html
 ---
 
 <!doctype html>
@@ -26,6 +33,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:site_name" content="Latest Solutions" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Latest Solutions: IT consultancy from experienced solution architects" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <!-- Marks that JavaScript runs, so scroll animations only hide content when they can show it again. -->
     <script is:inline>document.documentElement.classList.add('js');</script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
