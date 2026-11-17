@@ -3,7 +3,22 @@ title: "Ivanti ITAM | Latest Solutions"
 description: "Implementation and support for Ivanti ITAM (IT Asset Management, formerly Asset Manager), the cloud-based tool for tracking IT assets through their full lifecycle."
 eyebrow: Ivanti
 heading: "Ivanti ITAM"
-intro: "Asset tracking software to manage your IT lifecycles."
+intro: "Ivanti ITAM keeps one trusted record of every IT asset you own: hardware, software, cloud resources and contracts. It tracks who owns each asset, what it costs and where it is in its life, from purchase to retirement, and flags renewals and disposals before they turn into cost or compliance problems. Because it is built into the Ivanti Neurons Platform, your service desk and endpoint tools all work from the same asset data."
+heroImage: { src: /images/ivanti-itam/asset-dashboard.webp, alt: Ivanti ITAM asset manager dashboard with assets by type and financial owner, screenshot: true }
+cardsTitle: What Ivanti ITAM does
+cards:
+  - { title: One record per asset, icon: /icons/folder-tree.svg, text: "Identity, usage, financial and configuration data for every asset, kept up to date automatically." }
+  - { title: Full lifecycle tracking, icon: /icons/repeat.svg, text: "Follow each asset from request and purchase to deployment, repair and retirement." }
+  - { title: Ownership and assignment, icon: /icons/user-check.svg, text: Every asset has a known owner and department with a full assignment history. }
+  - { title: Contracts and vendors, icon: /icons/briefcase.svg, text: "Manage contracts, purchase orders, invoices and renewals in one place." }
+  - { title: Cost and depreciation, icon: /icons/wallet.svg, text: Track spend and depreciation trends across your whole estate. }
+  - { title: Relationship mapping, icon: /icons/network.svg, text: "Keep device, network and application dependencies in one CMDB-ready data layer." }
+showcaseTitle: A closer look at Ivanti ITAM
+showcase:
+  - { title: One authoritative asset record, image: /images/ivanti-itam/asset-record.webp, alt: Ivanti ITAM device record with user, location and performance details, text: "Each device record pulls together who uses it, where it is, how it is configured and how it is performing, so your team has the full picture before acting." }
+  - { title: Track every asset from purchase to retirement, image: /images/ivanti-itam/asset-lifecycle.webp, alt: Ivanti ITAM asset lifecycle activity chart, text: "See every asset by lifecycle stage, from on order and in stock to in use and disposed. Assets nearing renewal or end of life surface automatically." }
+  - { title: Contracts and renewals under control, image: /images/ivanti-itam/contracts.webp, alt: Ivanti ITAM asset contracts dashboard, text: "Dashboards show contracts by status, vendor and type, and which line items are due for renewal, so nothing lapses and you only pay for what you use." }
+  - { title: Know your hardware and software estate, image: /images/ivanti-itam/software-inventory.webp, alt: Ivanti ITAM device and software inventory dashboard, text: "Track operating systems, warranty expiration, device makers and installed software across the business, the data you need for audits, licensing and refresh planning." }
 services: true
 servicesIntro: 'Out of all the asset management services providers available, why choose Latest Solutions? Because we do much more than provide software. As former Ivanti employees, we have deep expertise in every feature of Ivanti ITAM—both obvious and hidden.
 
