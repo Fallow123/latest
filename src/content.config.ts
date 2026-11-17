@@ -34,6 +34,16 @@ const pages = defineCollection({
     cards: z.array(card).optional(),
     // Show the cards on a dark background (for white or light icons)
     cardsDark: z.boolean().default(false),
+    // Optional highlight band shown right under the hero (big numbers + a row of tags)
+    spotlight: z.object({
+      eyebrow: z.string().optional(),
+      title: z.string(),
+      text: z.string(), // paragraphs split on blank lines
+      stats: z.array(z.object({ value: z.string(), label: z.string() })).optional(),
+      tagsTitle: z.string().optional(),
+      tags: z.array(z.string()).optional(),
+      source: z.object({ label: z.string(), href: z.string() }).optional(),
+    }).optional(),
     // Optional product tour: rows of screenshot + text, alternating sides
     showcaseTitle: z.string().optional(),
     showcase: z.array(z.object({ title: z.string(), text: z.string(), image: z.string(), alt: z.string() })).optional(),

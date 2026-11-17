@@ -70,6 +70,45 @@ const faqSchema = d.faqs && {
   }
 
   {
+    d.spotlight && (
+      <section class="section spotlight">
+        <div class="container">
+          <div class="spotlight-grid">
+            <div class="reveal">
+              {d.spotlight.eyebrow && <p class="eyebrow">{d.spotlight.eyebrow}</p>}
+              <h2 class="title-line">{d.spotlight.title}</h2>
+              {d.spotlight.text.split(/\n\s*\n/).map((p) => <p>{p.trim()}</p>)}
+              {d.spotlight.source && (
+                <p class="spotlight-source">
+                  Source: <a href={d.spotlight.source.href} target="_blank" rel="noopener">{d.spotlight.source.label}</a>
+                </p>
+              )}
+            </div>
+            <div class="reveal">
+              {d.spotlight.stats && (
+                <div class="spotlight-stats">
+                  {d.spotlight.stats.map((st) => (
+                    <div class="card">
+                      <strong>{st.value}</strong>
+                      <span>{st.label}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {d.spotlight.tags && (
+                <div class="spotlight-tags">
+                  {d.spotlight.tagsTitle && <p>{d.spotlight.tagsTitle}</p>}
+                  <ul class="pill-list">{d.spotlight.tags.map((t) => <li>{t}</li>)}</ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
     overview && (
       <section class="section" id={d.overviewId}>
         <div class="container prose reveal">

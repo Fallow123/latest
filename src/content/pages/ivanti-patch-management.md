@@ -1,11 +1,25 @@
 ---
 title: "Ivanti Patch Management | Latest Solutions"
-description: "Ivanti patch management implementation from an Ivanti Premier Partner: risk-based cloud patching, Security Controls for the data center, and third-party patching for Configuration Manager and Intune."
+description: "Ivanti patch management from an Ivanti Premier Partner: one patch catalog of 800+ titles for Windows, macOS, Linux and third-party apps, risk-based cloud patching, Security Controls for the data center, and third-party patching for Configuration Manager and Intune."
 eyebrow: Ivanti Premier Partner · Patch Management
 heading: "Patch what matters most, first"
 intro: "Unpatched software is a way in for nearly every cyber attack. We design, deploy and run Ivanti's patch management products so your endpoints, servers and third-party apps stay up to date, with risk-based priorities and far less manual work."
 cta: { label: Get a patching assessment, href: "#contact" }
 heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti Partner Network Premier Partner badge }
+spotlight:
+  eyebrow: Why customers choose Ivanti
+  title: One patch catalog for Microsoft, Apple, Linux and third-party apps
+  text: |
+    The biggest reason companies choose Ivanti for patching is the patch content. Ivanti researches, builds and tests the patches for you, from Windows and Microsoft Office to Zoom, Google Chrome and Adobe Reader, and delivers them in one catalog as part of your subscription. No hunting down vendor updates, no packaging apps yourself, and no separate tool for Macs or Linux servers.
+
+    Ivanti has been building patch content for decades and calls it the largest catalog of patch content for operating systems and third-party apps. Combined with patching for Windows, macOS and Linux from a single console, that is what sets Ivanti apart.
+  stats:
+    - { value: 800+, label: software titles in the patch catalog }
+    - { value: "3", label: "operating systems: Windows, macOS, Linux" }
+    - { value: Included, label: patch content comes with your subscription }
+  tagsTitle: "A few of the apps Ivanti patches for you:"
+  tags: [Windows, macOS, Linux, Microsoft Office, Zoom, Google Chrome, Adobe Acrobat Reader, Java, Web browsers, And hundreds more]
+  source: { label: ivanti.com, href: "https://www.ivanti.com/products/patch-for-endpoint-manager" }
 overviewTitle: Why patch management comes first
 overview: "No team can patch every vulnerability the day it is published. The question is which patches to deploy first, how to roll them out without breaking anything, and how to prove every device is covered. Ivanti answers all three, from the cloud console to the data center to your existing Configuration Manager and Intune setup.
 

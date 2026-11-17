@@ -713,3 +713,18 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
   .stage-emblem { display: none; }
   .hero-stage .partner-panel { animation: none; }
 }
+
+/* Highlight band under the hero (Patch Management catalog) */
+.spotlight { background: radial-gradient(ellipse at 80% 20%, rgba(92,176,108,0.12), transparent 60%); }
+.spotlight-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 64px); align-items: center; }
+.spotlight-grid p { color: var(--text); }
+.spotlight-source { font-size: 0.85rem; color: #9aa8bc !important; }
+.spotlight-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.spotlight-stats .card { padding: 22px 18px; text-align: center; }
+.spotlight-stats strong { display: block; font-family: var(--font-head); font-size: clamp(1.3rem, 2.2vw, 1.9rem); line-height: 1.1; color: var(--mint); margin-bottom: 6px; }
+.spotlight-stats span { font-size: 0.88rem; color: var(--text); }
+.spotlight-tags { margin-top: 22px; }
+.spotlight .pill-list li { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color: var(--text); }
+.spotlight-tags > p { font-size: 0.9rem; margin: 0 0 10px; color: #9aa8bc; }
+@media (max-width: 860px) { .spotlight-grid { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .spotlight-stats { grid-template-columns: 1fr; } }
