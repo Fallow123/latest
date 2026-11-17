@@ -1,0 +1,25 @@
+---
+// Compact patch catalog band for patch-related Ivanti pages. Text lives in src/site.ts.
+import { patchCatalog as c } from '../site';
+---
+
+<section class="section patch-band">
+  <div class="container">
+    <div class="patch-band-inner card reveal">
+      <div>
+        <p class="eyebrow">Ivanti patch content</p>
+        <h2>{c.title}</h2>
+        <p>{c.text}</p>
+        <a class="more-link" href={c.link.href}>{c.link.label} <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="patch-band-stats">
+        {c.stats.map((s) => (
+          <div>
+            <strong>{s.value}</strong>
+            <span>{s.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

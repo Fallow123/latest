@@ -141,3 +141,16 @@ export const socials = [
   { label: 'Instagram', href: 'https://www.instagram.com/latestsolutions/' },
   { label: 'WhatsApp', href: 'https://wa.me/5219871181086' },
 ];
+
+// The patch catalog highlight shown on patch-related Ivanti pages (set `patchCatalog: true` in a page's front matter).
+// Numbers are Ivanti's own (ivanti.com). The full story lives on /ivanti-patch-management#patch-catalog.
+export const patchCatalog = {
+  title: 'Backed by Ivanti\'s patch catalog',
+  text: 'Ivanti researches, builds and tests patches for Microsoft, Apple, Linux and hundreds of third-party apps like Zoom, Office and Chrome, and delivers them in one catalog as part of your subscription.',
+  stats: [
+    { value: '800+', label: 'software titles' },
+    { value: '3', label: 'OSes: Windows, macOS, Linux' },
+    { value: 'Included', label: 'with your subscription' },
+  ],
+  link: { label: 'See how Ivanti patching works', href: '/ivanti-patch-management#patch-catalog' },
+};

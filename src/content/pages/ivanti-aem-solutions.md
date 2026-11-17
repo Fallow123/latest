@@ -18,6 +18,7 @@ cards:
   - { title: Secure access, icon: /icons/shield-check.svg, text: "Conditional access, app controls and policies that keep every device compliant." }
   - { title: Remote support, icon: /icons/headset.svg, text: "Run scripts, reboot devices, take remote control and fix issues without a desk visit." }
   - { title: Fleet actions and analytics, icon: /icons/chart-line.svg, text: Act on whole groups of devices at once and track device health and experience. }
+patchCatalog: true
 services: true
 servicesIntro: 'Ivanti’s autonomous endpoint management (AEM) solutions bring you more features than common endpoint management software can. These tools will connect IT seamlessly with vendors, enable you to discover and inventory more of your assets, migrate user profiles between systems, and much more.
 

@@ -3,6 +3,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import SpeakerCards from '../components/SpeakerCards.astro';
+import PatchCatalog from '../components/PatchCatalog.astro';
 import { implementationServices } from '../site';
 
 export async function getStaticPaths() {
@@ -69,9 +70,11 @@ const faqSchema = d.faqs && {
     )
   }
 
+  {d.patchCatalog && <PatchCatalog />}
+
   {
     d.spotlight && (
-      <section class="section spotlight">
+      <section class="section spotlight" id="patch-catalog">
         <div class="container">
           <div class="spotlight-grid">
             <div class="reveal">

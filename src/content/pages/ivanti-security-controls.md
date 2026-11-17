@@ -16,6 +16,7 @@ cards:
   - { title: Privilege management, icon: /icons/user-check.svg, text: Remove full admin rights and grant just-enough or just-in-time access to the apps users need. }
   - { title: Dynamic allowlisting, icon: /icons/shield-check.svg, text: Let only known and trusted applications run, without hand-maintaining long lists. }
   - { title: REST APIs and reporting, icon: /icons/chart-column.svg, text: Connect Security Controls to your other tools and see everything in real-time dashboards. }
+patchCatalog: true
 services: true
 servicesIntro: With Latest Solutions, you’re not just buying software, you’re buying a team of experts who want to make your IT assets more secure. All of our staff members have worked at Ivanti and are trained in Ivanti software.
 faqs:

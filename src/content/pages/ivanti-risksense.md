@@ -4,6 +4,7 @@ description: "Ivanti Risk-Based Vulnerability Management (RBVM), formerly Neuron
 eyebrow: "Ivanti · Exposure Management"
 heading: "Ivanti Risk-Based Vulnerability Management (RBVM)"
 intro: "Cloud-based Ivanti RBVM platform provides vulnerability and prioritization to control and measure security risk. The platform continuously correlates customer infrastructure with comprehensive internal and external vulnerability data, threat intelligence, human pen test findings, and business asset criticality to identify your security weaknesses with corresponding remediation action plans, dramatically improving security and IT team efficiency and effectiveness."
+patchCatalog: true
 services: true
 ---
 
