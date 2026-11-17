@@ -57,6 +57,31 @@ With NetDocuments, organizations gain:
 - **Cloud-based flexibility** – Access documents anywhere, anytime, with zero on-premise infrastructure.
 - **Deep integrations** – Connect seamlessly with Microsoft 365, Salesforce, and other business-critical tools.
 
+<div id="netdocuments-clients"></div>
+
+## Organizations that run on NetDocuments
+
+<p class="client-note">A selection of NetDocuments clients worldwide.</p>
+
+<ul class="client-wall">
+    <li><img src="/images/netdocuments/clients/us-department-of-justice.webp" alt="U.S. Department of Justice" width="140" height="140" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/council-of-europe.webp" alt="Council of Europe" width="174" height="140" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/deutsche-bank.webp" alt="Deutsche Bank" width="167" height="140" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/wells-fargo.webp" alt="Wells Fargo" width="88" height="43" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/liberty-mutual.webp" alt="Liberty Mutual" width="171" height="81" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/blackrock.webp" alt="BlackRock" width="140" height="30" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/b3-brasil-bolsa-balcao.webp" alt="B3 Brasil Bolsa Balcão" width="224" height="100" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/yale.webp" alt="Yale" width="155" height="81" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/lexisnexis.webp" alt="LexisNexis" width="115" height="97" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/ascension-health.webp" alt="Ascension Health" width="216" height="55" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/foley-lardner.webp" alt="Foley & Lardner LLP" width="180" height="52" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/davis-wright-tremaine.webp" alt="Davis Wright Tremaine LLP" width="179" height="46" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/nelson-mullins.webp" alt="Nelson Mullins" width="114" height="48" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/buchanan-ingersoll-rooney.webp" alt="Buchanan Ingersoll & Rooney PC" width="137" height="76" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/corrs-chambers-westgarth.webp" alt="Corrs Chambers Westgarth" width="104" height="45" loading="lazy" /></li>
+    <li><img src="/images/netdocuments/clients/chevez-ruiz-zamarripa.webp" alt="Chevez Ruiz Zamarripa" width="283" height="140" loading="lazy" /></li>
+</ul>
+
 ## Latest Solutions: Your NetDocuments Implementation Partner
 
 At Latest Solutions, we specialize in implementing, optimizing, and supporting NetDocuments to help businesses:
@@ -66,6 +91,33 @@ At Latest Solutions, we specialize in implementing, optimizing, and supporting N
 - **Ensure compliance:** Implement regulatory best practices with built-in security policies.
 - **Integrate with your tech stack:** Connect NetDocuments with Microsoft 365, Freshworks, CRMs, and other tools.
 - **Ongoing support & training:** Ensure your team maximizes the full potential of NetDocuments.
+
+<div id="certifications"></div>
+
+## Our NetDocuments certifications
+
+<div class="cert-band">
+  <div class="cert-cycle" style="--n:14" aria-label="14 NetDocuments certification badges" role="img">
+    <img src="/images/netdocuments/certifications/sales.webp" alt="NetDocuments Sales Certified badge" width="440" height="440" style="--i:0" />
+    <img src="/images/netdocuments/certifications/trainer.webp" alt="NetDocuments Trainer Certified badge" width="440" height="440" style="--i:1" />
+    <img src="/images/netdocuments/certifications/ndmax-sales.webp" alt="NetDocuments ndMAX Sales Certified badge" width="440" height="440" style="--i:2" />
+    <img src="/images/netdocuments/certifications/ndmax-implementation.webp" alt="NetDocuments ndMAX Implementation Certified badge" width="440" height="440" style="--i:3" />
+    <img src="/images/netdocuments/certifications/ndmax-trainer.webp" alt="NetDocuments ndMAX Trainer Certified badge" width="440" height="440" style="--i:4" />
+    <img src="/images/netdocuments/certifications/patternbuilder-sales.webp" alt="NetDocuments PatternBuilder Sales Certified badge" width="440" height="440" style="--i:5" />
+    <img src="/images/netdocuments/certifications/patternbuilder-implementation.webp" alt="NetDocuments PatternBuilder Implementation Certified badge" width="440" height="440" style="--i:6" />
+    <img src="/images/netdocuments/certifications/patternbuilder-max-implementation.webp" alt="NetDocuments PatternBuilder MAX Implementation Certified badge" width="440" height="440" style="--i:7" />
+    <img src="/images/netdocuments/certifications/patternbuilder-trainer.webp" alt="NetDocuments PatternBuilder Trainer Certified badge" width="440" height="440" style="--i:8" />
+    <img src="/images/netdocuments/certifications/setbuilder-sales.webp" alt="NetDocuments SetBuilder Sales Certified badge" width="440" height="440" style="--i:9" />
+    <img src="/images/netdocuments/certifications/setbuilder-implementation.webp" alt="NetDocuments SetBuilder Implementation Certified badge" width="440" height="440" style="--i:10" />
+    <img src="/images/netdocuments/certifications/setbuilder-trainer.webp" alt="NetDocuments SetBuilder Trainer Certified badge" width="440" height="440" style="--i:11" />
+    <img src="/images/netdocuments/certifications/app-builder-sales.webp" alt="NetDocuments App Builder Sales Certified badge" width="440" height="440" style="--i:12" />
+    <img src="/images/netdocuments/certifications/app-builder-trainer.webp" alt="NetDocuments App Builder Trainer Certified badge" width="440" height="440" style="--i:13" />
+  </div>
+  <div class="cert-copy">
+    <p class="cert-count"><strong>14</strong> NetDocuments certifications</p>
+    <p>Our team is certified across sales, implementation and training for NetDocuments, ndMAX, PatternBuilder, PatternBuilder MAX, SetBuilder and App Builder.</p>
+  </div>
+</div>
 
 <div id="intelligent-foundation"></div>
 
