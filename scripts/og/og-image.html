@@ -8,16 +8,27 @@
   .waves{position:absolute;left:0;right:0;bottom:-110px;height:260px;width:100%;opacity:.45}
   .glow{position:absolute;right:-180px;top:-220px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(92,176,108,.35),rgba(3,35,60,0) 65%)}
   .logo{height:62px;position:relative}
-  h1{position:relative;font-size:62px;line-height:1.1;font-weight:700;margin:72px 0 26px;letter-spacing:-.01em;max-width:1040px}
+  h1{position:relative;font-size:58px;line-height:1.1;font-weight:700;margin:48px 0 20px;letter-spacing:-.01em;max-width:1040px}
   h1 span{background:linear-gradient(120deg,#7fd08c,#5cb06c 40%,#48b4c2);-webkit-background-clip:text;background-clip:text;color:transparent}
   p{position:relative;font-size:26px;line-height:1.45;font-weight:500;color:#c9d4e3;margin:0}
-  .badge{position:absolute;right:80px;bottom:64px;height:84px}
+  .badges{position:absolute;left:80px;right:80px;bottom:56px;display:flex;justify-content:space-between}
+  .badges>*{flex:none;width:330px;height:108px;box-sizing:border-box;filter:drop-shadow(0 14px 24px rgba(0,0,0,.45))}
+  .badges>img{object-fit:contain;background:#fff;border-radius:10px}
+  .pb{background:#fff;border-radius:10px;display:flex;align-items:center;gap:14px;padding:0 18px;color:#03233c}
+  .pb img{flex:none;width:128px;max-height:30px;object-fit:contain;object-position:left center}
+  .pb .div{flex:none;width:2px;height:52px;background:#5cb06c}
+  .pb .t{font-size:13px;line-height:1.35;font-weight:500;color:#24646c;white-space:nowrap}
+  .pb .t b{display:block;font-size:16px;font-weight:600;color:#03233c}
 </style></head>
 <body><div class="card">
   <div class="glow"></div>
   <img class="waves" src="../../public/images/brand/waves.svg">
   <img class="logo" src="../../public/images/shared/latest-solutions-full-white.png">
   <h1>IT consultancy from experienced <span>solution architects</span></h1>
-  <p>Implementation, project management and support<br>Certified partner: Ivanti · NetDocuments · TeamDynamix</p>
-  <img class="badge" src="../../public/images/shared/ivanti-premier-partner-badge.png">
+  <p>Implementation, project management and support</p>
+  <div class="badges">
+    <img src="ivanti-premier-badge-cropped.png">
+    <div class="pb"><img src="netdocuments-logo-navy.png"><span class="div"></span><span class="t">NetDocuments<b>Certified Partner</b></span></div>
+    <div class="pb"><img src="teamdynamix-logo-navy.png"><span class="div"></span><span class="t">TeamDynamix<b>Certified Partner</b></span></div>
+  </div>
 </div></body></html>
