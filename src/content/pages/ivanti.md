@@ -6,6 +6,7 @@ heading: Ivanti & Us
 intro: "We are Ivanti partners, certified consultants trained to assist in managing and maintaining Ivanti products. We go beyond just focusing on software support—we provide a bridge between your Ivanti products and your business goals and requirements."
 cardsTitle: Ivanti products we cover
 cards:
+  - { title: Ivanti Patch Management, text: Risk-based patching for endpoints, servers and third-party apps., href: /ivanti-patch-management }
   - { title: Ivanti ITAM, text: Track every IT asset through its full lifecycle., href: /ivanti-asset-manager }
   - { title: Ivanti Automation, text: Hand repetitive IT tasks to software., href: /ivanti-automation }
   - { title: Ivanti Neurons Platform, text: Self-healing, automated cloud service management., href: /ivanti-neurons }
@@ -20,7 +21,7 @@ heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti P
 
 - Ivanti Professional Services
 - Ivanti Channel Management
-- Ivanti Patch Management
+- [Ivanti Patch Management](/ivanti-patch-management)
 - Ivanti Training
 
 In addition to being an Ivanti partner, we offer a unique boutique-style concierge service. This provides you with weekly touchpoints and monthly guidance to maximize adoption, achieve your goals, and implement recommendations. Our team is able to provide consultations for custom builds, architecture optimization, and Ivanti training.

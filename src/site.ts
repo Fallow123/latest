@@ -31,13 +31,20 @@ export const nav: NavItem[] = [
         label: 'Ivanti',
         href: '/ivanti',
         children: [
+          // Patch Management is highlighted at the top, with its related products grouped under it.
+          {
+            label: 'Patch Management',
+            href: '/ivanti-patch-management',
+            children: [
+              { label: 'Security Controls', href: '/ivanti-security-controls' },
+              { label: 'Neurons Platform', href: '/ivanti-neurons' },
+              { label: 'RBVM', href: '/ivanti-risksense' },
+              { label: 'AEM Solutions', href: '/ivanti-aem-solutions' },
+            ],
+          },
+          { label: 'ITSM', href: '/ivanti-service-manager' },
           { label: 'ITAM', href: '/ivanti-asset-manager' },
           { label: 'Automation', href: '/ivanti-automation' },
-          { label: 'Neurons Platform', href: '/ivanti-neurons' },
-          { label: 'RBVM', href: '/ivanti-risksense' },
-          { label: 'Security Controls', href: '/ivanti-security-controls' },
-          { label: 'ITSM', href: '/ivanti-service-manager' },
-          { label: 'AEM Solutions', href: '/ivanti-aem-solutions' },
         ],
       },
       {

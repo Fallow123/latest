@@ -39,10 +39,21 @@ const isActive = (item: NavItem): boolean =>
                       {group.children && (
                         <ul>
                           {group.children.map((child) => (
-                            <li>
+                            <li class={child.children ? 'mega-featured' : ''}>
                               <a href={child.href} class={child.href === path ? 'active' : ''}>
                                 {child.label}
                               </a>
+                              {child.children && (
+                                <ul class="mega-sub">
+                                  {child.children.map((sub) => (
+                                    <li>
+                                      <a href={sub.href} class={sub.href === path ? 'active' : ''}>
+                                        {sub.label}
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
                             </li>
                           ))}
                         </ul>
