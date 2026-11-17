@@ -650,3 +650,15 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
 .client-wall li:hover { background: rgba(143,209,156,0.07); border-color: rgba(143,209,156,0.3); }
 .prose .client-wall li:hover img { opacity: 1; }
 @media (max-width: 640px) { .prose .client-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Solutions menu: a highlighted item (Patch Management) with related products grouped under it */
+.main-nav .mega .mega-featured > a { color: var(--mint); font-weight: 600; background: rgba(143,209,156,0.08); box-shadow: inset 0 0 0 1px rgba(143,209,156,0.22); }
+.main-nav .mega .mega-featured > a:hover, .main-nav .mega .mega-featured > a.active { background: rgba(143,209,156,0.14); color: var(--white); }
+.mega .mega-sub { margin: 4px 0 8px 12px !important; padding: 0 0 0 8px !important; border-left: 1px solid rgba(143,209,156,0.25); display: block !important; }
+.main-nav .mega .mega-sub a { font-size: 0.86rem; padding: 4px 8px; }
+
+/* Analyst recognition cards (Patch Management page) */
+.recognition .card { display: flex; flex-direction: column; }
+.recognition .recognition-label { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: var(--mint); margin: 0 0 0.4em; }
+.recognition .card h3 { font-size: 1rem; font-weight: 500; line-height: 1.45; }
+.recognition .recognition-source { margin-top: auto; padding-top: 14px; font-size: 0.85rem; }
+.prose .sources { font-size: 0.85rem; color: #9aa8bc; margin-top: 2.5em; }

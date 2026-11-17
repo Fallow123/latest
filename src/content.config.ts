@@ -32,6 +32,10 @@ const pages = defineCollection({
     cards: z.array(card).optional(),
     // Show the cards on a dark background (for white or light icons)
     cardsDark: z.boolean().default(false),
+    // Optional analyst recognition cards, each linking to its source
+    recognitionTitle: z.string().optional(),
+    recognitionIntro: z.string().optional(),
+    recognition: z.array(z.object({ label: z.string(), report: z.string(), source: z.string() })).optional(),
     // Optional logo wall (used on Partners)
     logos: z.array(z.object({ name: z.string(), image: z.string().optional(), href: z.string() })).optional(),
     // Show the shared Consulting / Tech Support / Solutions Architecture cards
