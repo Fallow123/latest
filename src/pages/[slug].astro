@@ -51,6 +51,25 @@ const faqSchema = d.faqs && {
   </section>
 
   {
+    d.certifications && (
+      <section class="section cert-section" id="certifications">
+        <div class="container">
+          <div class="cert-band reveal">
+            <div class="cert-cycle" style={`--n:${d.certifications.badges.length}`} role="img" aria-label={`${d.certifications.badges.length} certification badges`}>
+              {d.certifications.badges.map((b, i) => <img src={b.src} alt={b.alt} width="440" height="440" style={`--i:${i}`} />)}
+            </div>
+            <div class="cert-copy">
+              <p class="eyebrow">{d.certifications.title}</p>
+              <p class="cert-count"><strong>{d.certifications.badges.length}</strong> certifications</p>
+              <p>{d.certifications.text}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
     overview && (
       <section class="section" id={d.overviewId}>
         <div class="container prose reveal">
