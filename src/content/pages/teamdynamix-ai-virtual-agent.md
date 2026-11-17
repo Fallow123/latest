@@ -1,10 +1,8 @@
 ---
 title: "TeamDynamix AI Virtual Agent | Latest Solutions"
 description: "Conversational AI that answers questions 24/7 and deflects 30-60% of tickets. Implemented by a certified TeamDynamix partner."
-eyebrow: TeamDynamix AI Virtual Agent
 heading: Empower Customer Conversations with TeamDynamix Virtual Agent
-intro: "As certified TeamDynamix partners, Latest Solutions specializes in integrating the Virtual Agent or conversational AI (CAI) into your business framework. With integrated chat, enterprise integration, and the ability to query any data source, customers are deflecting 30-60% of their tickets."
-cardsTitle: Features
+cta: { label: 'Request a Demo', href: '#contact' }
 cards:
   - { title: "Omnichannel Messaging", icon: /icons/messages-square.svg, text: "Reach your customers wherever they are\u2014web, mobile app, social media, or messaging platforms. TeamDynamix's conversational AI (CAI) integrates all conversations into one place, allowing your team to provide a consistent experience across channels." }
   - { title: "AI-Powered Chat Agent | CAI", icon: /icons/bot.svg, text: "Automate responses to common questions with intelligent chatbots that can handle queries 24/7. Let your team focus on more complex interactions while the bots manage the basics, improving response time and reducing workload." }
@@ -17,11 +15,19 @@ heroImage: { src: /images/shared/teamdynamix-logo-reversed.png, alt: TeamDynamix
 
 ## Why Choose TeamDynamix's Virtual Agent?
 
+Improved Team Efficiency: With AI, automation, and routing, your team can handle more conversations effectively.
+
+Scalable for Growth: The virtual agent is flexible and scalable, adapting as your business and customer base grow. Using conversational AI increases chatbot user adoption by 50 percent!
+
 - **Enhanced Customer Satisfaction:** Quick responses and personalized support build customer loyalty.
 - **Improved Team Efficiency:** With AI, automation, and routing, your team can handle more conversations effectively.
-- **Scalable for Growth:** CAI is flexible and scalable, adapting as your business and customer base grow. Using conversational AI increases chatbot user adoption by 50 percent!
+- **Scalable for Growth:** CAI is flexible and scalable, adapting as your business and customer base grow.
 - **Data-Driven Decisions:** Powerful insights help you track performance and make improvements where they matter.
 
 ## How Latest Solutions Can Help
 
 As certified TeamDynamix partners, Latest Solutions specializes in integrating the Virtual Agent or CAI into your business framework. Our team will help you configure TeamDynamix's conversational AI to align with your customer engagement goals, providing customization, training, and ongoing support to ensure you get the most out of the platform.
+
+### Get Started with TeamDynamix's Conversational AI Today!
+
+Ready to elevate your customer experience with TeamDynamix's Conversational AI? Contact Latest Solutions for a consultation and discover how CAI agent can help you build stronger, more meaningful customer relationships along with more precise help.

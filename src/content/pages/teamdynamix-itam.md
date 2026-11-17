@@ -1,21 +1,24 @@
 ---
 title: "TeamDynamix ITAM | Latest Solutions"
 description: "IT asset management combined with service management on one cloud platform. Implemented by a certified TeamDynamix ITAM partner."
-eyebrow: TeamDynamix ITAM
-heading: Experience a Comprehensive Asset Management Solution
-intro: "TeamDynamix is an intuitive, cloud-based solution designed to simplify and enhance organizations' Asset Management. With TeamDynamix, businesses can manage asset inquiries seamlessly, optimize team performance, and deliver outstanding device management experiences across all support channels."
+heading: EXPERIENCE A COMPREHENSIVE ASSET MANAGEMENT SOLUTION
+cta: { label: 'Request a Demo', href: '#contact' }
+overview: |
+  TeamDynamix is an intuitive, cloud-based solution designed to simplify and enhance organizations' Asset Management. With TeamDynamix, businesses can manage asset inquiries seamlessly, optimize team performance, and deliver outstanding device management experiences across all support channels. Sassafras (ITAM) IT Asset Management is a complete solution from discovery to security to cost savings. The insights gained with TeamDynamix's ITAM are first-class. Here’s how TeamDynamix empowers your business:
 cardsTitle: "By integrating TeamDynamix, Latest Solutions ensures your business benefits from:"
 cards:
   - { title: "Omnichannel Customer Support", icon: /icons/headset.svg, text: "Manage asset tickets & requests effortlessly across multiple channels like email, phone, and live chat. Reduce response times, improve efficiency, and provide consistent, high-quality customer device experiences." }
   - { title: "Complete Asset Management", icon: /icons/package.svg, text: "Streamline your team\u2019s hardware and software management with advanced tools to contain costs and mitigate risk. Secure your environment with cradle-to-grave asset tracking. TeamDynamix's asset lifecycle management removes repetitive tasks and lets your team focus on complex asset issues by combining ITSM and ITAM into a single platform." }
   - { title: "Self-Service Solutions", icon: /icons/mouse-pointer-click.svg, text: "Empower customers with AI-driven self-service tools, including asset knowledge bases, FAQs, and chatbots, helping them find solutions quickly for their asset management needs while reducing the workload on your support team." }
   - { title: "Effortless Collaboration", icon: /icons/users.svg, text: "Improve internal communication with TeamDynamix collaboration features. Share asset data, assign devices, and track asset management progress across teams in real time to resolve customer issues efficiently. See how DEX can improve your users' digital experience with real-time asset data on both the hardware & software side." }
-  - { title: "Customizable Reports and Insights", icon: /icons/chart-pie.svg, text: "Leverage powerful analytics and reporting tools to track support metrics, identify trends, and optimize your asset management strategy. TeamDynamix makes it easy to measure asset performance and costs. Have the visibility you need to accurately estimate hardware refresh costs and timing." }
+  - { title: "Customizable Reports and Insights", icon: /icons/chart-pie.svg, text: "Leverage powerful analytics and reporting tools to track support metrics, identify trends, and optimize your asset management strategy. TeamDynamix makes it easy to measure asset performance and costs. Have the visibility you need to accurately estimate hardware refresh costs and timing. Gain insights with IT Asset Management (ITAM)." }
 heroImage: { src: /images/shared/teamdynamix-logo-reversed.png, alt: TeamDynamix logo }
 ---
-
-Sassafras (ITAM) IT Asset Management is a complete solution from discovery to security to cost savings. The insights gained with TeamDynamix's ITAM are first-class.
 
 ## How Latest Solutions Can Help
 
 As certified ITAM TeamDynamix partners, Latest Solutions specializes in integrating its ITAM solutions into your business framework. Our team will help you configure Asset Management to align with your customer engagement goals, providing customization, training, and ongoing support to ensure you get the most out of the platform.
+
+### Get Started with TeamDynamix ITAM Today!
+
+Ready to elevate your customer experience with TeamDynamix? Contact Latest Solutions for a consultation and discover how ITAM can help you build stronger security, more meaningful reporting, and user satisfaction. Latest Solutions can help you crawl, walk, and run with ITAM implementation and program. Let's mature together!

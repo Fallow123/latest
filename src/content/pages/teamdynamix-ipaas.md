@@ -1,10 +1,9 @@
 ---
 title: "TeamDynamix iPaaS | Latest Solutions"
 description: "No-code integration and workflow automation with hundreds of prebuilt connectors. Implemented by a certified TeamDynamix iPaaS partner."
-eyebrow: TeamDynamix iPaaS
 heading: Boost Your Automation with TeamDynamix iPaaS
 intro: "iPaaS automation and AI platform designed to help businesses connect with their audience at the right time, through the right channels. Connect the dots between your enterprise systems with a library of pre-built connectors for data integration and a visual workflow builder. AI agents help you expedite form building to generate new workflows faster."
-cardsTitle: Platform
+cta: { label: 'Request a Demo', href: '#contact' }
 cards:
   - { title: "Get up and running quickly", icon: /icons/rocket.svg, text: "On a no-code, highly configurable platform. Hit the mark with AI and workflows that will keep your workforce moving with the right approvals and less downtime." }
   - { title: "Integration Hub", icon: /icons/network.svg, text: "iPaaS provides a centralized integration hub that connects applications, data, APIs, and workflows across the enterprise. Using a visual, no-code platform with hundreds of pre-built connectors that eliminates brittle point-to-point integrations, automates complex business processes, and synchronizes data between systems such as Workday, Microsoft 365, Salesforce, and more." }
@@ -27,3 +26,7 @@ iPaaS empowers your team to create impactful workflows, optimize user outcomes, 
 ## How Latest Solutions Can Help
 
 As certified TeamDynamix iPaaS partners, Latest Solutions specializes in implementing iPaaS to help you achieve your integration & request goals. From custom configurations and targeted workflows to hands-on training, we support your team every step of the way. We ensure iPaaS integrates smoothly with your systems, maximizing your API efficiency and impact.
+
+### Ready to Transform Your System Strategy?
+
+Get started with iPaaS and unlock the full potential of your integration efforts. Contact Latest Solutions today to schedule a consultation and discover how TeamDynamix can help you easily integrate systems and orgs.
