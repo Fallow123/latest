@@ -66,3 +66,19 @@ At Latest Solutions, we specialize in implementing, optimizing, and supporting N
 - **Ensure compliance:** Implement regulatory best practices with built-in security policies.
 - **Integrate with your tech stack:** Connect NetDocuments with Microsoft 365, Freshworks, CRMs, and other tools.
 - **Ongoing support & training:** Ensure your team maximizes the full potential of NetDocuments.
+
+<div id="intelligent-foundation"></div>
+
+## Improve your AI posture with an Intelligent Foundation
+
+Latest Solutions designs, cleans up and connects your NetDocuments environment, so the AI tools your firm adopts work from governed, well-organized content.
+
+<video src="/media/intelligent-foundation.mp4" poster="/media/intelligent-foundation-poster.jpg" autoplay muted loop playsinline aria-label="Animation: the Intelligent Foundation cube assembles from Documents, Matters, People, Expertise, Permissions, Semantic Embeddings, AI Profiling and Document Intelligence, then connects NetDocuments to AI tools through ndConnect" style="display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,0.12);margin:8px 0 28px"></video>
+
+### NetDocuments can be your central hub for legal tech
+
+1. **Assess** your AI posture
+2. **Build** the foundation
+3. **Connect** your AI tools
+
+[Book an AI Readiness Assessment](#contact)
