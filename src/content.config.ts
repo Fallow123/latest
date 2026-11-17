@@ -23,6 +23,9 @@ const pages = defineCollection({
     cta: z.object({ label: z.string(), href: z.string() }).optional(),
     // Optional picture shown beside the hero text (path under /public)
     heroImage: z.object({ src: z.string(), alt: z.string(), still: z.string().optional() }).optional(), // still: shown instead of an animated src to visitors who prefer less motion
+    // Optional text section shown between the hero and the cards (paragraphs split on blank lines; **bold** and [links](url) allowed)
+    overviewTitle: z.string().optional(),
+    overview: z.string().optional(),
     // Optional grid of cards shown under the hero
     cardsTitle: z.string().optional(),
     cards: z.array(card).optional(),

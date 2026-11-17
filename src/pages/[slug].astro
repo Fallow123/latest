@@ -14,6 +14,14 @@ const { page } = Astro.props;
 const d = page.data;
 const { Content } = await render(page);
 
+// Overview paragraphs: plain text with **bold** and [links](url) only, escaped before formatting.
+const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const overview = d.overview?.split(/\n\s*\n/).map((p) =>
+  esc(p.trim())
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, u) => `<a href="${u}"${/^https?:/.test(u) ? ' target="_blank" rel="noopener"' : ''}>${t}</a>`)
+);
+
 // Lets Google show the questions and answers directly in search results.
 const faqSchema = d.faqs && {
   '@context': 'https://schema.org',
@@ -41,6 +49,17 @@ const faqSchema = d.faqs && {
       )}
     </div>
   </section>
+
+  {
+    overview && (
+      <section class="section">
+        <div class="container prose reveal">
+          {d.overviewTitle && <h2>{d.overviewTitle}</h2>}
+          {overview.map((p) => <p set:html={p} />)}
+        </div>
+      </section>
+    )
+  }
 
   {
     d.cards && (
