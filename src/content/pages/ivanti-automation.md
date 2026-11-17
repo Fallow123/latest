@@ -3,7 +3,16 @@ title: "Ivanti Automation | Latest Solutions"
 description: "Ivanti Automation implementation services: automate provisioning, configuration and repetitive IT tasks."
 eyebrow: Ivanti
 heading: "Ivanti Automation Solutions"
-intro: "Cloud automation solutions for increased efficiency and productivity."
+intro: "Ivanti Automation takes routine IT work off your team. It runs configuration, provisioning, upgrades and server tasks automatically across on-premises and cloud systems, using more than 300 built-in tasks plus your own scripts. Every job is scheduled, controlled by role and logged, so you know exactly what ran, when and who asked for it."
+heroImage: { src: /images/ivanti-automation/it-automation.webp, alt: An IT administrator working at a laptop, screenshot: true }
+cardsTitle: What Ivanti Automation does
+cards:
+  - { title: 300+ built-in tasks, icon: /icons/zap.svg, text: "Automate configuration, provisioning and upgrades out of the box." }
+  - { title: Runbooks, icon: /icons/route.svg, text: Chain tasks into runbooks that make complex changes across many systems in the right order. }
+  - { title: Reuse your scripts, icon: /icons/code.svg, text: "Turn existing scripts into repeatable, shareable, fully automated tasks." }
+  - { title: Scheduling and delegation, icon: /icons/calendar-check.svg, text: Control who can run changes and exactly when they run in your infrastructure. }
+  - { title: Full audit trail, icon: /icons/clipboard-list.svg, text: "Prove when each task ran, who ran it and where the request came from." }
+  - { title: Hybrid and connected, icon: /icons/network.svg, text: "Works across on-premises and public cloud, and connects to Ivanti ITSM and third-party apps." }
 services: true
 servicesIntro: Could your staff members benefit from help with the implementation of Ivanti Automation? Organizations often need more support when distributing new and different software.
 faqs:
