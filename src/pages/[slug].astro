@@ -44,7 +44,7 @@ const faqSchema = d.faqs && {
       {d.heroImage && (
         <picture>
           {d.heroImage.still && <source media="(prefers-reduced-motion: reduce)" srcset={d.heroImage.still} />}
-          <img class="hero-image" src={d.heroImage.src} alt={d.heroImage.alt} />
+          <img class:list={['hero-image', { 'hero-shot': d.heroImage.screenshot }]} src={d.heroImage.src} alt={d.heroImage.alt} />
         </picture>
       )}
     </div>
@@ -82,6 +82,27 @@ const faqSchema = d.faqs && {
                 </div>
               )
             )}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    d.showcase && (
+      <section class="section">
+        <div class="container">
+          {d.showcaseTitle && <h2 class="center title-line reveal">{d.showcaseTitle}</h2>}
+          <div class="showcase">
+            {d.showcase.map((row) => (
+              <div class="showcase-row reveal">
+                <img src={row.image} alt={row.alt} loading="lazy" />
+                <div>
+                  <h3>{row.title}</h3>
+                  <p>{row.text}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

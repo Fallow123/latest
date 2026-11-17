@@ -3,7 +3,19 @@ title: "Ivanti Security Controls | Latest Solutions"
 description: "Ivanti Security Controls implementation: unified, agentless patch management for workstations, servers and VMs."
 eyebrow: Ivanti
 heading: "Ivanti Security Controls"
-intro: "Patch management tools to automate and enhance IT security."
+intro: "Ivanti Security Controls is unified, automated patch management for the servers in your data center. It discovers physical servers, virtual machines and templates, finds what is missing, and patches Windows and Linux operating systems and third-party apps, with or without an agent. It also adds privilege management and application allowlisting, so you can close the biggest attack vectors from one console."
+heroImage: { src: /images/ivanti-security-controls/data-center.webp, alt: An IT engineer checking servers in a data center, screenshot: true }
+cardsTitle: What Ivanti Security Controls does
+cards:
+  - { title: Vulnerability discovery, icon: /icons/network.svg, text: Scan physical and virtual systems for missing OS and application patches. }
+  - { title: Agentless patching, icon: /icons/zap.svg, text: Assess and deploy patches to workstations and servers on your network without installing an agent. }
+  - { title: Patch VMs and templates, icon: /icons/server.svg, text: "Discover, inventory and patch physical servers, VMs and templates, whether they are powered on or off." }
+  - { title: CVE to patch list, icon: /icons/clipboard-list.svg, text: Import a CVE list from any vulnerability scanner and build a ready-to-deploy patch group in minutes. }
+  - { title: Remote task scheduling, icon: /icons/calendar-check.svg, text: Schedule patching in maintenance windows so it never interrupts your users. }
+  - { title: Windows and Linux, icon: /icons/monitor-cog.svg, text: "Patch Windows, Red Hat Linux and CentOS systems, plus the third-party apps running on them." }
+  - { title: Privilege management, icon: /icons/user-check.svg, text: Remove full admin rights and grant just-enough or just-in-time access to the apps users need. }
+  - { title: Dynamic allowlisting, icon: /icons/shield-check.svg, text: Let only known and trusted applications run, without hand-maintaining long lists. }
+  - { title: REST APIs and reporting, icon: /icons/chart-column.svg, text: Connect Security Controls to your other tools and see everything in real-time dashboards. }
 services: true
 servicesIntro: With Latest Solutions, you’re not just buying software, you’re buying a team of experts who want to make your IT assets more secure. All of our staff members have worked at Ivanti and are trained in Ivanti software.
 faqs:
@@ -54,3 +66,5 @@ Get all our patch management tools in one easy-to-use system: Ivanti Security Co
 These tools can also automatically scan your systems to detect security problems, creating reports that help you make better decisions. Used together, Ivanti Security Controls help fill the gaps you may have in your cybersecurity team. It will also satisfy leadership that the best security tools are in place to protect their organization.
 
 **Connect with us:** we’ll set it up in your environment in under an hour!
+
+Not sure whether Security Controls or cloud-based Ivanti Patch Management fits you better? See our [Ivanti Patch Management](/ivanti-patch-management) overview, or ask us.

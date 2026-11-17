@@ -22,7 +22,7 @@ const pages = defineCollection({
     intro: z.string().optional(),
     cta: z.object({ label: z.string(), href: z.string() }).optional(),
     // Optional picture shown beside the hero text (path under /public)
-    heroImage: z.object({ src: z.string(), alt: z.string(), still: z.string().optional() }).optional(), // still: shown instead of an animated src to visitors who prefer less motion
+    heroImage: z.object({ src: z.string(), alt: z.string(), still: z.string().optional(), screenshot: z.boolean().default(false) }).optional(), // still: shown instead of an animated src to visitors who prefer less motion
     // Optional text section shown between the hero and the cards (paragraphs split on blank lines; **bold** and [links](url) allowed)
     overviewTitle: z.string().optional(),
     overviewId: z.string().optional(), // anchor for menu links, e.g. /netdocuments#document-management-system
@@ -32,6 +32,9 @@ const pages = defineCollection({
     cards: z.array(card).optional(),
     // Show the cards on a dark background (for white or light icons)
     cardsDark: z.boolean().default(false),
+    // Optional product tour: rows of screenshot + text, alternating sides
+    showcaseTitle: z.string().optional(),
+    showcase: z.array(z.object({ title: z.string(), text: z.string(), image: z.string(), alt: z.string() })).optional(),
     // Optional analyst recognition cards, each linking to its source
     recognitionTitle: z.string().optional(),
     recognitionIntro: z.string().optional(),
