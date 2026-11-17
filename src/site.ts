@@ -54,6 +54,7 @@ export const nav: NavItem[] = [
           { label: 'Overview', href: '/netdocuments' },
           { label: 'Document Management System', href: '/netdocuments#document-management-system' },
           { label: 'ndMAX AI', href: '/netdocuments#ndmax-the-revolutionary-artificial-intelligence' },
+          { label: 'Our Certifications', href: '/netdocuments#certifications' },
           { label: 'Intelligent Foundation', href: '/netdocuments#intelligent-foundation' },
         ],
       },

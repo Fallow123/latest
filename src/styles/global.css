@@ -627,6 +627,29 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
 }
 @media (prefers-reduced-motion: reduce) { .chat-panel, .chat-msg.typing span { animation: none; } }
 
+/* NetDocuments page: certification badges that cycle one at a time (pure CSS, ~3s each) */
+.cert-band { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 36px; align-items: center; margin: 8px 0 12px; padding: clamp(22px, 4vw, 36px); border-radius: 24px; background: linear-gradient(160deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.1); }
+.cert-cycle { position: relative; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(143,209,156,0.18), rgba(36,100,108,0.06) 55%, transparent 70%); }
+.prose .cert-cycle img { position: absolute; inset: 8%; margin: 0; border-radius: 50%; max-height: none; width: 84%; height: auto; opacity: 0; filter: drop-shadow(0 14px 30px rgba(0,0,0,0.45)); animation: cert-cycle calc(var(--n) * 3s) infinite; animation-delay: calc(var(--i) * 3s); }
+@keyframes cert-cycle { 0% { opacity: 0; transform: scale(0.9) rotate(-6deg); } 1.2% { opacity: 1; transform: none; } 7.14% { opacity: 1; transform: none; } 8.4%, 100% { opacity: 0; transform: scale(1.04); } }
+.cert-count { font-family: var(--font-head); font-size: 1.15rem; margin: 0 0 8px; }
+.cert-count strong { font-size: 2.6rem; line-height: 1; display: block; background: linear-gradient(120deg, #7fd08c, #5cb06c 40%, #48b4c2); -webkit-background-clip: text; background-clip: text; color: transparent; }
+@media (max-width: 640px) { .cert-band { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; } .cert-cycle { width: min(240px, 70vw); } }
+@media (prefers-reduced-motion: reduce) {
+  .cert-band { grid-template-columns: minmax(0, 1fr); }
+  .cert-cycle { aspect-ratio: auto; border-radius: 0; background: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: 12px; }
+  .prose .cert-cycle img { position: static; width: 100%; opacity: 1; animation: none; }
+}
+
+/* NetDocuments page: client logos, recolored white so they sit quietly on the dark background */
+.client-note { margin-top: -4px; }
+.prose .client-wall { list-style: none; padding: 0; margin: 20px 0 8px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.prose .client-wall li { margin: 0; padding: 18px 14px; min-height: 92px; display: grid; place-items: center; border-radius: 16px; background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08); transition: background 0.25s, border-color 0.25s; }
+.prose .client-wall li::before { display: none; }
+.prose .client-wall img { margin: 0; border-radius: 0; max-width: 100%; max-height: 52px; width: auto; height: auto; opacity: 0.72; transition: opacity 0.25s; }
+.client-wall li:hover { background: rgba(143,209,156,0.07); border-color: rgba(143,209,156,0.3); }
+.prose .client-wall li:hover img { opacity: 1; }
+@media (max-width: 640px) { .prose .client-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* Solutions menu: a highlighted item (Patch Management) with related products grouped under it */
 .main-nav .mega .mega-featured > a { color: var(--mint); font-weight: 600; background: rgba(143,209,156,0.08); box-shadow: inset 0 0 0 1px rgba(143,209,156,0.22); }
 .main-nav .mega .mega-featured > a:hover, .main-nav .mega .mega-featured > a.active { background: rgba(143,209,156,0.14); color: var(--white); }
