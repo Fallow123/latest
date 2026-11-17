@@ -33,12 +33,11 @@ export const nav: NavItem[] = [
         children: [
           { label: 'Asset Manager', href: '/ivanti-asset-manager' },
           { label: 'Automation', href: '/ivanti-automation' },
-          { label: 'Identity Director', href: '/ivanti-identity-director' },
           { label: 'Neurons', href: '/ivanti-neurons' },
           { label: 'Neurons for RBVM', href: '/ivanti-risksense' },
           { label: 'Security Controls', href: '/ivanti-security-controls' },
           { label: 'Service Manager', href: '/ivanti-service-manager' },
-          { label: 'UEM Solutions', href: '/ivanti-uem-solutions' },
+          { label: 'AEM Solutions', href: '/ivanti-aem-solutions' },
         ],
       },
       {

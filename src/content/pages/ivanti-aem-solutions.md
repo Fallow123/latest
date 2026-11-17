@@ -1,21 +1,21 @@
 ---
-title: "Ivanti UEM Solutions | Latest Solutions"
-description: "Ivanti Unified Endpoint Management implementation: manage Windows, macOS, Linux, iOS and Android devices from one console."
+title: "Ivanti AEM Solutions | Latest Solutions"
+description: "Ivanti Autonomous Endpoint Management (AEM) implementation: manage Windows, macOS, Linux, iOS and Android devices from one console."
 eyebrow: Ivanti
-heading: "Unified Endpoint Management Solutions"
+heading: "Autonomous Endpoint Management Solutions"
 intro: "Endpoint management software to oversee all user devices."
 services: true
-servicesIntro: 'Ivanti’s unified endpoint management solutions bring you more features than common endpoint management software can. These tools will connect IT seamlessly with vendors, enable you to discover and inventory more of your assets, migrate user profiles between systems, and much more.
+servicesIntro: 'Ivanti’s autonomous endpoint management (AEM) solutions bring you more features than common endpoint management software can. These tools will connect IT seamlessly with vendors, enable you to discover and inventory more of your assets, migrate user profiles between systems, and much more.
 
 
   But will your employees know how to access these tools? Will they be integrated into your workflows?'
 faqs:
-- q: What does UEM mean?
-  a: UEM means unified endpoint management. It is a set of tools for controlling and protecting an organization’s employee devices and servers from a single location within the IT department.
+- q: What does AEM mean?
+  a: AEM means autonomous endpoint management. It is a set of tools for controlling and protecting an organization’s employee devices and servers from a single location within the IT department, using AI and automation to discover, patch and fix devices with less manual work.
 - q: What is an endpoint management system?
   a: It is software that helps IT managers perform remote management tasks on users’ endpoint devices, including discovering, updating, troubleshooting, patching, and provisioning them.
-- q: What is a UEM solution?
-  a: This refers to unified endpoint management software that integrates common endpoint management features with other IT systems. These tools can help IT to manage and protect devices, software, data, and users.
+- q: What is an AEM solution?
+  a: This refers to autonomous endpoint management software that integrates common endpoint management features with other IT systems. These tools can help IT to manage and protect devices, software, data, and users.
 - q: Why is endpoint security important?
   a: An organization’s devices, particularly when in remote locations, are vulnerable to cybersecurity threats. Endpoint security tools can protect them from threats and remediate them after attacks.
 - q: How does endpoint security work?
@@ -32,7 +32,7 @@ faqs:
 
 What is endpoint management software? It’s a comprehensive tool for IT departments to oversee all user devices via one console. The software shows every device—even if they’re running different operating systems—including desktops, laptops, servers, virtual environments, and mobile devices.
 
-With Ivanti’s Unified Endpoint Manager, you will be able to:
+With Ivanti’s Autonomous Endpoint Management, you will be able to:
 
 - Automatically compile an accurate list of all devices connected to your network, along with their software
 - Send out new software and patches automatically to appropriate devices

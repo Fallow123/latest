@@ -8,12 +8,11 @@ cardsTitle: Ivanti products we cover
 cards:
   - { title: Ivanti Asset Manager, text: Track every IT asset through its full lifecycle., href: /ivanti-asset-manager }
   - { title: Ivanti Automation, text: Hand repetitive IT tasks to software., href: /ivanti-automation }
-  - { title: Ivanti Identity Director, text: Automate identity and access management., href: /ivanti-identity-director }
   - { title: Ivanti Neurons, text: Self-healing, automated cloud service management., href: /ivanti-neurons }
   - { title: Ivanti Neurons for RBVM, text: Risk-based vulnerability management., href: /ivanti-risksense }
   - { title: Ivanti Security Controls, text: One patch management system for all your assets., href: /ivanti-security-controls }
   - { title: Ivanti Service Manager, text: A modern IT service desk., href: /ivanti-service-manager }
-  - { title: Ivanti UEM Solutions, text: Manage every device from one console., href: /ivanti-uem-solutions }
+  - { title: Ivanti AEM Solutions, text: Autonomous management for every device from one console., href: /ivanti-aem-solutions }
 heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti Partner Network Premier Partner badge }
 ---
 

@@ -7,3 +7,15 @@
   from = "/intercom"
   to = "/partners"
   status = 301
+
+# Ivanti no longer offers Identity Director; send old links to the Ivanti page
+[[redirects]]
+  from = "/ivanti-identity-director"
+  to = "/ivanti"
+  status = 301
+
+# Ivanti renamed UEM to AEM (Autonomous Endpoint Management)
+[[redirects]]
+  from = "/ivanti-uem-solutions"
+  to = "/ivanti-aem-solutions"
+  status = 301
