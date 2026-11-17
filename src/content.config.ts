@@ -25,6 +25,7 @@ const pages = defineCollection({
     heroImage: z.object({ src: z.string(), alt: z.string(), still: z.string().optional() }).optional(), // still: shown instead of an animated src to visitors who prefer less motion
     // Optional text section shown between the hero and the cards (paragraphs split on blank lines; **bold** and [links](url) allowed)
     overviewTitle: z.string().optional(),
+    overviewId: z.string().optional(), // anchor for menu links, e.g. /netdocuments#document-management-system
     overview: z.string().optional(),
     // Optional grid of cards shown under the hero
     cardsTitle: z.string().optional(),
