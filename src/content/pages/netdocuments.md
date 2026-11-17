@@ -4,6 +4,24 @@ description: Migrate, customize and support NetDocuments, the secure cloud docum
 heading: Revolutionizing Document Management with NetDocuments & Latest Solutions
 intro: "At Latest Solutions, we specialize in integrating top-tier business solutions to enhance efficiency, security, and compliance for organizations worldwide. As a trusted NetDocuments partner, we help businesses streamline their document management workflows with cloud-based, AI-powered, and highly secure solutions tailored to their needs."
 cta: { label: 'Request a Demo', href: '#contact' }
+certifications:
+  title: Our NetDocuments certifications
+  text: "Our team is certified across sales, implementation and training for NetDocuments, ndMAX, PatternBuilder, PatternBuilder MAX, SetBuilder and App Builder."
+  badges:
+    - { src: /images/netdocuments/certifications/sales.webp, alt: "NetDocuments Sales Certified badge" }
+    - { src: /images/netdocuments/certifications/trainer.webp, alt: "NetDocuments Trainer Certified badge" }
+    - { src: /images/netdocuments/certifications/ndmax-sales.webp, alt: "NetDocuments ndMAX Sales Certified badge" }
+    - { src: /images/netdocuments/certifications/ndmax-implementation.webp, alt: "NetDocuments ndMAX Implementation Certified badge" }
+    - { src: /images/netdocuments/certifications/ndmax-trainer.webp, alt: "NetDocuments ndMAX Trainer Certified badge" }
+    - { src: /images/netdocuments/certifications/patternbuilder-sales.webp, alt: "NetDocuments PatternBuilder Sales Certified badge" }
+    - { src: /images/netdocuments/certifications/patternbuilder-implementation.webp, alt: "NetDocuments PatternBuilder Implementation Certified badge" }
+    - { src: /images/netdocuments/certifications/patternbuilder-max-implementation.webp, alt: "NetDocuments PatternBuilder MAX Implementation Certified badge" }
+    - { src: /images/netdocuments/certifications/patternbuilder-trainer.webp, alt: "NetDocuments PatternBuilder Trainer Certified badge" }
+    - { src: /images/netdocuments/certifications/setbuilder-sales.webp, alt: "NetDocuments SetBuilder Sales Certified badge" }
+    - { src: /images/netdocuments/certifications/setbuilder-implementation.webp, alt: "NetDocuments SetBuilder Implementation Certified badge" }
+    - { src: /images/netdocuments/certifications/setbuilder-trainer.webp, alt: "NetDocuments SetBuilder Trainer Certified badge" }
+    - { src: /images/netdocuments/certifications/app-builder-sales.webp, alt: "NetDocuments App Builder Sales Certified badge" }
+    - { src: /images/netdocuments/certifications/app-builder-trainer.webp, alt: "NetDocuments App Builder Trainer Certified badge" }
 overviewId: document-management-system
 overview: |
   **Document Management System:** NetDocuments is a leading Document Management System (DMS), providing a secure, cloud-based vault for managing critical documents.
@@ -63,24 +81,100 @@ With NetDocuments, organizations gain:
 
 <p class="client-note">A selection of NetDocuments clients worldwide.</p>
 
-<ul class="client-wall">
-    <li><img src="/images/netdocuments/clients/us-department-of-justice.webp" alt="U.S. Department of Justice" width="140" height="140" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/council-of-europe.webp" alt="Council of Europe" width="174" height="140" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/deutsche-bank.webp" alt="Deutsche Bank" width="167" height="140" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/wells-fargo.webp" alt="Wells Fargo" width="88" height="43" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/liberty-mutual.webp" alt="Liberty Mutual" width="171" height="81" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/blackrock.webp" alt="BlackRock" width="140" height="30" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/b3-brasil-bolsa-balcao.webp" alt="B3 Brasil Bolsa Balcão" width="224" height="100" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/yale.webp" alt="Yale" width="155" height="81" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/lexisnexis.webp" alt="LexisNexis" width="115" height="97" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/ascension-health.webp" alt="Ascension Health" width="216" height="55" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/foley-lardner.webp" alt="Foley & Lardner LLP" width="180" height="52" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/davis-wright-tremaine.webp" alt="Davis Wright Tremaine LLP" width="179" height="46" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/nelson-mullins.webp" alt="Nelson Mullins" width="114" height="48" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/buchanan-ingersoll-rooney.webp" alt="Buchanan Ingersoll & Rooney PC" width="137" height="76" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/corrs-chambers-westgarth.webp" alt="Corrs Chambers Westgarth" width="104" height="45" loading="lazy" /></li>
-    <li><img src="/images/netdocuments/clients/chevez-ruiz-zamarripa.webp" alt="Chevez Ruiz Zamarripa" width="283" height="140" loading="lazy" /></li>
-</ul>
+<div class="client-marquee" aria-label="NetDocuments clients">
+  <div class="client-row">
+    <ul>
+      <li><img src="/images/netdocuments/clients/ups.webp" alt="UPS" width="103" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/coca-cola.webp" alt="Coca-Cola" width="120" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/walt-disney.webp" alt="The Walt Disney Company" width="184" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/delta.webp" alt="Delta Air Lines" width="172" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/toyota.webp" alt="Toyota" width="134" height="110" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/wells-fargo.webp" alt="Wells Fargo" width="172" height="84" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/kpmg.webp" alt="KPMG" width="250" height="80" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/blackrock.webp" alt="BlackRock" width="137" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/deutsche-bank.webp" alt="Deutsche Bank" width="144" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/capital-one.webp" alt="Capital One" width="244" height="82" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/harvard-law-school.webp" alt="Harvard Law School" width="171" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/yale.webp" alt="Yale" width="228" height="118" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/nissan.webp" alt="Nissan" width="123" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/hyundai.webp" alt="Hyundai" width="162" height="92" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/gsk.webp" alt="GSK" width="175" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/kraft.webp" alt="Kraft" width="158" height="68" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/heinz.webp" alt="Heinz" width="148" height="66" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/vmware.webp" alt="VMware" width="108" height="116" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/liberty-mutual.webp" alt="Liberty Mutual" width="248" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/ing.webp" alt="ING" width="220" height="56" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/lexisnexis.webp" alt="LexisNexis" width="145" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/ups.webp" alt="" width="103" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/coca-cola.webp" alt="" width="120" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/walt-disney.webp" alt="" width="184" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/delta.webp" alt="" width="172" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/toyota.webp" alt="" width="134" height="110" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/wells-fargo.webp" alt="" width="172" height="84" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/kpmg.webp" alt="" width="250" height="80" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/blackrock.webp" alt="" width="137" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/deutsche-bank.webp" alt="" width="144" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/capital-one.webp" alt="" width="244" height="82" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/harvard-law-school.webp" alt="" width="171" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/yale.webp" alt="" width="228" height="118" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/nissan.webp" alt="" width="123" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/hyundai.webp" alt="" width="162" height="92" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/gsk.webp" alt="" width="175" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/kraft.webp" alt="" width="158" height="68" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/heinz.webp" alt="" width="148" height="66" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/vmware.webp" alt="" width="108" height="116" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/liberty-mutual.webp" alt="" width="248" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/ing.webp" alt="" width="220" height="56" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/lexisnexis.webp" alt="" width="145" height="120" loading="lazy" /></li>
+    </ul>
+  </div>
+  <div class="client-row reverse">
+    <ul>
+      <li><img src="/images/netdocuments/clients/mckesson.webp" alt="McKesson" width="262" height="40" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/office-depot.webp" alt="Office Depot OfficeMax" width="274" height="100" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/wyndham.webp" alt="Wyndham Hotels and Resorts" width="268" height="74" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/virgin-australia.webp" alt="Virgin Australia" width="138" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/dupont-dow.webp" alt="DuPont and Dow" width="169" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/cardinal-health.webp" alt="Cardinal Health" width="264" height="92" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/university-of-california.webp" alt="University of California" width="246" height="100" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/us-department-of-justice.webp" alt="U.S. Department of Justice" width="120" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/bt.webp" alt="BT" width="184" height="92" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/millercoors.webp" alt="MillerCoors" width="256" height="82" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/atlanta-braves.webp" alt="Atlanta Braves" width="214" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/habitat-for-humanity.webp" alt="Habitat for Humanity" width="238" height="80" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/council-of-europe.webp" alt="Council of Europe" width="149" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/skadden.webp" alt="Skadden" width="200" height="46" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/sullivan-cromwell.webp" alt="Sullivan & Cromwell" width="208" height="68" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/hogan-lovells.webp" alt="Hogan Lovells" width="158" height="120" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/milbank.webp" alt="Milbank" width="302" height="62" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/orrick.webp" alt="Orrick" width="198" height="106" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/akin-gump.webp" alt="Akin Gump" width="256" height="78" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/wilson-sonsini.webp" alt="Wilson Sonsini" width="268" height="86" loading="lazy" /></li>
+      <li><img src="/images/netdocuments/clients/pillsbury.webp" alt="Pillsbury" width="166" height="80" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/mckesson.webp" alt="" width="262" height="40" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/office-depot.webp" alt="" width="274" height="100" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/wyndham.webp" alt="" width="268" height="74" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/virgin-australia.webp" alt="" width="138" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/dupont-dow.webp" alt="" width="169" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/cardinal-health.webp" alt="" width="264" height="92" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/university-of-california.webp" alt="" width="246" height="100" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/us-department-of-justice.webp" alt="" width="120" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/bt.webp" alt="" width="184" height="92" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/millercoors.webp" alt="" width="256" height="82" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/atlanta-braves.webp" alt="" width="214" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/habitat-for-humanity.webp" alt="" width="238" height="80" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/council-of-europe.webp" alt="" width="149" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/skadden.webp" alt="" width="200" height="46" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/sullivan-cromwell.webp" alt="" width="208" height="68" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/hogan-lovells.webp" alt="" width="158" height="120" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/milbank.webp" alt="" width="302" height="62" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/orrick.webp" alt="" width="198" height="106" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/akin-gump.webp" alt="" width="256" height="78" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/wilson-sonsini.webp" alt="" width="268" height="86" loading="lazy" /></li>
+      <li aria-hidden="true"><img src="/images/netdocuments/clients/pillsbury.webp" alt="" width="166" height="80" loading="lazy" /></li>
+    </ul>
+  </div>
+</div>
 
 ## Latest Solutions: Your NetDocuments Implementation Partner
 
@@ -91,33 +185,6 @@ At Latest Solutions, we specialize in implementing, optimizing, and supporting N
 - **Ensure compliance:** Implement regulatory best practices with built-in security policies.
 - **Integrate with your tech stack:** Connect NetDocuments with Microsoft 365, Freshworks, CRMs, and other tools.
 - **Ongoing support & training:** Ensure your team maximizes the full potential of NetDocuments.
-
-<div id="certifications"></div>
-
-## Our NetDocuments certifications
-
-<div class="cert-band">
-  <div class="cert-cycle" style="--n:14" aria-label="14 NetDocuments certification badges" role="img">
-    <img src="/images/netdocuments/certifications/sales.webp" alt="NetDocuments Sales Certified badge" width="440" height="440" style="--i:0" />
-    <img src="/images/netdocuments/certifications/trainer.webp" alt="NetDocuments Trainer Certified badge" width="440" height="440" style="--i:1" />
-    <img src="/images/netdocuments/certifications/ndmax-sales.webp" alt="NetDocuments ndMAX Sales Certified badge" width="440" height="440" style="--i:2" />
-    <img src="/images/netdocuments/certifications/ndmax-implementation.webp" alt="NetDocuments ndMAX Implementation Certified badge" width="440" height="440" style="--i:3" />
-    <img src="/images/netdocuments/certifications/ndmax-trainer.webp" alt="NetDocuments ndMAX Trainer Certified badge" width="440" height="440" style="--i:4" />
-    <img src="/images/netdocuments/certifications/patternbuilder-sales.webp" alt="NetDocuments PatternBuilder Sales Certified badge" width="440" height="440" style="--i:5" />
-    <img src="/images/netdocuments/certifications/patternbuilder-implementation.webp" alt="NetDocuments PatternBuilder Implementation Certified badge" width="440" height="440" style="--i:6" />
-    <img src="/images/netdocuments/certifications/patternbuilder-max-implementation.webp" alt="NetDocuments PatternBuilder MAX Implementation Certified badge" width="440" height="440" style="--i:7" />
-    <img src="/images/netdocuments/certifications/patternbuilder-trainer.webp" alt="NetDocuments PatternBuilder Trainer Certified badge" width="440" height="440" style="--i:8" />
-    <img src="/images/netdocuments/certifications/setbuilder-sales.webp" alt="NetDocuments SetBuilder Sales Certified badge" width="440" height="440" style="--i:9" />
-    <img src="/images/netdocuments/certifications/setbuilder-implementation.webp" alt="NetDocuments SetBuilder Implementation Certified badge" width="440" height="440" style="--i:10" />
-    <img src="/images/netdocuments/certifications/setbuilder-trainer.webp" alt="NetDocuments SetBuilder Trainer Certified badge" width="440" height="440" style="--i:11" />
-    <img src="/images/netdocuments/certifications/app-builder-sales.webp" alt="NetDocuments App Builder Sales Certified badge" width="440" height="440" style="--i:12" />
-    <img src="/images/netdocuments/certifications/app-builder-trainer.webp" alt="NetDocuments App Builder Trainer Certified badge" width="440" height="440" style="--i:13" />
-  </div>
-  <div class="cert-copy">
-    <p class="cert-count"><strong>14</strong> NetDocuments certifications</p>
-    <p>Our team is certified across sales, implementation and training for NetDocuments, ndMAX, PatternBuilder, PatternBuilder MAX, SetBuilder and App Builder.</p>
-  </div>
-</div>
 
 <div id="intelligent-foundation"></div>
 

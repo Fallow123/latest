@@ -23,6 +23,8 @@ const pages = defineCollection({
     cta: z.object({ label: z.string(), href: z.string() }).optional(),
     // Optional picture shown beside the hero text (path under /public)
     heroImage: z.object({ src: z.string(), alt: z.string(), still: z.string().optional(), screenshot: z.boolean().default(false) }).optional(), // still: shown instead of an animated src to visitors who prefer less motion
+    // Optional certification badges that cycle one at a time, in a band right under the hero
+    certifications: z.object({ title: z.string(), text: z.string(), badges: z.array(z.object({ src: z.string(), alt: z.string() })) }).optional(),
     // Optional text section shown between the hero and the cards (paragraphs split on blank lines; **bold** and [links](url) allowed)
     overviewTitle: z.string().optional(),
     overviewId: z.string().optional(), // anchor for menu links, e.g. /netdocuments#document-management-system
