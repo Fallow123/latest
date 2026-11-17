@@ -1,8 +1,8 @@
 ---
-title: "Ivanti Neurons | Latest Solutions"
-description: "Ivanti Neurons implementation and support: self-healing, automated, secure device and cloud service management."
+title: "Ivanti Neurons Platform | Latest Solutions"
+description: "Ivanti Neurons Platform implementation and support: self-healing, automated, secure device and cloud service management."
 eyebrow: Ivanti
-heading: "Ivanti Neurons"
+heading: "Ivanti Neurons Platform"
 intro: "Cloud service management for automation, security, self healing, and more."
 services: true
 servicesIntro: Ivanti’s new cloud service management solution is a scalable, reliable way to improve your cloud services. But will you implement it in the most effective way for your particular system? Will your staff members adopt it and use it optimally?
@@ -25,7 +25,7 @@ faqs:
 
 ## Experience a comprehensive cloud solution
 
-Ivanti Neurons is a new type of cloud service management solution. It is a platform that provides cloud-based automation, security, and self-healing to your employee’s devices anywhere on your network, powered by machine learning. These cloud service management tools will:
+The Ivanti Neurons Platform is the cloud foundation behind Ivanti’s Autonomous Endpoint Management, Exposure Management, IT Service Management and Network Security solutions. It that provides cloud-based automation, security, and self-healing to your employee’s devices anywhere on your network, powered by machine learning. These cloud service management tools will:
 
 - Maintain reliable cloud services, reducing interruptions by 60% or more
 - About 80% of the time, self-heal user device problems without users reporting them
@@ -38,4 +38,4 @@ Ivanti Neurons is a new type of cloud service management solution. It is a platf
 - Offer self-service options to users, allowing lightning-fast resolutions
 - Bring greater cost efficiencies to your IT budget
 
-Ivanti Neurons will distribute automated ITIL cloud service management tools throughout your network as it grows. Bring on new devices, and Ivanti Neurons will inventory them and begin automatically protecting them—saving you time, labor costs, and complicated workflows.
+The Ivanti Neurons Platform will distribute automated ITIL cloud service management tools throughout your network as it grows. Bring on new devices, and the Ivanti Neurons Platform will inventory them and begin automatically protecting them—saving you time, labor costs, and complicated workflows.

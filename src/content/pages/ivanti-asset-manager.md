@@ -1,11 +1,11 @@
 ---
-title: "Ivanti Asset Manager | Latest Solutions"
-description: "Implementation and support for Ivanti Asset Manager, the cloud-based tool for tracking IT assets through their full lifecycle."
+title: "Ivanti ITAM | Latest Solutions"
+description: "Implementation and support for Ivanti ITAM (IT Asset Management, formerly Asset Manager), the cloud-based tool for tracking IT assets through their full lifecycle."
 eyebrow: Ivanti
-heading: "Ivanti Asset Manager"
+heading: "Ivanti ITAM"
 intro: "Asset tracking software to manage your IT lifecycles."
 services: true
-servicesIntro: 'Out of all the asset management services providers available, why choose Latest Solutions? Because we do much more than provide software. As former Ivanti employees, we have deep expertise in every feature of Asset Manager—both obvious and hidden.
+servicesIntro: 'Out of all the asset management services providers available, why choose Latest Solutions? Because we do much more than provide software. As former Ivanti employees, we have deep expertise in every feature of Ivanti ITAM—both obvious and hidden.
 
 
   We can ensure you will get full value out of your new software, from the planning to the implementation to the day-to-day use.'
@@ -59,4 +59,4 @@ Organizations live and die on insights. And IT asset management software gives y
 - Install patches and updates on time
 - Reduce security risks
 
-Enjoy the benefits of our best IT asset management solutions provided by Ivanti Asset Manager. By using your assets more effectively, you can save money and get more value out of each resource. Pursue your most important objectives knowing your assets are being managed right.
+Enjoy the benefits of our best IT asset management solutions provided by Ivanti ITAM. By using your assets more effectively, you can save money and get more value out of each resource. Pursue your most important objectives knowing your assets are being managed right.

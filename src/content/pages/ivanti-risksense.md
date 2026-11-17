@@ -1,19 +1,17 @@
 ---
-title: "Ivanti Neurons for RBVM | Latest Solutions"
-description: "Ivanti Neurons for Risk-Based Vulnerability Management (formerly RiskSense): prioritize and remediate the vulnerabilities that matter."
-eyebrow: "Ivanti · Risk-Based Vulnerability Management"
-heading: "Ivanti Neurons for RBVM"
-intro: "Cloud-based RiskSense management platform provides vulnerability and prioritization to control and measure security risk. RiskSense platform continuously correlates customer infrastructure with comprehensive internal and external vulnerability data, threat intelligence, human pen test findings, and business asset criticality to identify your security weaknesses with corresponding remediation action plans, dramatically improving security and IT team efficiency and effectiveness."
+title: "Ivanti RBVM | Latest Solutions"
+description: "Ivanti Risk-Based Vulnerability Management (RBVM), formerly Neurons for RBVM and RiskSense: prioritize and remediate the vulnerabilities that matter."
+eyebrow: "Ivanti · Exposure Management"
+heading: "Ivanti Risk-Based Vulnerability Management (RBVM)"
+intro: "Cloud-based Ivanti RBVM platform provides vulnerability and prioritization to control and measure security risk. The platform continuously correlates customer infrastructure with comprehensive internal and external vulnerability data, threat intelligence, human pen test findings, and business asset criticality to identify your security weaknesses with corresponding remediation action plans, dramatically improving security and IT team efficiency and effectiveness."
 services: true
 ---
 
-![RiskSense, acquired by Ivanti](/images/ivanti-risksense/risksense-logo.png)
-
 ## Experience a risk management cloud solution
 
-By leveraging RiskSense threat and vulnerability management solutions, organizations significantly shorten time-to-remediation, increase operational efficiency, strengthen their security programs, heighten response readiness, lower costs, and ultimately reduce the attack surface and minimize cyber risks.
+By leveraging Ivanti RBVM threat and vulnerability management solutions, organizations significantly shorten time-to-remediation, increase operational efficiency, strengthen their security programs, heighten response readiness, lower costs, and ultimately reduce the attack surface and minimize cyber risks.
 
-What RiskSense will do for your company:
+What Ivanti RBVM will do for your company:
 
 - Provide a true risk posture
 - Make them self sufficient
@@ -24,10 +22,10 @@ What RiskSense will do for your company:
 - Enrich with relevant insights and vulnerability data
 - Build plans based on their use case and ability to manage the risk
 
-## RiskSense - Neurons for RBVM Platform
+## The Ivanti RBVM platform
 
-![RiskSense dashboard in Ivanti Neurons for RBVM](/images/ivanti-risksense/risksense-dashboard.png)
+![Ivanti RBVM dashboard](/images/ivanti-risksense/risksense-dashboard.png)
 
 ## RBVM - Integrations
 
-![Ivanti Neurons for RBVM integrations](/images/ivanti-risksense/risksense-integrations.png)
+![Ivanti RBVM integrations](/images/ivanti-risksense/risksense-integrations.png)

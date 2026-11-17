@@ -36,5 +36,5 @@ humanSide:
     - title: "Webinar series: Staying Human in the Age of AI"
       href: /webinars
       text: "Free live sessions on behavioral science, leadership and AI adoption. First up: The Humaning Side of AI."
-expertise: [Service Manager, Asset Manager, Endpoint Management, Security Controls, Patching, Neurons, Automation, GRC, Xtraction, Integrations, Reporting, Cloud and On-Premises, Ivanti Legacy Products, MSP Provider, Project Management]
+expertise: [ITSM, ITAM, Autonomous Endpoint Management, Security Controls, Patch Management, Neurons Platform, Automation, GRC, Xtraction, Integrations, Reporting, Cloud and On-Premises, Ivanti Legacy Products, MSP Provider, Project Management]
 ---
