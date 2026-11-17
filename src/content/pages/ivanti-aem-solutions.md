@@ -3,7 +3,21 @@ title: "Ivanti AEM Solutions | Latest Solutions"
 description: "Ivanti Autonomous Endpoint Management (AEM) implementation: manage Windows, macOS, Linux, iOS and Android devices from one console."
 eyebrow: Ivanti
 heading: "Autonomous Endpoint Management Solutions"
-intro: "Endpoint management software to oversee all user devices."
+intro: "Ivanti Autonomous Endpoint Management (AEM) is endpoint management that runs itself. It discovers every device on your network, from laptops and servers to phones, then patches, configures and fixes them automatically based on risk, and checks the results. Your IT team manages Windows, macOS, Linux, iOS and Android from one console, and spends far less time on repeat work."
+heroImage: { src: /images/ivanti-aem/asset-visibility.webp, alt: Ivanti Autonomous Endpoint Management dashboard showing devices seen in the past 7 days, screenshot: true }
+showcaseTitle: A closer look at Ivanti AEM
+showcase:
+  - { title: Autonomous, risk-based patching, image: /images/ivanti-aem/autonomous-patching.webp, alt: AEM assets and exposure overview, text: "See which assets carry the highest risk, then patch them automatically based on risk and your own risk appetite. AEM verifies the results and keeps devices continuously compliant." }
+  - { title: Self-healing that cuts tickets, image: /images/ivanti-aem/self-healing.webp, alt: AEM self-healing bots library, text: "Bots detect and fix routine problems, like a full disk or configuration drift, before they reach the service desk." }
+  - { title: A better digital experience, image: /images/ivanti-aem/digital-experience.webp, alt: AEM digital experience score dashboard, text: "A digital experience score shows how well each device is working for its user, so IT can find slow or failing devices and fix them before they cause downtime." }
+cardsTitle: Everything AEM manages
+cards:
+  - { title: Multi-OS management, icon: /icons/monitor-cog.svg, text: "Enroll, configure, secure and retire Windows, macOS, Linux, iOS and Android devices from one console." }
+  - { title: Provisioning, icon: /icons/rocket.svg, text: Get new devices ready faster with modern enrollment and OS provisioning. }
+  - { title: App delivery and self-service, icon: /icons/package.svg, text: Deploy apps and give employees a self-service catalog while IT stays in control. }
+  - { title: Secure access, icon: /icons/shield-check.svg, text: "Conditional access, app controls and policies that keep every device compliant." }
+  - { title: Remote support, icon: /icons/headset.svg, text: "Run scripts, reboot devices, take remote control and fix issues without a desk visit." }
+  - { title: Fleet actions and analytics, icon: /icons/chart-line.svg, text: Act on whole groups of devices at once and track device health and experience. }
 services: true
 servicesIntro: 'Ivanti’s autonomous endpoint management (AEM) solutions bring you more features than common endpoint management software can. These tools will connect IT seamlessly with vendors, enable you to discover and inventory more of your assets, migrate user profiles between systems, and much more.
 

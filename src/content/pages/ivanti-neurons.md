@@ -3,7 +3,20 @@ title: "Ivanti Neurons Platform | Latest Solutions"
 description: "Ivanti Neurons Platform implementation and support: self-healing, automated, secure device and cloud service management."
 eyebrow: Ivanti
 heading: "Ivanti Neurons Platform"
-intro: "Cloud service management for automation, security, self healing, and more."
+intro: "The Ivanti Neurons Platform is the cloud foundation that every modern Ivanti product runs on: Autonomous Endpoint Management, Exposure Management, IT Service Management and Network Security. It brings your asset data, automation and AI together in one system of record, so IT and security teams see the same devices, act on the same data and let self-healing bots fix problems before users notice."
+heroImage: { src: /images/ivanti-neurons/neurons-platform.webp, alt: "Diagram of the Ivanti Neurons Platform: Autonomous Endpoint Management, IT Service Management and Network Security on one shared platform", screenshot: true }
+cardsTitle: What the platform gives you
+cards:
+  - { title: One system of record, icon: /icons/folder-tree.svg, text: "Continuous discovery, a CMDB, IT asset management and software estate data, all kept current and shared by every Ivanti product." }
+  - { title: Self-healing bots, icon: /icons/bot.svg, text: Bots that find and fix common device problems automatically and cut down service desk tickets. }
+  - { title: AI built in, icon: /icons/sparkles.svg, text: "AI for diagnostics, knowledge, agent assistance and insights, working from your real device data." }
+  - { title: Automation and workflows, icon: /icons/workflow.svg, text: A shared workflow engine that runs policy-driven actions across IT and security. }
+  - { title: Governance and security, icon: /icons/shield-check.svg, text: "Single sign-on, MFA on by default, role-based access control and audit logs across every Ivanti solution." }
+  - { title: Open integrations, icon: /icons/puzzle.svg, text: "Connectors and APIs for Microsoft, ServiceNow, Cisco, CrowdStrike, Okta, Tenable, Zscaler and more." }
+showcaseTitle: See it in action
+showcase:
+  - { title: Self-healing that fixes issues for you, image: /images/ivanti-aem/self-healing.webp, alt: Ivanti Neurons self-healing bots library, text: "Pick from a library of ready-made bots, like cleaning a full disk or flagging aged user profiles, and let them run on every device. Problems are fixed before anyone opens a ticket." }
+  - { title: Every asset in one view, image: /images/ivanti-aem/asset-visibility.webp, alt: Ivanti Neurons asset visibility dashboard, text: "Neurons discovers managed and unmanaged devices across your network and shows them in one dashboard, so you can spot devices that have not been seen and close the gaps." }
 services: true
 servicesIntro: Ivanti’s new cloud service management solution is a scalable, reliable way to improve your cloud services. But will you implement it in the most effective way for your particular system? Will your staff members adopt it and use it optimally?
 faqs:
@@ -25,7 +38,7 @@ faqs:
 
 ## Experience a comprehensive cloud solution
 
-The Ivanti Neurons Platform is the cloud foundation behind Ivanti’s Autonomous Endpoint Management, Exposure Management, IT Service Management and Network Security solutions. It that provides cloud-based automation, security, and self-healing to your employee’s devices anywhere on your network, powered by machine learning. These cloud service management tools will:
+The Ivanti Neurons Platform is the cloud foundation behind Ivanti’s Autonomous Endpoint Management, Exposure Management, IT Service Management and Network Security solutions. It provides cloud-based automation, security, and self-healing to your employee’s devices anywhere on your network, powered by machine learning. These cloud service management tools will:
 
 - Maintain reliable cloud services, reducing interruptions by 60% or more
 - About 80% of the time, self-heal user device problems without users reporting them
