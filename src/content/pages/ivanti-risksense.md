@@ -7,6 +7,8 @@ intro: "Cloud-based Ivanti RBVM platform provides vulnerability and prioritizati
 services: true
 ---
 
+![RiskSense, acquired by Ivanti](/images/ivanti-risksense/risksense-logo.png)
+
 ## Experience a risk management cloud solution
 
 By leveraging Ivanti RBVM threat and vulnerability management solutions, organizations significantly shorten time-to-remediation, increase operational efficiency, strengthen their security programs, heighten response readiness, lower costs, and ultimately reduce the attack surface and minimize cyber risks.
