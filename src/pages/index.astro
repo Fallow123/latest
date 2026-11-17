@@ -26,8 +26,17 @@ const partners = [
           <a class="btn btn-outline" href="/about">More about us</a>
         </div>
       </div>
+      <div class="hero-stage">
+        <script is:inline>
+          // The emblem intro plays once per visit; after that the partner card shows straight away.
+          try { if (sessionStorage.getItem('ls-intro')) document.currentScript.parentElement.classList.add('intro-seen'); sessionStorage.setItem('ls-intro', '1'); } catch (e) {}
+        </script>
+        <picture class="stage-emblem" aria-hidden="true">
+          <source media="(prefers-reduced-motion: reduce)" srcset="/images/brand/emblem.png" />
+          <img src="/images/brand/emblem-glimmer.webp" alt="" width="320" height="320" />
+        </picture>
       <div class="partner-panel" aria-label="Our technology partners">
-        <p class="partner-panel-label">Our technology partners</p>
+        <p class="partner-panel-label"><img class="partner-panel-emblem" src="/images/brand/emblem.png" alt="" width="20" height="20" />Our technology partners</p>
         <a class="partner-lead" href="/ivanti">
           <img src={site.ivantiBadge} alt="Ivanti Premier Partner badge" width="411" height="139" />
           <span>Long-time Ivanti Premier Partner with 100+ years of combined Ivanti experience</span>
@@ -40,6 +49,7 @@ const partners = [
             </a>
           ))}
         </div>
+      </div>
       </div>
     </div>
   </section>
