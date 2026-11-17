@@ -6,12 +6,12 @@ heading: Ivanti & Us
 intro: "We are Ivanti partners, certified consultants trained to assist in managing and maintaining Ivanti products. We go beyond just focusing on software support—we provide a bridge between your Ivanti products and your business goals and requirements."
 cardsTitle: Ivanti products we cover
 cards:
-  - { title: Ivanti Asset Manager, text: Track every IT asset through its full lifecycle., href: /ivanti-asset-manager }
+  - { title: Ivanti ITAM, text: Track every IT asset through its full lifecycle., href: /ivanti-asset-manager }
   - { title: Ivanti Automation, text: Hand repetitive IT tasks to software., href: /ivanti-automation }
-  - { title: Ivanti Neurons, text: Self-healing, automated cloud service management., href: /ivanti-neurons }
-  - { title: Ivanti Neurons for RBVM, text: Risk-based vulnerability management., href: /ivanti-risksense }
+  - { title: Ivanti Neurons Platform, text: Self-healing, automated cloud service management., href: /ivanti-neurons }
+  - { title: Ivanti RBVM, text: Risk-based vulnerability management., href: /ivanti-risksense }
   - { title: Ivanti Security Controls, text: One patch management system for all your assets., href: /ivanti-security-controls }
-  - { title: Ivanti Service Manager, text: A modern IT service desk., href: /ivanti-service-manager }
+  - { title: Ivanti ITSM, text: A modern IT service desk., href: /ivanti-service-manager }
   - { title: Ivanti AEM Solutions, text: Autonomous management for every device from one console., href: /ivanti-aem-solutions }
 heroImage: { src: /images/shared/ivanti-premier-partner-badge.png, alt: Ivanti Partner Network Premier Partner badge }
 ---
