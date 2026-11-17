@@ -89,6 +89,31 @@ const faqSchema = d.faqs && {
   }
 
   {
+    d.recognition && (
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Analyst recognition</p>
+            <h2 class="title-line">{d.recognitionTitle ?? 'Analyst recognition'}</h2>
+            {d.recognitionIntro && <p>{d.recognitionIntro}</p>}
+          </div>
+          <div class="grid recognition stagger">
+            {d.recognition.map((r) => (
+              <div class="card reveal">
+                <p class="recognition-label">{r.label}</p>
+                <h3>{r.report}</h3>
+                <a class="recognition-source" href={r.source} target="_blank" rel="noopener">
+                  Source: {new URL(r.source).hostname.replace(/^www\./, '')}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
     d.logos && (
       <section class="section">
         <div class="container">
