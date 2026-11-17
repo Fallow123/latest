@@ -25,7 +25,7 @@ cardsDark: true
 heroImage: { src: /images/netdocuments/netdocuments-logo-white.png, alt: NetDocuments logo }
 ---
 
-## NdMax : The revolutionnary Artificial Intelligence
+## ndMAX: The Revolutionary Artificial Intelligence
 
 NetDocuments’ ndMAX is an AI-powered suite designed to enhance legal workflows by automating routine tasks and providing intelligent document management solutions.
 

@@ -33,5 +33,5 @@ Discover what Latest Solutions + TeamDynamix can do for you.
 1. **Consultation** – We assess your needs and explore how TeamDynamix fits into your strategy.
 2. **Customized Integration** – Tailoring TeamDynamix products to your operations.
 3. **Implementation & Training** – We oversee setup and train your team to maximize adoption.
-4. **Ongoing Support** your needs evolve.
+4. **Ongoing Support** – We stay with you as your needs evolve.
 5. **Client Autonomy**
