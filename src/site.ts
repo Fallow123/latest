@@ -13,9 +13,9 @@ export const site = {
   footerLogo: '/images/shared/latest-solutions-full-white.png',
   ivantiBadge: '/images/shared/ivanti-premier-partner-badge.png',
 
-  // Where the "Request a discovery call" form sends submissions.
-  // Set this to a Formspree / Netlify / Basin endpoint once hosting is chosen.
-  formAction: '',
+  // Page shown after someone sends the "Request a discovery call" form.
+  // Submissions are collected by Netlify Forms (form name: discovery-call) and emailed from there.
+  formAction: '/thanks',
 };
 
 export type NavItem = { label: string; href: string; children?: NavItem[] };

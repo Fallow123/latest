@@ -13,7 +13,7 @@ const {
     <h3>{title}</h3>
     <p>{text}</p>
   </div>
-  <form class="form" name="webinar-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <form class="form" name="webinar-signup" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="webinar-signup" />
     <input type="hidden" name="session" value={session} />
     <p class="visually-hidden" aria-hidden="true">
