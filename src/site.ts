@@ -79,6 +79,35 @@ export const nav: NavItem[] = [
       { label: 'Webinars', href: '/webinars' },
     ],
   },
+  {
+    label: 'Training',
+    href: '/training',
+    children: [
+      {
+        label: 'By platform',
+        href: '/training#platforms',
+        children: [
+          { label: 'Ivanti', href: '/training-ivanti' },
+          { label: 'NetDocuments', href: '/training-netdocuments' },
+          { label: 'TeamDynamix', href: '/training-teamdynamix' },
+        ],
+      },
+      {
+        label: 'Best practices',
+        href: '/training#best-practices',
+        children: [
+          { label: 'ITIL', href: '/training-itil' },
+          { label: 'ITSM', href: '/training-itsm' },
+          { label: 'ITAM', href: '/training-itam' },
+        ],
+      },
+      {
+        label: 'Careers in tech',
+        href: '/training#careers',
+        children: [{ label: 'Inside Sales', href: '/training-inside-sales' }],
+      },
+    ],
+  },
   { label: 'Partners', href: '/partners' },
   { label: 'About', href: '/about' },
 ];
@@ -101,6 +130,12 @@ export const speakers: Record<string, Speaker> = {
     bio: 'Kip is an award-winning executive coach with more than 20 years working with leaders on what sits underneath behavior. He has spoken for organizations including AstraZeneca, Novartis, Pepsi and Ford, and his work starts from one idea: look beneath the behavior.',
     href: 'https://www.kipjon.com',
     linkLabel: 'kipjon.com',
+  },
+  // Placeholder until we have Grant's full name, title, bio and photo.
+  grant: {
+    name: 'Grant',
+    role: 'Inside Sales Trainer',
+    bio: 'Grant leads our Inside Sales training. He coaches people from every kind of background through the skills, habits and confidence it takes to land a first sales role in tech and do well in it.',
   },
 };
 

@@ -32,6 +32,8 @@ const pages = defineCollection({
     // Optional grid of cards shown under the hero
     cardsTitle: z.string().optional(),
     cards: z.array(card).optional(),
+    // Optional groups of linked cards, each with its own heading (used as the chooser on /training)
+    cardGroups: z.array(z.object({ title: z.string(), id: z.string().optional(), intro: z.string().optional(), cards: z.array(card) })).optional(),
     // Show the cards on a dark background (for white or light icons)
     cardsDark: z.boolean().default(false),
     // Show the shared patch catalog band (text in src/site.ts) right under the hero

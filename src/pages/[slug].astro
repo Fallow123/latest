@@ -150,6 +150,33 @@ const faqSchema = d.faqs && {
   }
 
   {
+    d.cardGroups && (
+      <section class="section soft">
+        <div class="container card-groups">
+          {d.cardGroups.map((g) => (
+            <div class="card-group" id={g.id}>
+              <div class="section-head reveal">
+                <h2 class="title-line">{g.title}</h2>
+                {g.intro && <p>{g.intro}</p>}
+              </div>
+              <div class:list={['grid stagger', { 'grid-3': g.cards.length % 3 === 0 }]}>
+                {g.cards.map((c) => (
+                  <a class="card card-link reveal" href={c.href}>
+                    {c.icon && <img class="icon" src={c.icon} alt="" />}
+                    <h3>{c.title}</h3>
+                    {c.text && <p>{c.text}</p>}
+                    <span class="more">Explore →</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
     d.showcase && (
       <section class="section">
         <div class="container">
