@@ -742,3 +742,9 @@ h3 { letter-spacing: -0.015em; font-weight: 500; }
 .patch-band-stats strong { display: block; font-family: var(--font-head); font-size: clamp(1.15rem, 2vw, 1.6rem); color: var(--mint); line-height: 1.15; margin-bottom: 4px; }
 .patch-band-stats span { font-size: 0.82rem; color: var(--text); }
 @media (max-width: 860px) { .patch-band-inner { grid-template-columns: 1fr; } }
+
+/* Training chooser: groups of linked cards on /training */
+.card-groups { display: grid; gap: 64px; }
+.card-group { scroll-margin-top: 110px; }
+.card-group .section-head { margin-bottom: 24px; }
+.card-group .card-link .more { margin-top: 12px; color: var(--mint); font-weight: 600; }
