@@ -131,11 +131,13 @@ export const speakers: Record<string, Speaker> = {
     href: 'https://www.kipjon.com',
     linkLabel: 'kipjon.com',
   },
-  // Placeholder until we have Grant's full name, title, bio and photo.
+  // Still to add: Grant's photo (square image in /public/images/speakers) and a fuller bio.
   grant: {
-    name: 'Grant',
+    name: 'Grant Mitchell',
     role: 'Inside Sales Trainer',
     bio: 'Grant leads our Inside Sales training. He coaches people from every kind of background through the skills, habits and confidence it takes to land a first sales role in tech and do well in it.',
+    href: 'https://www.linkedin.com/in/gmitchellgm/',
+    linkLabel: 'Grant on LinkedIn',
   },
 };
 

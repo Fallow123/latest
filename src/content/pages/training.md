@@ -25,7 +25,7 @@ cardGroups:
     id: careers
     intro: "You don't need a computer science degree to build a career in technology."
     cards:
-      - { title: Inside Sales Training with Grant, href: /training-inside-sales, icon: /icons/trending-up.svg, text: "Learn the skills tech companies hire inside sales reps for: prospecting, cold calling, discovery and closing, plus how to land the job." }
+      - { title: Inside Sales Training with Grant Mitchell, href: /training-inside-sales, icon: /icons/trending-up.svg, text: "Learn the skills tech companies hire inside sales reps for: prospecting, cold calling, discovery and closing, plus how to land the job." }
 faqs:
   - q: Is training delivered online or in person?
     a: "Both. Most sessions run live online, and we can come on site for workshops and larger groups. Every session is live with a real instructor, not a pre-recorded video."

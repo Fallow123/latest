@@ -1,6 +1,6 @@
 ---
 title: "Inside Sales Training: Get Into Tech | Latest Solutions"
-description: "Inside Sales training with Grant: learn prospecting, cold calling, discovery and closing, and get ready to land your first sales job in tech."
+description: "Inside Sales training with Grant Mitchell: learn prospecting, cold calling, discovery and closing, and get ready to land your first sales job in tech."
 eyebrow: Training · Careers in tech
 heading: Break into tech with Inside Sales training
 intro: "Inside sales is one of the fastest ways into the tech industry, no coding or degree required. Grant teaches you the skills tech companies hire for, and helps you get ready to land the job."
