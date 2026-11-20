@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SDR Launch Academy</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Three courses for software sales reps: SDR Academy, AI Basic Knowledge, and the Net-New Logo Hunting Playbook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: dark-first, centered and symmetrical. Black ground with a faint green grid and a pointer spotlight; every section head centered; equal-column grids that never leave an orphan. */
+:root{
+  --bg:#021a2d; --bg-soft:#03233c; --card:#ffffff0b; --card-2:#ffffff0a;
+  --line:#ffffff14; --line-2:#ffffff29;
+  --ink:#b8c6d8; --muted:#8e9fb5; --head:#ffffff;
+  --accent:#5cb06c; --accent-ink:#8fd19c; --mint:#8fd19c; --accent-deep:#24646c;
+  --warn:#e8b33d; --hot:#ff8a76;
+  --radius:18px; --ease:cubic-bezier(.22,1,.36,1);
+  --font-head:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;font-family:var(--font-body);font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);position:relative}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+/* grid + spotlight */
+.bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(to right,#5cb06c12 1px,transparent 1px),linear-gradient(to bottom,#5cb06c12 1px,transparent 1px);
+  background-size:56px 56px;background-position:center top;
+  -webkit-mask-image:radial-gradient(ellipse 90% 70% at 50% 20%,#000 30%,transparent 100%);mask-image:radial-gradient(ellipse 90% 70% at 50% 20%,#000 30%,transparent 100%)}
+.spotlight{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(520px circle at var(--mx,50%) var(--my,30%),#5cb06c1f,transparent 60%);transition:opacity .3s}
+.site-header,main,.cta,.site-footer{position:relative;z-index:2}
+h1,h2,h3,h4{font-family:var(--font-head);color:var(--head);margin:0;line-height:1.18;text-wrap:balance}
+h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:700;letter-spacing:-.01em}
+h3{font-size:1.12rem;font-weight:700}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.narrow{max-width:900px}
+.section{padding-block:clamp(64px,8vw,104px)}
+.soft{background:linear-gradient(180deg,transparent,#0a0e0bcc 12%,#0a0e0bcc 88%,transparent)}
+.dark{background:transparent}
+.stack{display:grid;gap:16px}
+.eyebrow{font-family:var(--font-head);text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-size:.76rem;font-weight:700}
+.lead{font-size:1.1rem;max-width:64ch;color:var(--muted)}
+.sec-head{display:grid;gap:14px;margin:0 auto 48px;max-width:780px;text-align:center;justify-items:center}
+.center{text-align:center}
+
+.btn{display:inline-block;font-family:var(--font-head);font-weight:700;font-size:1rem;background:var(--accent);color:#04261b;border:0;border-radius:999px;padding:.85em 1.6em;text-decoration:none;cursor:pointer;transition:box-shadow .2s,transform .15s;box-shadow:0 0 0 0 #5cb06c00}
+.btn:hover{box-shadow:0 0 28px #5cb06c66;transform:translateY(-1px)}
+.btn-outline,.btn-line{background:transparent;color:var(--head);box-shadow:inset 0 0 0 1.5px var(--line-2)}
+.btn-outline:hover,.btn-line:hover{box-shadow:inset 0 0 0 1.5px var(--accent);color:var(--accent)}
+.btn-small{padding:.55em 1.15em;font-size:.85rem}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:#050706d9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:var(--font-head);font-weight:800;font-size:1.08rem}
+.logo svg{flex:none}
+.logo small{display:block;font-weight:600;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.main-nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.main-nav a.nav{color:#c4cec8;font-family:var(--font-head);font-weight:600;font-size:.88rem;text-decoration:none;padding:10px 12px;border-radius:999px}
+.main-nav a.nav:hover{color:var(--accent)}
+.main-nav a.nav[aria-current="page"]{color:var(--accent);background:#5cb06c14}
+.main-nav .btn{margin-left:8px}
+.menu-btn{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.menu-btn span{display:block;width:24px;height:2px;background:#fff;margin:5px 0}
+@media (max-width:1000px){
+  .menu-btn{display:block}
+  .main-nav{display:none;width:100%;flex-direction:column;align-items:stretch;padding-bottom:16px}
+  .site-header.open .main-nav{display:flex}
+  .main-nav .btn{align-self:flex-start;margin:8px 0 0}
+}
+
+/* hero */
+.hero{padding-block:clamp(64px,9vw,120px) clamp(56px,7vw,88px);background:radial-gradient(ellipse 60% 50% at 50% 0%,#5cb06c22,transparent 70%)}
+.hero h1{color:#fff}
+.hero-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:center}
+@media (max-width:900px){.hero-split{grid-template-columns:minmax(0,1fr)}}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.hero-note{font-size:.88rem;color:var(--muted)}
+.accent-word{color:var(--accent)}
+.hero .lead{color:#a8b4ad}
+
+/* glass panel (role-play, proof) */
+.call,.proof{background:linear-gradient(180deg,#0f1612e6,#0a0f0ce6);border:1px solid var(--line-2);border-radius:20px;padding:24px;display:grid;gap:14px;min-width:0;box-shadow:0 30px 80px #00000080,0 0 0 1px #5cb06c0d inset}
+.call-top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--font-head);font-size:.7rem;letter-spacing:.12em;color:var(--muted);font-weight:700;flex-wrap:wrap}
+.rec{display:inline-flex;align-items:center;gap:6px;color:var(--hot)}
+.rec::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--hot);box-shadow:0 0 10px var(--hot)}
+.who{display:flex;gap:12px;align-items:center}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--accent);color:#04261b;display:grid;place-items:center;font-family:var(--font-head);font-weight:800}
+.who b{color:#fff;font-family:var(--font-head);display:block}
+.who span{font-size:.85rem;color:var(--muted)}
+.line{display:grid;gap:4px;font-size:.95rem}
+.line small{font-family:var(--font-head);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.line.you{padding:12px 14px;background:#5cb06c12;border-radius:12px;border:1px solid #5cb06c33}
+.line.you small{color:var(--accent)}
+.line p{color:#e9efeb}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.76rem;font-weight:600;padding:5px 11px;border-radius:999px;background:#5cb06c1a;color:var(--accent);border:1px solid #5cb06c40}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.stat{background:var(--card);padding:26px 20px;display:grid;gap:6px;align-content:start;text-align:center;justify-items:center}
+.stat b{font-family:var(--font-head);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--accent);font-weight:800;font-variant-numeric:tabular-nums}
+.stat span{font-size:.88rem;color:var(--muted);max-width:24ch}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stats-wrap{position:relative;z-index:2}
+
+/* grids */
+.grid,.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:1000px){.grid,.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.grid-3{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:620px){.grid,.grid-4,.grid-2{grid-template-columns:minmax(0,1fr)}}
+
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:grid;gap:10px;align-content:start;min-width:0;overflow:hidden;transition:border-color .2s,transform .15s}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .25s;background:radial-gradient(320px circle at var(--x,50%) var(--y,50%),#5cb06c1c,transparent 60%)}
+.card:hover{border-color:#5cb06c55}
+.card:hover::before{opacity:1}
+.card>*{position:relative}
+.card p{color:var(--muted)}
+.num{font-family:var(--font-head);font-weight:800;color:var(--accent);font-size:1.3rem}
+.grid .card,.grid-4 .card{text-align:center;justify-items:center}
+
+.course-card{text-decoration:none;color:inherit;grid-template-rows:auto auto auto 1fr auto auto;text-align:center;justify-items:center}
+.course-card:hover{transform:translateY(-4px)}
+.course-badge{width:56px;height:56px;border-radius:16px;background:#5cb06c14;border:1px solid #5cb06c40;display:grid;place-items:center}
+.course-badge svg{stroke:var(--accent)}
+.course-meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.tag{font-size:.76rem;font-weight:600;padding:4px 11px;border-radius:999px;background:var(--card-2);border:1px solid var(--line-2);color:var(--ink)}
+.course-card .go{font-family:var(--font-head);font-weight:700;color:var(--accent);font-size:.92rem;margin-top:6px}
+.status{display:inline-block;font-family:var(--font-head);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:4px 10px;border-radius:999px}
+.status.live{background:#5cb06c1a;color:var(--accent)}
+.status.draft{background:#e8b33d1a;color:var(--warn)}
+
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:center}
+@media (max-width:900px){.two-col{grid-template-columns:minmax(0,1fr);gap:32px}}
+.two-col>*{min-width:0}
+
+.pill-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.pill-list.centered{justify-content:center}
+.pill-list li{background:var(--card-2);border:1px solid var(--line-2);border-radius:999px;padding:6px 14px;font-size:.88rem}
+
+blockquote.quote{font-family:var(--font-head);font-weight:600;color:#fff;font-size:clamp(1.2rem,2.3vw,1.6rem);border-left:3px solid var(--accent);margin:0;padding-left:20px;line-height:1.4}
+
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;text-align:left}
+.checks li::before{content:"";width:22px;height:22px;border-radius:50%;margin-top:2px;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2303140b' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* session rhythm */
+.rhythm{display:grid;grid-template-columns:10fr 25fr 10fr;border-radius:12px;overflow:hidden;font-family:var(--font-head);font-weight:700;color:#04261b;font-size:.88rem}
+.rhythm div{padding:14px 16px;display:grid;gap:2px}
+.rhythm div small{font-weight:600;font-size:.72rem;opacity:.75}
+.rhythm .r1{background:#9af0c4}.rhythm .r2{background:var(--accent)}.rhythm .r3{background:#22a868}
+.ticks{display:grid;grid-template-columns:10fr 25fr 10fr;font-size:.75rem;color:var(--muted);margin-top:6px;font-variant-numeric:tabular-nums}
+.ticks span:last-child{display:flex;justify-content:space-between}
+
+/* curriculum */
+.modules{display:grid;gap:48px;max-width:900px;margin-inline:auto}
+.module{display:grid;gap:18px}
+.module-head{display:grid;gap:6px;text-align:center;justify-items:center}
+.module-head .when{font-size:.92rem;color:var(--muted)}
+.sessions{display:grid;gap:12px}
+.sessions.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){.sessions.two{grid-template-columns:minmax(0,1fr)}}
+.session{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:var(--card);align-content:start}
+.session .n{font-family:var(--font-head);font-weight:800;font-size:1.2rem;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.25}
+.session h4{font-size:1rem;margin-bottom:4px}
+.session p{font-size:.92rem;color:var(--muted)}
+.deliv{display:inline-flex;gap:8px;align-items:baseline;margin-top:10px;font-size:.84rem;font-weight:600;color:var(--ink)}
+.deliv::before{content:"Build";font-family:var(--font-head);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#04261b;background:var(--accent);padding:2px 8px;border-radius:999px}
+
+/* tables */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:640px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--font-head);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:var(--card-2);font-weight:700}
+tr:last-child td{border-bottom:0}
+td b{color:#fff;font-family:var(--font-head);font-weight:600}
+.w{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent);font-family:var(--font-head)}
+.str{display:inline-block;font-size:.7rem;font-weight:700;font-family:var(--font-head);letter-spacing:.08em;padding:3px 9px;border-radius:999px;text-transform:uppercase}
+.str.high{background:#ff7a661f;color:var(--hot)}.str.med{background:#e8b33d1f;color:var(--warn)}.str.low{background:#8a978f20;color:var(--muted)}
+
+/* method flow */
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:f}
+@media (max-width:900px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.flow li{counter-increment:f;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:4px;font-size:.9rem;color:var(--muted);text-align:center;justify-items:center}
+.flow li::before{content:counter(f,decimal-leading-zero);font-family:var(--font-head);font-weight:800;color:var(--accent);font-size:1.1rem}
+.flow li b{color:#fff;font-family:var(--font-head)}
+
+/* tiers */
+.tiers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.tiers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.tiers{grid-template-columns:minmax(0,1fr)}}
+.tier{border-radius:var(--radius);padding:24px 20px;display:grid;gap:8px;align-content:start;border:1px solid var(--line);background:var(--card);text-align:center;justify-items:center}
+.tier .count{font-family:var(--font-head);font-weight:800;font-size:2.1rem;color:#fff;font-variant-numeric:tabular-nums;line-height:1}
+.tier .count small{font-size:.78rem;font-weight:600;color:var(--muted);margin-left:6px}
+.tier h3{font-size:1rem}
+.tier p{font-size:.88rem;color:var(--muted)}
+.tier .freq{font-size:.8rem;font-weight:600;color:var(--accent)}
+.tier.top{border-color:#5cb06c66;background:linear-gradient(180deg,#5cb06c14,var(--card));box-shadow:0 0 40px #5cb06c14}
+
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+@media (max-width:1000px){.phases{grid-template-columns:minmax(0,1fr)}}
+.phase{border-top:3px solid var(--accent);background:var(--card);border-radius:0 0 14px 14px;padding:20px 18px;display:grid;gap:6px;align-content:start;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;justify-items:center}
+.phase .wk{font-family:var(--font-head);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.phase p{font-size:.88rem;color:var(--muted)}
+
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:480px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 12px;display:grid;gap:2px;text-align:center}
+.kpi b{font-family:var(--font-head);font-weight:800;font-size:1.6rem;color:var(--accent);font-variant-numeric:tabular-nums}
+.kpi span{font-size:.82rem;color:var(--muted)}
+.sub-head{text-align:center;margin:56px 0 20px}
+
+/* pricing */
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+@media (max-width:900px){.price-grid{grid-template-columns:minmax(0,1fr)}}
+.price{gap:16px;grid-template-rows:auto auto auto auto 1fr auto;padding:30px}
+.price .amt{font-family:var(--font-head);font-weight:800;font-size:2.5rem;color:#fff;font-variant-numeric:tabular-nums;line-height:1}
+.price .amt small{font-size:.82rem;font-weight:600;color:var(--muted);margin-left:6px}
+.price.feature{border-color:#5cb06c80;background:linear-gradient(180deg,#5cb06c17,var(--card) 60%);box-shadow:0 0 60px #5cb06c1a}
+.price .checks li{font-size:.92rem}
+.price .btn{justify-self:stretch;text-align:center}
+.popular{justify-self:start;font-family:var(--font-head);font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--accent);color:#04261b;padding:4px 10px;border-radius:999px}
+.price .spacer{height:22px}
+.fine{font-size:.88rem;color:var(--muted);text-align:center}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:820px;margin-inline:auto}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:18px 22px}
+.faq details[open]{border-color:#5cb06c40}
+.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:700;color:#fff;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:10px;color:var(--muted)}
+
+/* cta */
+.cta{background:radial-gradient(ellipse 60% 70% at 50% 100%,#5cb06c1f,transparent 70%);border-top:1px solid var(--line)}
+.cta h2{color:#fff}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s}
+@media (max-width:820px){.steps{grid-template-columns:minmax(0,1fr)}}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:6px;text-align:center;justify-items:center;color:var(--muted)}
+.steps li::before{content:"Step " counter(s);font-family:var(--font-head);font-weight:700;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.steps li b{color:#fff;font-family:var(--font-head)}
+.cta .hero-actions{justify-content:center;margin-top:36px}
+
+/* footer */
+.site-footer{background:#030403;color:#7f8b84;font-size:.9rem;padding-block:48px 24px;border-top:1px solid var(--line)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+@media (max-width:720px){.footer-grid{grid-template-columns:minmax(0,1fr)}}
+.site-footer h4{color:#fff;font-size:.92rem;margin-bottom:10px}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.site-footer a{color:#b9c4bd;text-decoration:none}
+.site-footer a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid var(--line);margin-top:36px;padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.course-hero .crumb{font-size:.86rem;color:var(--muted)}
+.course-hero .crumb a{color:var(--muted);text-decoration:none}
+.course-hero .crumb a:hover{color:var(--accent)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px}
+.hero-facts span{font-size:.84rem;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--card-2);border:1px solid var(--line-2);color:var(--ink)}
+.proof{text-align:center;justify-items:center;padding:36px 28px}
+.proof b{font-family:var(--font-head);font-size:clamp(2.8rem,6vw,4.2rem);font-weight:800;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;text-shadow:0 0 40px #5cb06c55}
+.proof b em{font-style:normal;color:#fff}
+.proof span{color:#b3beb7;max-width:40ch}
+.proof hr{border:0;border-top:1px solid var(--line-2);margin:8px 0;width:100%}
+
+.callout{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--card);padding:18px 22px;border-radius:12px;font-size:.94rem;color:var(--muted)}
+.callout b{font-family:var(--font-head);color:#fff}
+.view[hidden]{display:none!important}
+[id]{scroll-margin-top:calc(80px + env(safe-area-inset-top,0px))}
+.mt{margin-top:40px}
+
+/* ===== Latest Solutions type + surface system (matched to latestsolutions.io) ===== */
+html,body{background:var(--bg)}
+body{font-family:var(--font-body);font-size:16px;line-height:1.7;color:var(--ink)}
+body::before{background:#021a2d}
+h1,h2,h3,h4{font-family:var(--font-head);color:#fff}
+h1{font-size:clamp(2.25rem,5vw,3.75rem);font-weight:600;letter-spacing:-.04em;line-height:1.06;background:linear-gradient(#fff 30%,#b9d7cf);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 .accent-word{white-space:nowrap;background:linear-gradient(90deg,#8fd19c,#5cb06c);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.75rem,3.2vw,2.6rem);font-weight:600;letter-spacing:-.032em;line-height:1.12}
+h3{font-size:1.15rem;font-weight:500;letter-spacing:-.015em}
+h4{font-weight:500;letter-spacing:-.01em}
+.lead{font-size:clamp(1.05rem,1.4vw,1.2rem);line-height:1.65;color:#9fb1c6}
+.hero .lead{color:#9fb1c6}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;justify-self:start;font-family:var(--font-head);font-size:.8rem;font-weight:500;letter-spacing:.01em;text-transform:none;color:#c3cfdc;background:#ffffff0a;border:1px solid var(--line);border-radius:999px;padding:5px 14px 5px 12px}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px #5cb06c33}
+.sec-head .eyebrow,.module-head .eyebrow,.proof .eyebrow{justify-self:center}
+/* header */
+.site-header{background:#021a2db8;backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.header-inner{min-height:68px}
+.logo{gap:10px;font-family:var(--font-head);font-weight:600;font-size:1.05rem;letter-spacing:-.02em;color:#fff}
+.main-nav a.nav{font-family:var(--font-head);font-weight:500;font-size:.88rem;color:#aebdcf;padding:8px 12px}
+.main-nav a.nav:hover{color:#fff}
+.main-nav a.nav[aria-current="page"]{color:#fff;background:#ffffff0f}
+/* buttons */
+.btn{font-family:var(--font-head);font-weight:600;font-size:.95rem;line-height:1.2;padding:.9em 1.6em;color:#04261b;background:linear-gradient(#6fc27d,#55a865);box-shadow:inset 0 1px #ffffff59,inset 0 -1px #0000001f,0 8px 24px -10px #5cb06c99;transition:background .2s,transform .2s var(--ease),box-shadow .2s}
+.btn:hover{background:linear-gradient(#7dcd8a,#5fb36f);transform:translateY(-1px);box-shadow:inset 0 1px #ffffff59,0 10px 28px -10px #5cb06cb3}
+.btn-small{font-size:.84rem;padding:.6em 1.15em}
+.btn-outline,.btn-line{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn-outline:hover,.btn-line:hover{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px #fff6}
+/* background: grid + glow + spotlight */
+.bg-grid{background-image:linear-gradient(#ffffff0e 1px,transparent 1px),linear-gradient(90deg,#ffffff0e 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(75% 60% at 60% 20%,#000 20%,transparent 75%);mask-image:radial-gradient(75% 60% at 60% 20%,#000 20%,transparent 75%)}
+.spotlight{background:radial-gradient(600px circle at var(--mx,60%) var(--my,25%),#5cb06c1c,transparent 60%)}
+.hero{background:radial-gradient(ellipse 80% 60% at 50% -10%,#033f63e6,transparent 70%);padding-block:clamp(72px,10vw,128px) clamp(56px,8vw,96px)}
+.soft{background:linear-gradient(180deg,transparent,#03233c99 15%,#03233c99 85%,transparent)}
+.section{position:relative}
+.section+.section::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(1180px,100% - 32px);height:1px;background:linear-gradient(90deg,transparent,#ffffff17 20%,#ffffff17 80%,transparent)}
+/* glass cards */
+.card,.session,.tier,.phase,.kpi,.flow li,.steps li,.faq details,.callout,.table-wrap,.stat{background:linear-gradient(#ffffff0b,#ffffff03);border-color:var(--line)}
+.card{box-shadow:inset 0 1px #ffffff0f,0 1px 2px #0003;border-radius:var(--radius)}
+.card::before{background:radial-gradient(420px circle at var(--x,50%) var(--y,0%),#8fd19c17,transparent 45%)}
+.card:hover{border-color:var(--line-2);background:linear-gradient(#ffffff0f,#ffffff05);box-shadow:inset 0 1px #ffffff1a,0 24px 48px -24px #000000b3}
+.stats{background:var(--line)}
+.stat{background:#03233c}
+.stat b,.kpi b{color:var(--mint)}
+.num,.session .n,.w{color:var(--mint)}
+.call,.proof{background:linear-gradient(160deg,#ffffff17,#ffffff06);border:1px solid #ffffff1f;backdrop-filter:blur(8px);box-shadow:0 24px 48px -20px #0009}
+.proof b{color:#fff;text-shadow:none;font-weight:600;letter-spacing:-.03em}
+.proof b em{color:var(--mint)}
+.line.you{background:#5cb06c14;border-color:#5cb06c38}
+.line.you small,.chip,.status.live,.tier .freq,.course-card .go,.faq summary::after{color:var(--mint)}
+.course-badge{background:#ffffff0a;border:1px solid var(--line);color:var(--mint)}
+.tier .count,.price .amt{font-weight:600;letter-spacing:-.03em}
+.tier.top,.price.feature{border-color:#8fd19c4d;background:linear-gradient(160deg,#5cb06c1f,#ffffff05)}
+.tag,.pill-list li,.hero-facts span{background:#ffffff0a;border-color:var(--line);color:#c3cfdc;font-size:.8rem}
+th{background:#ffffff08;font-family:var(--font-head);font-weight:500;letter-spacing:.06em}
+td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
+.faq summary{font-weight:500}
+.module-head h3,.phase h3{font-weight:500}
+.deliv::before,.popular,.rhythm{font-weight:600}
+.rhythm .r1{background:#8fd19c}.rhythm .r2{background:#5cb06c}.rhythm .r3{background:#24646c;color:#fff}
+.cta{background:radial-gradient(ellipse 60% 70% at 50% 100%,#2a6e6a40,transparent 70%)}
+.site-footer{background:#01131f;color:#7f91a7}
+.site-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#5cb06c80,transparent)}
+</style>
+</head>
+<body>
+
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#home" class="logo" aria-label="SDR Launch Academy home">
+      <svg width="32" height="32" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="18" fill="#5cb06c"/><path d="M10 24l6-6 4 4 7-9" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 13h5v5" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>SDR Launch Academy</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main">
+      <a class="nav" href="#home">Programs</a>
+      <a class="nav" href="#sdr-academy">SDR Academy</a>
+      <a class="nav" href="#ai-basics">AI Basic Knowledge</a>
+      <a class="nav" href="#hunting-playbook">Hunting Playbook</a>
+      <a class="nav" href="#pricing">Pricing</a>
+      <a class="nav" href="#faq">FAQ</a>
+      <a class="btn btn-small" href="#enroll">Free consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===================== HOME ===================== -->
+<div class="view" data-view="home" id="home">
+  <section class="hero">
+    <div class="wrap hero-split">
+      <div class="hero-copy">
+        <p class="eyebrow">Tech sales training · 100% virtual</p>
+        <h1>Break into tech sales, and learn to <span class="accent-word">hunt net-new logos</span>.</h1>
+        <p class="lead">Three courses taught by an enterprise seller who has carried a quota for 12+ years. Start as a Sales Development Rep, add the AI skills hiring managers now expect, then run the prospecting method that built $3M in new pipeline in 4 months.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#enroll">Book a free 30-min consultation</a>
+          <a class="btn btn-outline" href="#programs">Compare the courses</a>
+        </div>
+        <p class="hero-note">Live on Zoom · Cohorts capped at 15 · Recordings of every session</p>
+      </div>
+      <div class="call" aria-label="Example role-play from session 5">
+        <div class="call-top"><span>SESSION 05 · COLD CALLING II</span><span class="rec">ROLE-PLAY 02:14</span></div>
+        <div class="who"><div class="avatar">JR</div><div><b>Jordan Reyes</b><span>VP of Operations · 400-person logistics firm</span></div></div>
+        <div class="line"><small>Them</small><p>"We already use a vendor for that."</p></div>
+        <div class="line you"><small>You</small><p>"Makes sense, most teams I talk to do. What would make you look at a second option at the next renewal?"</p></div>
+        <div class="line"><small>Them</small><p>"Honestly, reporting takes my team forever."</p></div>
+        <div class="line you"><small>You</small><p>"Worth 20 minutes Thursday to see how others cut that down?"</p></div>
+        <div class="chips"><span class="chip">Objection handled</span><span class="chip">Meeting booked</span><span class="chip">Logged in CRM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap stats-wrap" style="margin-top:8px">
+    <div class="stats">
+      <div class="stat"><b>$3M</b><span>New pipeline built in 4 months with the hunting method</span></div>
+      <div class="stat"><b>$60K–$75K</b><span>Typical entry-level SDR on-target earnings in the US</span></div>
+      <div class="stat"><b>12+ yrs</b><span>Enterprise SaaS selling by your instructor</span></div>
+      <div class="stat"><b>15</b><span>Students per cohort, max, so everyone gets reps</span></div>
+    </div>
+  </div>
+
+  <section class="section" id="programs">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The programs</p>
+        <h2>Three courses, one path from first job to quota-carrying hunter</h2>
+        <p class="lead">Take them in order or start where you are. Every course ends with something you built and can show a hiring manager.</p>
+      </div>
+      <div class="grid-3">
+        <a class="card course-card" href="#sdr-academy">
+          <div class="course-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <span class="status live">Enrolling now</span>
+          <h3>SDR Academy</h3>
+          <p>A 6-week bootcamp for your first Sales Development Rep role at a software company. Cold calls, email, LinkedIn, the tool stack, and a finished resume.</p>
+          <div class="course-meta"><span class="tag">18 live sessions</span><span class="tag">6 weeks</span><span class="tag">Beginner</span></div>
+          <span class="go">See the curriculum →</span>
+        </a>
+        <a class="card course-card" href="#ai-basics">
+          <div class="course-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 4.6L18.5 9.5 13.9 11.4 12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div>
+          <span class="status draft">Curriculum in review</span>
+          <h3>AI Basic Knowledge</h3>
+          <p>What AI is, how to prompt it well, and how to use it safely for account research, outreach drafts, call prep and role-play.</p>
+          <div class="course-meta"><span class="tag">8 lessons</span><span class="tag">Self-paced + live lab</span><span class="tag">All levels</span></div>
+          <span class="go">See the lessons →</span>
+        </a>
+        <a class="card course-card" href="#hunting-playbook">
+          <div class="course-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></div>
+          <span class="status live">Proven in the field</span>
+          <h3>Net-New Logo Hunting Playbook</h3>
+          <p>The 90-day system for reps chasing new logos in public sector: tier the territory, act on intent, use partners and contract vehicles, and build pipeline.</p>
+          <div class="course-meta"><span class="tag">7 modules</span><span class="tag">90-day plan</span><span class="tag">AEs &amp; senior SDRs</span></div>
+          <span class="go">See the method →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Why train with us</p>
+        <h2>Built around reps, not slides</h2>
+      </div>
+      <div class="grid">
+        <div class="card"><span class="num">01</span><h3>Practice first</h3><p>Every 45-minute session is 10 minutes of teaching, 25 minutes of live practice and 10 minutes of feedback.</p></div>
+        <div class="card"><span class="num">02</span><h3>Real tools</h3><p>Hands-on in HubSpot, Salesforce Trailhead and Apollo, with guided walkthroughs of Outreach, ZoomInfo and Gong.</p></div>
+        <div class="card"><span class="num">03</span><h3>A portfolio, not a certificate</h3><p>Leave with a resume, LinkedIn profile, call script, sequences and a recorded mock cold call.</p></div>
+        <div class="card"><span class="num">04</span><h3>A method with receipts</h3><p>The hunting playbook is the same system used to build $3M in new pipeline in 4 months after big deals paused.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two-col">
+      <div class="stack">
+        <p class="eyebrow">Your instructor</p>
+        <h2>Taught by someone who has carried an enterprise quota</h2>
+        <p class="lead">Grant Mitchell has spent 12+ years selling enterprise SaaS to Federal, State and Local government, Higher Education and corporate buyers across North America. He has built pipeline from cold outreach, worked hand in hand with SDR teams, and knows what an AE needs from a booked meeting.</p>
+      </div>
+      <div class="stack">
+        <blockquote class="quote">When big deals paused, this hunting method built $3M in new pipeline in 4 months. The Hunting Playbook course teaches it step by step.</blockquote>
+        <ul class="pill-list"><li>Enterprise SaaS · 12+ years</li><li>Fed · SLED · Higher Ed</li><li>Direct and partner-led</li><li>North America &amp; Canada</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="who">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Who it's for</p><h2>No sales experience needed to start</h2></div>
+      <div class="grid">
+        <div class="card"><h3>Career changers</h3><p>From retail, hospitality, teaching or customer service, ready for a higher-earning path.</p></div>
+        <div class="card"><h3>New graduates</h3><p>Degree in hand, no sales experience yet, and want tool skills and interview confidence.</p></div>
+        <div class="card"><h3>Athletes and veterans</h3><p>Competitive, coachable, used to metrics, and looking for a structured way into SaaS.</p></div>
+        <div class="card"><h3>Working reps</h3><p>SDRs and AEs who need a repeatable system to find and open net-new accounts.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <div class="sec-head center">
+        <p class="eyebrow">Tuition</p>
+        <h2>SDR Academy costs less than one month of a new SDR's pay</h2>
+        <p class="lead">Founding cohort: $300 off for the first 10 students. Pay in full or in 3 monthly payments.</p>
+      </div>
+      <div class="price-grid">
+        <div class="card price">
+          <span class="spacer" aria-hidden="true"></span>
+          <h3>Career Launch</h3>
+          <div class="amt">$397<small>one time</small></div>
+          <p>For people who already have sales skills and need help getting hired.</p>
+          <ul class="checks"><li>Sessions 15–17: resume, LinkedIn, interviews</li><li>Resume and LinkedIn templates</li><li>Session recordings</li></ul>
+          <a class="btn btn-line" href="#enroll">Choose Career Launch</a>
+        </div>
+        <div class="card price feature">
+          <span class="popular">Most popular</span>
+          <h3>Full Cohort</h3>
+          <div class="amt">$1,497<small>one time</small></div>
+          <p>The complete 6-week program and certificate.</p>
+          <ul class="checks"><li>All 18 live sessions and recordings</li><li>Scripts, sequences and resume templates</li><li>Capstone, certificate and demo day</li><li>Alumni community and job board</li></ul>
+          <a class="btn" href="#enroll">Save my seat</a>
+        </div>
+        <div class="card price">
+          <span class="spacer" aria-hidden="true"></span>
+          <h3>Cohort + Coaching</h3>
+          <div class="amt">$2,497<small>one time</small></div>
+          <p>Everything in Full Cohort, plus private time with your instructor.</p>
+          <ul class="checks"><li>4 private 45-minute coaching sessions</li><li>Resume review and mock interview</li><li>Cold-call recording review</li><li>Offer negotiation prep</li></ul>
+          <a class="btn btn-line" href="#enroll">Choose Coaching</a>
+        </div>
+      </div>
+      <div class="grid-2 mt">
+        <p class="callout"><b>Hiring a team of SDRs?</b> Private employer cohorts are $8,000 for up to 10 new hires.</p>
+        <p class="callout"><b>Refunds.</b> Full refund before session 3. AI Basic Knowledge and the Hunting Playbook pricing is announced with their first cohorts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="faq">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Questions</p><h2>Before you enroll</h2></div>
+      <div class="faq">
+        <details><summary>Is any of it in person?</summary><p>No. The consultation, all live classes, coaching, demo day and graduation happen on Zoom. You need a computer, a headset and a reliable internet connection.</p></details>
+        <details><summary>Do I need sales experience?</summary><p>Not for SDR Academy or AI Basic Knowledge. The Hunting Playbook is built for working SDRs and AEs who already prospect.</p></details>
+        <details><summary>How much time does it take each week?</summary><p>SDR Academy is three 45-minute live sessions plus about 2–3 hours of assignments, so plan on 4–5 hours a week for 6 weeks.</p></details>
+        <details><summary>What if I miss a session?</summary><p>Every session is recorded. To graduate you attend live or watch the recording for every session and submit every deliverable.</p></details>
+        <details><summary>Do I have to pay for the software?</summary><p>No. You use free versions of HubSpot, Salesforce Trailhead and Apollo. Paid tools such as ZoomInfo and Gong are taught through guided walkthroughs.</p></details>
+        <details><summary>Do you guarantee a job?</summary><p>No program can honestly guarantee a job. You get the skills, materials and practice hiring managers look for, plus demo day and the alumni job board.</p></details>
+        <details><summary>Which course should I take first?</summary><p>New to sales: SDR Academy, then AI Basic Knowledge. Already prospecting: go straight to the Hunting Playbook and add AI Basic Knowledge if you are not using AI daily.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== SDR ACADEMY ===================== -->
+<div class="view" data-view="sdr-academy" id="sdr-academy" hidden>
+  <section class="hero course-hero">
+    <div class="wrap hero-split">
+      <div class="hero-copy">
+        <p class="crumb"><a href="#home">Programs</a> / Course 1</p>
+        <p class="eyebrow">SDR Academy</p>
+        <h1>Want a tech career but don't know where to start?</h1>
+        <p class="lead">A fully virtual bootcamp that gets you ready for your first Sales Development Rep role at a software company. You leave with a finished resume, a recruiter-ready LinkedIn profile, hands-on practice in the tools employers use, and a recorded cold call to show hiring managers.</p>
+        <div class="hero-facts"><span>18 live sessions</span><span>45 minutes each</span><span>Mon · Wed · Thu evenings</span><span>6 weeks</span></div>
+        <div class="hero-actions"><a class="btn" href="#enroll">Book a free consultation</a><a class="btn btn-outline" href="#sdr-curriculum">See all 18 sessions</a></div>
+      </div>
+      <div class="proof">
+        <span class="eyebrow">What new SDRs earn</span>
+        <b>$60K<em>–</em>$75K</b>
+        <span>Typical entry-level on-target earnings in the US. Pay varies by company and city (SyncGTM 2026 SDR pay guide).</span>
+        <hr>
+        <span><strong style="color:#fff">13.5 hours</strong> of live instruction across 18 sessions, in cohorts of 15 or fewer.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two-col">
+      <div class="stack">
+        <p class="eyebrow">How every session runs</p>
+        <h2>45 minutes. Most of it on the phone, in the tool, or in a role-play.</h2>
+        <p class="lead">SDRs are hired for what they can do on a call, so the program is built around practice.</p>
+      </div>
+      <div class="stack">
+        <div>
+          <div class="rhythm"><div class="r1">Teach<small>10 min</small></div><div class="r2">Live practice<small>25 min</small></div><div class="r3">Feedback<small>10 min</small></div></div>
+          <div class="ticks"><span>0:00</span><span>0:10</span><span><span>0:35</span><span>0:45</span></span></div>
+        </div>
+        <div class="stack">
+          <p><b>Teach.</b> One concept, shown with a real SaaS example: a call recording, a live sequence, a CRM record.</p>
+          <p><b>Live practice.</b> Role-plays in breakout rooms, writing outreach, or building in the tool while the instructor watches.</p>
+          <p><b>Feedback and assignment.</b> Specific notes on what worked, Q&amp;A, and the deliverable due before the next session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="sdr-curriculum">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The curriculum</p>
+        <h2>18 sessions, in the order you'll use them on the job</h2>
+        <p class="lead">Five modules take you from how a SaaS sales team works to your first interview. Every session ends with something you build.</p>
+      </div>
+
+      <div class="modules">
+      <div class="module">
+        <div class="module-head"><p class="eyebrow">Module 1 · Week 1</p><h3>Foundations of the SDR role</h3><p class="when">How SaaS companies sell, and where you fit.</p></div>
+        <div class="sessions">
+          <div class="session"><span class="n">01</span><div><h4>The SDR role in a SaaS company</h4><p>How SaaS makes money (ARR, churn), the sales funnel, SDR vs AE vs CSM, base-plus-variable comp, and the path to AE.</p><span class="deliv">Map a real SaaS company's sales org</span></div></div>
+          <div class="session"><span class="n">02</span><div><h4>ICP, personas and account research</h4><p>Ideal customer profiles, buyer personas, trigger events, and researching an account in 10 minutes.</p><span class="deliv">Build an ICP and 3 personas</span></div></div>
+          <div class="session"><span class="n">03</span><div><h4>Qualification frameworks</h4><p>BANT, CHAMP and MEDDIC-lite, when a lead is sales-qualified, and what an AE will accept.</p><span class="deliv">Qualify 5 sample leads and defend each call</span></div></div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-head"><p class="eyebrow">Module 2 · Weeks 2–3</p><h3>Outreach skills</h3><p class="when">Calls, email, LinkedIn and the objections that come back.</p></div>
+        <div class="sessions two">
+          <div class="session"><span class="n">04</span><div><h4>Cold calling I: openers and talk tracks</h4><p>Permission-based openers, the 30-second pitch, discovery questions, and getting past gatekeepers.</p><span class="deliv">Write your personal call script</span></div></div>
+          <div class="session"><span class="n">05</span><div><h4>Cold calling II: live role-play</h4><p>Tone, pace, voicemail scripts, and recovering from a bad start.</p><span class="deliv">Live role-play calls with instructor feedback</span></div></div>
+          <div class="session"><span class="n">06</span><div><h4>Email prospecting and sequences</h4><p>Subject lines, personalization at scale, the 5-touch sequence, and follow-up timing.</p><span class="deliv">Write a 5-touch email sequence</span></div></div>
+          <div class="session"><span class="n">07</span><div><h4>LinkedIn, social selling and video</h4><p>Connection requests, commenting strategy, short prospecting videos, and multi-channel cadences.</p><span class="deliv">Record a 60-second prospecting video</span></div></div>
+          <div class="session"><span class="n">08</span><div><h4>Objection handling</h4><p>"Not interested," "send me info," "we use X," "no budget." Acknowledge, question, reframe, or set a later follow-up.</p><span class="deliv">Objection drill in pairs and your own cheat sheet</span></div></div>
+          <div class="session"><span class="n">09</span><div><h4>Inbound leads, discovery and booking meetings</h4><p>Speed-to-lead on demo requests and trials, running discovery, booking the meeting, and writing AE handoff notes.</p><span class="deliv">Mock inbound call ending in a booked meeting</span></div></div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-head"><p class="eyebrow">Module 3 · Weeks 4–5</p><h3>The SDR tool stack</h3><p class="when">Hands-on time in the software hiring managers expect you to know.</p></div>
+        <div class="sessions two">
+          <div class="session"><span class="n">10</span><div><h4>CRM: Salesforce and HubSpot</h4><p>Leads, contacts, accounts and opportunities, logging activity, lead status, and why CRM hygiene matters.</p><span class="deliv">Build and update records in HubSpot and Trailhead</span></div></div>
+          <div class="session"><span class="n">11</span><div><h4>Sales engagement: Outreach, Salesloft, Apollo</h4><p>Building sequences, tasks and call queues, A/B testing, and reading reply and meeting rates.</p><span class="deliv">Build a live multi-step sequence in Apollo</span></div></div>
+          <div class="session"><span class="n">12</span><div><h4>Prospecting data: ZoomInfo, Sales Navigator, Lusha</h4><p>Building lead lists, filters, finding direct dials and emails, and intent and trigger signals.</p><span class="deliv">Build a 50-contact target list for one ICP</span></div></div>
+          <div class="session"><span class="n">13</span><div><h4>Calls, recording and AI tools</h4><p>Power dialers, reviewing Gong or Chorus recordings, Zoom, and using AI for account research and drafts responsibly.</p><span class="deliv">Score a recorded call against a rubric</span></div></div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-head"><p class="eyebrow">Module 4 · Week 5</p><h3>Daily performance</h3><p class="when">How SDRs are measured, and how to hit the number.</p></div>
+        <div class="sessions">
+          <div class="session"><span class="n">14</span><div><h4>Metrics, time management and teamwork</h4><p>Activity targets of 50–80 touches a day, meetings booked vs held, conversion rates, time blocking, nurturing closed-lost, and working with AEs, marketing and your manager.</p><span class="deliv">Plan a full SDR day and week</span></div></div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-head"><p class="eyebrow">Module 5 · Weeks 5–6</p><h3>Career launch</h3><p class="when">Resume, LinkedIn, interviews, and the capstone.</p></div>
+        <div class="sessions two">
+          <div class="session"><span class="n">15</span><div><h4>The SDR resume</h4><p>Translating past jobs into sales results, a metric on every bullet, and an ATS-friendly format.</p><span class="deliv">Finished one-page SDR resume</span></div></div>
+          <div class="session"><span class="n">16</span><div><h4>The LinkedIn profile</h4><p>Headline, About section, Open to Work settings, the skills recruiters search, and a prospecting-style job search.</p><span class="deliv">Updated profile and 25 target companies</span></div></div>
+          <div class="session"><span class="n">17</span><div><h4>Interviews and the hiring process</h4><p>Common SDR interview questions, the mock cold-call test, the 30-60-90 plan, following up, and comparing offers.</p><span class="deliv">Mock interview with feedback</span></div></div>
+          <div class="session"><span class="n">18</span><div><h4>Capstone and graduation</h4><p>A live prospecting block: research an account, cold call, handle objections, book the meeting, and log it in the CRM.</p><span class="deliv">Pass the capstone, earn your certificate</span></div></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Software you'll train on</p><h2>Walk into the interview already knowing the stack</h2><p class="lead">You practice in free versions of the core tools. Paid platforms are taught through guided walkthroughs and free trials where vendors offer them.</p></div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Hands-on in class</h3>
+          <p>Free accounts you set up and keep using after graduation.</p>
+          <div class="table-wrap" style="margin-top:8px"><table style="min-width:0"><tbody>
+            <tr><td><b>HubSpot CRM</b></td><td>Contacts, deals, activity logging</td></tr>
+            <tr><td><b>Salesforce Trailhead</b></td><td>A practice org for leads and opportunities</td></tr>
+            <tr><td><b>Apollo</b></td><td>Lead lists and multi-step sequences</td></tr>
+            <tr><td><b>LinkedIn</b></td><td>Profile, social selling, prospecting</td></tr>
+            <tr><td><b>Zoom</b></td><td>Video calls and recorded role-plays</td></tr>
+          </tbody></table></div>
+        </div>
+        <div class="card">
+          <h3>Guided walkthroughs</h3>
+          <p>Enterprise tools shown live so you know the workflow on day one.</p>
+          <div class="table-wrap" style="margin-top:8px"><table style="min-width:0"><tbody>
+            <tr><td><b>Outreach &amp; Salesloft</b></td><td>Sequences, call queues, reporting</td></tr>
+            <tr><td><b>ZoomInfo &amp; Lusha</b></td><td>Direct dials, emails, intent data</td></tr>
+            <tr><td><b>Sales Navigator</b></td><td>Account and lead search, alerts</td></tr>
+            <tr><td><b>Gong &amp; Chorus</b></td><td>Call recording and coaching</td></tr>
+            <tr><td><b>Power dialers</b></td><td>High-volume calling workflow</td></tr>
+          </tbody></table></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap two-col">
+      <div class="stack"><p class="eyebrow">What you graduate with</p><h2>A portfolio, not just a certificate</h2><p class="lead">Everything you build in class becomes material you can send to a hiring manager.</p></div>
+      <ul class="checks">
+        <li>An SDR-targeted resume and an optimized LinkedIn profile</li>
+        <li>Your prospecting playbook: ICP, call script, 5-touch sequence, objection responses</li>
+        <li>Real reps in a CRM, a sales engagement platform and prospecting data tools</li>
+        <li>A recorded mock cold call and a 30-60-90 day plan</li>
+        <li>Your certificate, a seat at demo day, and the alumni job board</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== AI BASICS ===================== -->
+<div class="view" data-view="ai-basics" id="ai-basics" hidden>
+  <section class="hero course-hero">
+    <div class="wrap hero-split">
+      <div class="hero-copy">
+        <p class="crumb"><a href="#home">Programs</a> / Course 2</p>
+        <p class="eyebrow">AI Basic Knowledge</p>
+        <h1>Use AI like the best reps on the floor, and know where it goes wrong.</h1>
+        <p class="lead">A practical course for sellers who are new to AI. You learn what these tools actually do, how to write prompts that get usable answers, and how to put AI to work on research, outreach and call prep without risking customer data or your credibility.</p>
+        <div class="hero-facts"><span>8 lessons</span><span>Self-paced + 1 live lab</span><span>No technical background</span></div>
+        <div class="hero-actions"><a class="btn" href="#enroll">Join the first cohort</a><a class="btn btn-outline" href="#ai-lessons">See the lessons</a></div>
+      </div>
+      <div class="call" aria-label="Example account research prompt">
+        <div class="call-top"><span>LESSON 03 · ACCOUNT RESEARCH</span><span>PROMPT</span></div>
+        <div class="line you"><small>You</small><p>"You're helping a software sales rep prepare for a first call. Here is the county's FY27 IT budget summary. List the three funded initiatives that involve records or case management, with the page number for each. If something isn't in the document, say so."</p></div>
+        <div class="line"><small>AI</small><p>"1. Records modernization, $1.2M capital request (p. 14). 2. Permitting system replacement (p. 22). 3. No case-management line item found in this document."</p></div>
+        <div class="chips"><span class="chip">Role set</span><span class="chip">Source given</span><span class="chip">Citations asked for</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ai-lessons">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The lessons</p>
+        <h2>From "what is this?" to a personal AI workflow</h2>
+        <p class="lead">Each lesson is a short video plus an exercise in the AI tool of your choice. The live lab at the end is where you build and test your own prompt library.</p>
+      </div>
+      <div class="sessions two">
+        <div class="session"><span class="n">01</span><div><h4>What AI is, and what it isn't</h4><p>How large language models predict text, why they sound confident when they are wrong, and the difference between chat assistants, copilots inside your tools, and AI agents.</p><span class="deliv">Spot the made-up fact in 5 sample answers</span></div></div>
+        <div class="session"><span class="n">02</span><div><h4>Prompting basics</h4><p>The four parts of a good prompt: role, context, task and format. Giving examples, asking for sources, and iterating instead of starting over.</p><span class="deliv">Rewrite 3 weak prompts and compare results</span></div></div>
+        <div class="session"><span class="n">03</span><div><h4>AI for account research</h4><p>Summarizing annual reports, budget books, council minutes and news into a one-page account brief, and checking every claim against the source.</p><span class="deliv">A 1-page brief on a real target account</span></div></div>
+        <div class="session"><span class="n">04</span><div><h4>AI for writing outreach</h4><p>First drafts of emails, LinkedIn notes and voicemail scripts that still sound like you. Personalizing at scale without sounding generated.</p><span class="deliv">A 3-touch sequence drafted with AI, edited by you</span></div></div>
+        <div class="session"><span class="n">05</span><div><h4>AI inside the sales stack</h4><p>The AI features in CRM, sales engagement, data and call-recording tools: call summaries, suggested next steps, email assist and deal risk alerts.</p><span class="deliv">Map which AI features your stack already has</span></div></div>
+        <div class="session"><span class="n">06</span><div><h4>Call prep and role-play with AI</h4><p>Using AI as a practice buyer: rehearsing objections, testing discovery questions and getting feedback on your talk track before the real call.</p><span class="deliv">Record a 5-minute AI role-play and self-score it</span></div></div>
+        <div class="session"><span class="n">07</span><div><h4>Data privacy, security and ethics</h4><p>What never goes into a public AI tool, your company's AI policy, public-sector sensitivities, and being honest with buyers about AI-assisted work.</p><span class="deliv">Your personal do / don't checklist</span></div></div>
+        <div class="session"><span class="n">08</span><div><h4>Live lab: build your AI workflow</h4><p>Put it together: a daily routine and a saved prompt library for research, outreach, call prep and follow-up notes.</p><span class="deliv">A 10-prompt library you use on day one</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap two-col">
+      <div class="stack"><p class="eyebrow">The house rules</p><h2>Three rules we teach in every lesson</h2></div>
+      <div class="stack">
+        <div class="card"><h3>Verify before you send</h3><p>AI drafts, you decide. Every fact in an email or brief gets checked against a source you can name.</p></div>
+        <div class="card"><h3>Protect customer data</h3><p>No customer names, contracts or personal details in tools your company hasn't approved.</p></div>
+        <div class="card"><h3>Keep your voice</h3><p>Buyers reply to people. Use AI to get to a first draft faster, then make it sound like you.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== HUNTING PLAYBOOK ===================== -->
+<div class="view" data-view="hunting-playbook" id="hunting-playbook" hidden>
+  <section class="hero course-hero">
+    <div class="wrap hero-split">
+      <div class="hero-copy">
+        <p class="crumb"><a href="#home">Programs</a> / Course 3</p>
+        <p class="eyebrow">Net-New Logo Hunting Playbook</p>
+        <h1>A 90-day system for opening accounts that have never bought from you.</h1>
+        <p class="lead">Built for SDRs and AEs selling into State and Local government and Education (SLED), and adaptable to any territory. Tier the account universe, act on buying signals within 48 hours, use partners and contract vehicles to get buyable, and measure every week.</p>
+        <div class="hero-facts"><span>7 modules</span><span>18-tab working toolkit</span><span>90-day action plan</span></div>
+        <div class="hero-actions"><a class="btn" href="#enroll">Talk to us about this course</a><a class="btn btn-outline" href="#hunt-modules">See the modules</a></div>
+      </div>
+      <div class="proof">
+        <span class="eyebrow">The proof</span>
+        <b>$3M</b>
+        <span>in new pipeline in 4 months, built with this method after large deals in the forecast paused.</span>
+        <hr>
+        <span>The course teaches the system step by step: who to call, when, through which partner, and with what message.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">The method</p><h2>One loop, run every week</h2><p class="lead">Each step has its own tab in the toolkit, and each feeds the next.</p></div>
+      <ol class="flow">
+        <li><b>Tier accounts</b>Score on six weighted criteria</li>
+        <li><b>Rank the Top 10</b>Hand-picked, above Tier 1</li>
+        <li><b>Capture intent</b>ZoomInfo, Scoops, bid alerts</li>
+        <li><b>Activate partners</b>Intros, intel, contract vehicles</li>
+        <li><b>Run cadences</b>Flows by tier in Gong Engage</li>
+        <li><b>Hunt RFPs</b>Be there 6–12 months early</li>
+        <li><b>Map the account</b>Org, relationships, budget</li>
+        <li><b>Measure</b>Weekly KPIs and dashboard</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="hunt-modules">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Module 1 · Foundation</p><h2>Tier the territory so the right accounts get the most attention</h2><p class="lead">Score every account 1–5 on six criteria. The weighted score sets the tier, and the tier sets how much effort each account gets.</p></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Criterion</th><th>Weight</th><th>A 5 looks like</th><th>A 1 looks like</th><th>Where to find it</th></tr></thead>
+          <tbody>
+            <tr><td><b>Budget / size</b></td><td class="w">25%</td><td>Large IT budget, population over 1M or a state-level agency</td><td>Small town or micro-district, tight budget</td><td>GovSpend, Census, budget documents, ZoomInfo</td></tr>
+            <tr><td><b>Intent / buying signals</b></td><td class="w">25%</td><td>Surging intent, RFI or RFP issued, new funding</td><td>No signals in 6+ months</td><td>ZoomInfo Intent, GovSpend, GovWin, Google Alerts</td></tr>
+            <tr><td><b>Pain / use-case fit</b></td><td class="w">15%</td><td>Clear problem you solve: legacy system, audit finding, mandate</td><td>No obvious fit</td><td>Audits, council minutes, strategic plans</td></tr>
+            <tr><td><b>Contract access</b></td><td class="w">15%</td><td>Can buy through Carahsoft, NASPO, Sourcewell or a state contract</td><td>Requires a full open RFP</td><td>Contract vehicle lookups</td></tr>
+            <tr><td><b>Relationships</b></td><td class="w">10%</td><td>Known champion, ex-customer or partner already inside</td><td>Zero contacts</td><td>LinkedIn, CRM, partner reps, Gong history</td></tr>
+            <tr><td><b>Timing</b></td><td class="w">10%</td><td>Contract expiring or budget cycle aligns within 6 months</td><td>Just signed multi-year with a competitor</td><td>Contract expirations, fiscal calendar</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tiers mt">
+        <div class="tier top"><span class="eyebrow">Hand-picked</span><div class="count">10<small>accounts</small></div><h3>Top 10</h3><p>Full account plan, 8–12 contacts across every buying role, exec sponsor, partner co-sell, weekly deal review.</p><span class="freq">Daily attention · 3–5 touches a week</span></div>
+        <div class="tier"><span class="eyebrow">Score 80+</span><div class="count">25<small>accounts</small></div><h3>Tier 1</h3><p>Full account plan, 6–10 contacts, partner co-sell, executive outreach.</p><span class="freq">2–3 touches a week · 1:1 personalized</span></div>
+        <div class="tier"><span class="eyebrow">Score 60–79</span><div class="count">75<small>accounts</small></div><h3>Tier 2</h3><p>Light account plan, 3–5 contacts, partner awareness.</p><span class="freq">1–2 touches a week · persona-level</span></div>
+        <div class="tier"><span class="eyebrow">Under 60</span><div class="count">300<small>accounts</small></div><h3>Tier 3</h3><p>Programmatic sequence. Promote the account the moment intent spikes.</p><span class="freq">Automated nurture</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Module 2 · Intent and signals</p><h2>Every signal has a response window and a play</h2><p class="lead">Set up intent topics, Scoops and public-sector alerts once. Then the job is speed: the right flow, inside the window.</p></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Signal</th><th>Strength</th><th>Respond within</th><th>Play</th></tr></thead>
+          <tbody>
+            <tr><td><b>Any signal at a Top 10 account</b></td><td><span class="str high">High</span></td><td>Same day</td><td>AE and exec sponsor review today, outreach tied to the signal, loop in the partner</td></tr>
+            <tr><td><b>Intent surge on a core topic (score 80+)</b></td><td><span class="str high">High</span></td><td>24 hours</td><td>Promote one tier; call and personalized email to the decision maker</td></tr>
+            <tr><td><b>New CIO, CTO, CISO or agency director</b></td><td><span class="str high">High</span></td><td>2 weeks from start</td><td>Congratulate, share what peers prioritized in their first 90 days, offer a reference</td></tr>
+            <tr><td><b>RFI or sources-sought published</b></td><td><span class="str high">High</span></td><td>48 hours</td><td>Respond to the RFI, request a meeting with the issuing officer, loop in the partner</td></tr>
+            <tr><td><b>Incumbent contract expires in 6–12 months</b></td><td><span class="str high">High</span></td><td>This week</td><td>Build the account plan, map evaluators, position your contract vehicle</td></tr>
+            <tr><td><b>Grant, budget award or new mandate</b></td><td><span class="str med">Medium</span></td><td>1 week</td><td>Tie your solution to the funded initiative and the compliance angle</td></tr>
+            <tr><td><b>Visits to pricing or solution pages</b></td><td><span class="str med">Medium</span></td><td>48 hours</td><td>Persona email on the topic, LinkedIn connect</td></tr>
+            <tr><td><b>Peer agency in the same state goes live</b></td><td><span class="str med">Medium</span></td><td>2 weeks</td><td>"Your neighbor did X" outreach, ask the customer for an intro</td></tr>
+            <tr><td><b>Low or no signal</b></td><td><span class="str low">Low</span></td><td>Ongoing</td><td>Automated nurture, quarterly check</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two-col">
+      <div class="stack">
+        <p class="eyebrow">Module 3 · Partners and contract vehicles</p>
+        <h2>Get buyable before you get a meeting</h2>
+        <p class="lead">Public buyers move fastest when they can purchase through a contract they already trust. Find out which partner already knows the account, get the intro or the intel, and lead with the vehicle.</p>
+        <ul class="pill-list"><li>Carahsoft</li><li>NASPO ValuePoint</li><li>Sourcewell</li><li>OMNIA Partners</li><li>TIPS-USA</li><li>E&amp;I Cooperative</li><li>State IT contracts</li><li>GSA Cooperative Purchasing</li></ul>
+      </div>
+      <div class="card">
+        <h3>Partner checklist</h3>
+        <ul class="checks">
+          <li>List every contract your product is on, with numbers and expiry dates</li>
+          <li>Map each Top 10 and Tier 1 account to the vehicle it can buy through</li>
+          <li>Register every deal to protect pricing and reseller margin</li>
+          <li>Request vehicle pricing early so procurement can move without an RFP</li>
+          <li>Watch contract expirations as re-bid windows</li>
+          <li>Confirm piggyback rights before relying on a state or co-op contract</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Module 4 · Account plans and MEDDPICC</p><h2>Know what you have, and what you still need</h2><p class="lead">Every Top 10, Tier 1 and Top Priority account gets five artifacts: an account plan, a MEDDPICC score, an org chart, a relationship map and a budget map. Score each element 0 (need), 1 (partial) or 2 (have), and work the biggest gap first.</p></div>
+      <div class="grid">
+        <div class="card"><span class="num">M</span><h3>Metrics</h3><p>The measurable outcome they care about: backlog days, request turnaround, staff hours, audit findings closed.</p></div>
+        <div class="card"><span class="num">E</span><h3>Economic buyer</h3><p>Who can release funds, and above what dollar threshold it goes to council, board or the state CIO.</p></div>
+        <div class="card"><span class="num">D</span><h3>Decision criteria</h3><p>Security certifications, integrations, references, price and contract vehicle.</p></div>
+        <div class="card"><span class="num">D</span><h3>Decision process</h3><p>Department, IT governance, security, legal, procurement, then council or board, in that order.</p></div>
+        <div class="card"><span class="num">P</span><h3>Paper process</h3><p>Which vehicle, the PO steps, legal review, agenda deadlines and who signs.</p></div>
+        <div class="card"><span class="num">I</span><h3>Identify pain</h3><p>What's broken, who feels it, and what happens if nothing changes.</p></div>
+        <div class="card"><span class="num">C</span><h3>Champion</h3><p>Someone with power who is selling for you internally, and who you have tested.</p></div>
+        <div class="card"><span class="num">C</span><h3>Competition</h3><p>The incumbent, other vendors, an in-house build, or doing nothing.</p></div>
+      </div>
+      <p class="callout mt"><b>Follow the money.</b> Every plan names the funding source the budget owner will actually charge: general fund, capital project fund, enterprise fund, federal or state grant, or a shared state contract. Then it names the fiscal year-end deadline for issuing a PO.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Module 5 · Cadences and messaging</p><h2>Flows built per tier, messages built per persona</h2></div>
+      <div class="grid-3">
+        <div class="card"><h3>Top 10 · Executive</h3><p>Ongoing. Exec-to-exec note on day 2, multi-thread 4–6 stakeholders with personal video, partner co-sell, and an onsite workshop tied to their budget cycle. Never quiet for more than 5 business days.</p></div>
+        <div class="card"><h3>Tier 1 · Strategic</h3><p>21 days, 12 touches. Initiative-specific email, voicemail, LinkedIn, a 60–90 second video on their public plan, partner intro, peer case study, event invite, and a pivot to nurture.</p></div>
+        <div class="card"><h3>Tier 2 and 3</h3><p>Tier 2 runs 6 touches over 14 days with a "buyable via cooperative contract" proof point. Tier 3 is a 30-day automated nurture that promotes on intent.</p></div>
+      </div>
+      <div class="table-wrap mt">
+        <table>
+          <thead><tr><th>Persona</th><th>What they care about</th><th>Lead with</th></tr></thead>
+          <tbody>
+            <tr><td><b>CIO / CTO</b></td><td>Modernization, cloud, cost control, workforce gaps</td><td>Modernize the process on a secure cloud platform without adding headcount</td></tr>
+            <tr><td><b>CISO</b></td><td>Security, compliance, audit findings, ransomware</td><td>Reduce risk with capabilities that meet CJIS, StateRAMP and state standards</td></tr>
+            <tr><td><b>Agency director</b></td><td>Mission delivery, constituent service, backlogs</td><td>Serve constituents faster by automating the workflow</td></tr>
+            <tr><td><b>Procurement</b></td><td>Compliance, fair process, speed to buy</td><td>Buyable today through a competitively awarded contract</td></tr>
+            <tr><td><b>Finance / budget</b></td><td>ROI, budget alignment, grant fit</td><td>Fits within the budget line or grant program, with predictable costs</td></tr>
+            <tr><td><b>Clerk / records / legal</b></td><td>Retention, public records requests, e-discovery</td><td>Find, retain and produce records in hours, not weeks</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap two-col">
+      <div class="stack">
+        <p class="eyebrow">Module 6 · RFP and budget intel</p>
+        <h2>Be in the account 6–12 months before the RFP drops</h2>
+        <p class="lead">Once an RFP is live, the quiet period starts and you can only talk to the procurement officer. The work happens before: meet stakeholders, share best practices, respond to RFIs, and time outreach to the budget cycle.</p>
+        <ul class="pill-list"><li>GovSpend</li><li>GovWin IQ</li><li>State procurement portals</li><li>Council and board agendas</li><li>Budget books and CIPs</li><li>Auditor reports</li><li>Grant announcements</li></ul>
+      </div>
+      <div class="table-wrap">
+        <table style="min-width:440px">
+          <thead><tr><th>Fiscal year starts</th><th>Typical for</th><th>Best window</th></tr></thead>
+          <tbody>
+            <tr><td><b>July 1</b></td><td>Most states, many counties, cities and school districts</td><td>Fall–winter for next year's budget; spring for remaining funds</td></tr>
+            <tr><td><b>October 1</b></td><td>A few states and the federal government</td><td>Spring for budget; late summer for year-end spend</td></tr>
+            <tr><td><b>September 1</b></td><td>Texas (biennial budget)</td><td>Fall–winter before the legislative session</td></tr>
+            <tr><td><b>April 1</b></td><td>New York State</td><td>Summer–fall</td></tr>
+            <tr><td><b>January 1</b></td><td>Many cities and counties</td><td>Spring–summer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Module 7 · Execute and measure</p><h2>The 90-day plan, in five phases</h2><p class="lead">30 actions on a 13-week timeline. The toolkit's dashboard shows tiering, coverage gaps, MEDDPICC averages, budget deadlines and progress against plan.</p></div>
+      <div class="phases">
+        <div class="phase"><span class="wk">Weeks 1–2</span><h3>Foundation</h3><p>ICP, account universe, tier scoring, intent and bid alerts, flows and messaging.</p></div>
+        <div class="phase"><span class="wk">Weeks 2–3</span><h3>Partner</h3><p>Partner kickoff with the Top 10 and Tier 1 list; identify the incumbent reseller at each.</p></div>
+        <div class="phase"><span class="wk">Weeks 2–4</span><h3>Account plans</h3><p>Org charts, budget maps, relationship maps and a MEDDPICC baseline for every required account.</p></div>
+        <div class="phase"><span class="wk">Weeks 3–12</span><h3>Execution</h3><p>Launch flows, work signals within 24–48 hours, two 90-minute call blocks a day, events and peer intros.</p></div>
+        <div class="phase"><span class="wk">Weeks 4–13</span><h3>Optimize</h3><p>Re-tier on Mondays, review call insights on Fridays, partner pipeline reviews, 90-day review.</p></div>
+      </div>
+      <h3 class="sub-head">Weekly targets</h3>
+      <div class="kpis">
+        <div class="kpi"><b>40</b><span>Accounts touched</span></div>
+        <div class="kpi"><b>100</b><span>Calls</span></div>
+        <div class="kpi"><b>15</b><span>Conversations</span></div>
+        <div class="kpi"><b>150</b><span>Emails sent</span></div>
+        <div class="kpi"><b>5</b><span>Partner touches</span></div>
+        <div class="kpi"><b>2</b><span>RFIs or RFPs found</span></div>
+      </div>
+      <p class="fine" style="margin-top:16px">Starting targets from the toolkit. Meeting, opportunity and pipeline targets are calculated from your own quota, deal sizes and 5x coverage.</p>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap two-col">
+      <div class="stack"><p class="eyebrow">What you take home</p><h2>The toolkit behind the $3M</h2><p class="lead">An 18-tab working spreadsheet you load your own territory into. Formulas do the scoring, coverage checks and roll-ups.</p></div>
+      <ul class="checks">
+        <li>Tier model, account list and Top 10 tracker</li>
+        <li>Account plan template, MEDDPICC scorecard, org chart, relationship and budget maps</li>
+        <li>Intent signal rules, partner directory and contract vehicle checklist</li>
+        <li>Cadence library and persona messaging framework</li>
+        <li>RFP and budget intel sources with fiscal-year timing</li>
+        <li>90-day action plan, weekly KPIs, financial model and live dashboard</li>
+      </ul>
+    </div>
+  </section>
+</div>
+</main>
+
+<section class="section cta" id="enroll">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Get started</p>
+      <h2>Start with a free 30-minute consultation</h2>
+      <p class="lead">A video call where we talk through your background and goals, walk you through the right course, and tell you honestly whether it's a fit. No cost and no pressure.</p>
+    </div>
+    <ol class="steps">
+      <li><b>Book your consultation</b>Pick a time that works and we'll meet on Zoom.</li>
+      <li><b>Choose your course and package</b>Pay in full or in 3 monthly payments.</li>
+      <li><b>Start with your cohort</b>New SDR Academy cohorts begin on a Monday.</li>
+    </ol>
+    <div class="hero-actions" style="margin-top:32px"><a class="btn" href="#enroll" id="book-btn">Book a free consultation</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#home" class="logo" style="margin-bottom:14px"><svg width="32" height="32" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="18" fill="#5cb06c"/><path d="M10 24l6-6 4 4 7-9" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 13h5v5" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>SDR Launch Academy</span></a>
+      <p>Virtual tech sales training. Live cohorts on Zoom across North America.</p>
+    </div>
+    <nav aria-label="Courses"><h4>Courses</h4><ul><li><a href="#sdr-academy">SDR Academy</a></li><li><a href="#ai-basics">AI Basic Knowledge</a></li><li><a href="#hunting-playbook">Hunting Playbook</a></li></ul></nav>
+    <nav aria-label="More"><h4>More</h4><ul><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#enroll">Free consultation</a></li></ul></nav>
+  </div>
+  <div class="wrap footer-bottom"><span>© 2026 SDR Launch Academy. All rights reserved.</span><span>100% virtual cohorts</span></div>
+</footer>
+
+<script>
+(function(){
+  var views=[].slice.call(document.querySelectorAll('[data-view]'));
+  var navLinks=[].slice.call(document.querySelectorAll('.main-nav a.nav'));
+  var header=document.querySelector('.site-header');
+  var menuBtn=document.getElementById('menu-btn');
+  function route(){
+    var id=(location.hash||'#home').slice(1)||'home';
+    var el=document.getElementById(id);
+    var view=el&&el.closest('[data-view]');
+    if(!view&&(!el||el.closest('main'))){ view=views[0]; }
+    if(view){ views.forEach(function(v){v.hidden=(v!==view);}); }
+    var current=view?view.getAttribute('data-view'):null;
+    navLinks.forEach(function(a){
+      var h=a.getAttribute('href').slice(1);
+      var match=(h===id)||(current&&h===current&&!(h==='home'&&(id==='pricing'||id==='faq')));
+      if(match)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
+    });
+    header.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');
+    if(el&&el!==view){ requestAnimationFrame(function(){el.scrollIntoView({block:'start'});}); }
+    else { window.scrollTo(0,0); }
+  }
+  window.addEventListener('hashchange',route);
+  menuBtn.addEventListener('click',function(){var o=header.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o?'true':'false');});
+  route();
+  var spot=document.getElementById('spotlight'),raf=0,px=0,py=0;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.addEventListener('pointermove',function(e){
+    px=e.clientX;py=e.clientY;
+    var c=e.target.closest&&e.target.closest('.card');
+    if(c){var r=c.getBoundingClientRect();c.style.setProperty('--x',(px-r.left)+'px');c.style.setProperty('--y',(py-r.top)+'px');}
+    if(reduce||raf)return;
+    raf=requestAnimationFrame(function(){raf=0;spot.style.setProperty('--mx',px+'px');spot.style.setProperty('--my',py+'px');});
+  },{passive:true});
+})();
+</script>
+
+</body>
+</html>
