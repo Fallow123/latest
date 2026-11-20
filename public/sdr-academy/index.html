@@ -349,6 +349,31 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
 .cta{background:radial-gradient(ellipse 60% 70% at 50% 100%,#2a6e6a40,transparent 70%)}
 .site-footer{background:#01131f;color:#7f91a7}
 .site-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#5cb06c80,transparent)}
+
+/* certificate */
+.cert-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:center}
+@media (max-width:900px){.cert-wrap{grid-template-columns:minmax(0,1fr);gap:32px}}
+.cert-wrap>*{min-width:0}
+.cert{position:relative;aspect-ratio:1.414/1;max-width:100%;margin:0;border-radius:18px;padding:clamp(18px,3.4vw,34px);display:grid;grid-template-rows:auto 1fr auto;gap:10px;text-align:center;overflow:hidden;
+  background:radial-gradient(ellipse 80% 60% at 50% 0%,#033f63,transparent 70%),linear-gradient(160deg,#03233c,#021a2d);border:1px solid #8fd19c4d;box-shadow:0 30px 60px -24px #000a,inset 0 1px #ffffff14}
+.cert::before{content:"";position:absolute;inset:10px;border:1px solid #ffffff17;border-radius:12px;pointer-events:none}
+.cert::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:28px 28px;-webkit-mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent);mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent)}
+.cert>*{position:relative;z-index:1}
+.cert-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--font-head);font-size:clamp(.55rem,1.1vw,.7rem);letter-spacing:.14em;text-transform:uppercase;color:#8e9fb5}
+.cert-top span:first-child{display:inline-flex;align-items:center;gap:6px;color:#fff;letter-spacing:.02em;text-transform:none;font-weight:600;font-size:clamp(.65rem,1.3vw,.85rem)}
+.cert-body{display:grid;align-content:center;gap:clamp(4px,1vw,8px)}
+.cert-kicker{font-family:var(--font-head);font-size:clamp(.55rem,1.1vw,.72rem);letter-spacing:.2em;text-transform:uppercase;color:var(--mint)}
+.cert-name{font-family:var(--font-head);font-weight:600;letter-spacing:-.03em;font-size:clamp(1.2rem,3vw,2rem);color:#fff;line-height:1.1}
+.cert-for{font-size:clamp(.65rem,1.3vw,.85rem);color:#9fb1c6}
+.cert-prog{font-family:var(--font-head);font-weight:600;font-size:clamp(.85rem,1.9vw,1.2rem);background:linear-gradient(90deg,#8fd19c,#5cb06c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cert-foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:10px;font-size:clamp(.5rem,1vw,.68rem);color:#8e9fb5}
+.cert-foot div{display:grid;gap:2px;border-top:1px solid #ffffff29;padding-top:6px}
+.cert-foot div:last-child{text-align:right}
+.cert-foot .seal{border-top:0;padding-top:0}
+.cert-foot b{font-family:var(--font-head);font-weight:500;color:#dfe7f0;font-size:clamp(.58rem,1.15vw,.78rem)}
+.seal{width:clamp(38px,7vw,64px);height:clamp(38px,7vw,64px);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#5cb06c33,#5cb06c0d 70%);border:1px solid #8fd19c66;box-shadow:0 0 0 4px #5cb06c14}
+.resume-line{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:.86rem;background:#ffffff08;border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:#dfe7f0;line-height:1.6}
+.resume-line small{display:block;font-family:var(--font-head);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 </style>
 </head>
 <body>
@@ -424,7 +449,7 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
           <span class="status live">Enrolling now</span>
           <h3>SDR Academy</h3>
           <p>A 6-week bootcamp for your first Sales Development Rep role at a software company. Cold calls, email, LinkedIn, the tool stack, and a finished resume.</p>
-          <div class="course-meta"><span class="tag">18 live sessions</span><span class="tag">6 weeks</span><span class="tag">Beginner</span></div>
+          <div class="course-meta"><span class="tag">18 live sessions</span><span class="tag">6 weeks</span><span class="tag">Certificate</span></div>
           <span class="go">See the curriculum →</span>
         </a>
         <a class="card course-card" href="#ai-basics">
@@ -432,7 +457,7 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
           <span class="status draft">Curriculum in review</span>
           <h3>AI Basic Knowledge</h3>
           <p>What AI is, how to prompt it well, and how to use it safely for account research, outreach drafts, call prep and role-play.</p>
-          <div class="course-meta"><span class="tag">8 lessons</span><span class="tag">Self-paced + live lab</span><span class="tag">All levels</span></div>
+          <div class="course-meta"><span class="tag">8 lessons</span><span class="tag">Self-paced + live lab</span><span class="tag">Certificate</span></div>
           <span class="go">See the lessons →</span>
         </a>
         <a class="card course-card" href="#hunting-playbook">
@@ -440,7 +465,7 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
           <span class="status live">Proven in the field</span>
           <h3>Net-New Logo Hunting Playbook</h3>
           <p>The 90-day system for reps chasing new logos in public sector: tier the territory, act on intent, use partners and contract vehicles, and build pipeline.</p>
-          <div class="course-meta"><span class="tag">7 modules</span><span class="tag">90-day plan</span><span class="tag">AEs &amp; senior SDRs</span></div>
+          <div class="course-meta"><span class="tag">7 modules</span><span class="tag">90-day plan</span><span class="tag">Certificate</span></div>
           <span class="go">See the method →</span>
         </a>
       </div>
@@ -456,7 +481,7 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
       <div class="grid">
         <div class="card"><span class="num">01</span><h3>Practice first</h3><p>Every 45-minute session is 10 minutes of teaching, 25 minutes of live practice and 10 minutes of feedback.</p></div>
         <div class="card"><span class="num">02</span><h3>Real tools</h3><p>Hands-on in HubSpot, Salesforce Trailhead and Apollo, with guided walkthroughs of Outreach, ZoomInfo and Gong.</p></div>
-        <div class="card"><span class="num">03</span><h3>A portfolio, not a certificate</h3><p>Leave with a resume, LinkedIn profile, call script, sequences and a recorded mock cold call.</p></div>
+        <div class="card"><span class="num">03</span><h3>A certificate for every course</h3><p>Each program ends with a Certificate of Completion you can list on your resume and LinkedIn.</p></div>
         <div class="card"><span class="num">04</span><h3>A method with receipts</h3><p>The hunting playbook is the same system used to build $3M in new pipeline in 4 months after big deals paused.</p></div>
       </div>
     </div>
@@ -538,6 +563,7 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
         <details><summary>What if I miss a session?</summary><p>Every session is recorded. To graduate you attend live or watch the recording for every session and submit every deliverable.</p></details>
         <details><summary>Do I have to pay for the software?</summary><p>No. You use free versions of HubSpot, Salesforce Trailhead and Apollo. Paid tools such as ZoomInfo and Gong are taught through guided walkthroughs.</p></details>
         <details><summary>Do you guarantee a job?</summary><p>No program can honestly guarantee a job. You get the skills, materials and practice hiring managers look for, plus demo day and the alumni job board.</p></details>
+        <details><summary>Do I get a certificate?</summary><p>Yes. Each course has its own Certificate of Completion with a unique ID, issued when you finish the requirements listed on that course page. It shows you completed the training. It is not an accredited degree or a licensed industry certification.</p></details>
         <details><summary>Which course should I take first?</summary><p>New to sales: SDR Academy, then AI Basic Knowledge. Already prospecting: go straight to the Hunting Playbook and add AI Basic Knowledge if you are not using AI daily.</p></details>
       </div>
     </div>
@@ -685,8 +711,31 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
         <li>Your prospecting playbook: ICP, call script, 5-touch sequence, objection responses</li>
         <li>Real reps in a CRM, a sales engagement platform and prospecting data tools</li>
         <li>A recorded mock cold call and a 30-60-90 day plan</li>
-        <li>Your certificate, a seat at demo day, and the alumni job board</li>
+        <li>Your SDR Academy certificate, a seat at demo day, and the alumni job board</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap cert-wrap">
+      <div class="stack">
+        <p class="eyebrow">Your certificate</p>
+        <h2>Finish the program, earn a certificate for your resume</h2>
+        <p class="lead">Graduates receive a SDR Academy Certificate of Completion with a unique certificate ID. Add it to your resume and the Licenses &amp; Certifications section of LinkedIn.</p>
+        <ul class="checks"><li>Attend or watch all 18 live sessions</li><li>Submit every session deliverable</li><li>Pass the capstone: research, cold call, objection handling, booked meeting, CRM log</li></ul>
+        <ul class="pill-list"><li>Cold calling</li><li>Email sequencing</li><li>Objection handling</li><li>HubSpot</li><li>Salesforce</li><li>Apollo</li></ul>
+        <p class="resume-line"><small>On your resume</small>SDR Academy, Certificate of Completion<br>SDR Launch Academy · 2027</p>
+      </div>
+      <figure class="cert" aria-label="Sample SDR Academy certificate">
+        <div class="cert-top"><span><svg width="16" height="16" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="18" fill="#5cb06c"/><path d="M10 24l6-6 4 4 7-9" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 13h5v5" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> SDR Launch Academy</span><span>ID SLA-SDR-0001</span></div>
+        <div class="cert-body">
+          <span class="cert-kicker">Certificate of Completion</span>
+          <span class="cert-name">Your Name</span>
+          <span class="cert-for">has successfully completed</span>
+          <span class="cert-prog">SDR Academy</span>
+        </div>
+        <div class="cert-foot"><div><b>Grant Mitchell</b>Lead instructor</div><span class="seal" aria-hidden="true"><svg width="55%" height="55%" viewBox="0 0 24 24" fill="none" stroke="#8fd19c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></span><div><b>Month 2027</b>Date completed</div></div>
+      </figure>
     </div>
   </section>
 </div>
@@ -740,6 +789,29 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
         <div class="card"><h3>Protect customer data</h3><p>No customer names, contracts or personal details in tools your company hasn't approved.</p></div>
         <div class="card"><h3>Keep your voice</h3><p>Buyers reply to people. Use AI to get to a first draft faster, then make it sound like you.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cert-wrap">
+      <div class="stack">
+        <p class="eyebrow">Your certificate</p>
+        <h2>Finish the program, earn a certificate for your resume</h2>
+        <p class="lead">Graduates receive a AI Basic Knowledge Certificate of Completion with a unique certificate ID. Add it to your resume and the Licenses &amp; Certifications section of LinkedIn.</p>
+        <ul class="checks"><li>Complete all 8 lessons and their exercises</li><li>Attend or watch the live lab</li><li>Submit your 10-prompt library</li></ul>
+        <ul class="pill-list"><li>Prompt writing</li><li>AI account research</li><li>AI-assisted outreach</li><li>Responsible AI use</li></ul>
+        <p class="resume-line"><small>On your resume</small>AI Basic Knowledge for Sales, Certificate of Completion<br>SDR Launch Academy · 2027</p>
+      </div>
+      <figure class="cert" aria-label="Sample AI Basic Knowledge certificate">
+        <div class="cert-top"><span><svg width="16" height="16" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="18" fill="#5cb06c"/><path d="M10 24l6-6 4 4 7-9" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 13h5v5" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> SDR Launch Academy</span><span>ID SLA-AI-0001</span></div>
+        <div class="cert-body">
+          <span class="cert-kicker">Certificate of Completion</span>
+          <span class="cert-name">Your Name</span>
+          <span class="cert-for">has successfully completed</span>
+          <span class="cert-prog">AI Basic Knowledge</span>
+        </div>
+        <div class="cert-foot"><div><b>Grant Mitchell</b>Lead instructor</div><span class="seal" aria-hidden="true"><svg width="55%" height="55%" viewBox="0 0 24 24" fill="none" stroke="#8fd19c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></span><div><b>Month 2027</b>Date completed</div></div>
+      </figure>
     </div>
   </section>
 </div>
@@ -949,6 +1021,29 @@ td b,.faq summary,.steps li b,.flow li b,.who b,.callout b{font-weight:500}
         <li>RFP and budget intel sources with fiscal-year timing</li>
         <li>90-day action plan, weekly KPIs, financial model and live dashboard</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap cert-wrap">
+      <div class="stack">
+        <p class="eyebrow">Your certificate</p>
+        <h2>Finish the program, earn a certificate for your resume</h2>
+        <p class="lead">Graduates receive a Net-New Logo Hunting Playbook Certificate of Completion with a unique certificate ID. Add it to your resume and the Licenses &amp; Certifications section of LinkedIn.</p>
+        <ul class="checks"><li>Complete all 7 modules</li><li>Build your tiered territory and Top 10 list in the toolkit</li><li>Submit one full account plan with a MEDDPICC score and a 90-day action plan</li></ul>
+        <ul class="pill-list"><li>Territory planning</li><li>Account tiering</li><li>MEDDPICC</li><li>Intent-based prospecting</li><li>Partner co-selling</li><li>SLED procurement</li></ul>
+        <p class="resume-line"><small>On your resume</small>Net-New Logo Hunting Playbook, Certificate of Completion<br>SDR Launch Academy · 2027</p>
+      </div>
+      <figure class="cert" aria-label="Sample Net-New Logo Hunting Playbook certificate">
+        <div class="cert-top"><span><svg width="16" height="16" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="18" fill="#5cb06c"/><path d="M10 24l6-6 4 4 7-9" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 13h5v5" fill="none" stroke="#04261b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> SDR Launch Academy</span><span>ID SLA-HNT-0001</span></div>
+        <div class="cert-body">
+          <span class="cert-kicker">Certificate of Completion</span>
+          <span class="cert-name">Your Name</span>
+          <span class="cert-for">has successfully completed</span>
+          <span class="cert-prog">Net-New Logo Hunting Playbook</span>
+        </div>
+        <div class="cert-foot"><div><b>Grant Mitchell</b>Lead instructor</div><span class="seal" aria-hidden="true"><svg width="55%" height="55%" viewBox="0 0 24 24" fill="none" stroke="#8fd19c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></span><div><b>Month 2027</b>Date completed</div></div>
+      </figure>
     </div>
   </section>
 </div>
