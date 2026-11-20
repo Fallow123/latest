@@ -19,3 +19,14 @@
   from = "/ivanti-uem-solutions"
   to = "/ivanti-aem-solutions"
   status = 301
+
+# SDR Launch Academy training page: shared by link only, kept out of search engines
+[[headers]]
+  for = "/sdr-academy/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/sdr-academy"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
